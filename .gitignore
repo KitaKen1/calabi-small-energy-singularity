@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pickle
+*.aux
+*.log
+*.out
+*.xdv

@@ -1,0 +1,11 @@
+{
+  "all_symbolic_identities_pass": true,
+  "identities": [
+    "curvature expansion",
+    "auxiliary-sphere factorization",
+    "general-dimensional profile transformation",
+    "flat profile curvature",
+    "exact nonlinear reciprocal remainder"
+  ],
+  "scope": "Exact algebra only; not a check of the parabolic or geometric proof."
+}
