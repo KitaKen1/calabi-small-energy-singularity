@@ -1,0 +1,4 @@
+Source: https://github.com/openai/math
+Revision: fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+The extracted Lean sources are unmodified and retain their upstream copyright notices.
+Released under the upstream Apache License 2.0. See LICENSE and ../../vendor-lock.json.

@@ -1,0 +1,22 @@
+[
+  {
+    "module": "FCTargetDefinitions",
+    "exit_code": 0,
+    "seconds": 15.86
+  },
+  {
+    "module": "Challenge",
+    "exit_code": 0,
+    "seconds": 3.08
+  },
+  {
+    "module": "FCSolution",
+    "exit_code": 0,
+    "seconds": 32.7
+  },
+  {
+    "module": "FCAudit",
+    "exit_code": 0,
+    "seconds": 12.38
+  }
+]

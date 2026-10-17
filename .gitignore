@@ -1,0 +1,13 @@
+.DS_Store
+**/.lake/
+**/__pycache__/
+**/*.pyc
+**/*.olean
+**/*.ilean
+**/*.ir
+**/*.ir.sig
+build-receipt/
+comparator-receipt/
+replay-receipt/
+tools/
+tmp/

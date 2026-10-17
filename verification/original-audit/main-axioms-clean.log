@@ -1,0 +1,99 @@
+'Calabi.mainTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.mainTheoremEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.localizedCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.exists_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.first_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.pairLim_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.interior_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.Sm.diffquot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.chart_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.chartOp_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.chart0_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.chart1_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Whitney.whitney_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.kop_diff_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.Hsol_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.Hsol_eqn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.exists_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+Calabi.mainTheorem : Calabi.Geometry.MainTheorem
+Calabi.mainTheoremEnergy : Calabi.Geometry.MainTheoremEnergy
+@Calabi.Weighted.localizedCorrection : ∀ {c : ℝ} {G : ℝ → ℝ}, Calabi.IsProfile c G → Calabi.Radial.LocalizedCorrection G
+def Calabi.Geometry.MainTheorem : Prop :=
+∃ CS,
+  ∀ (p : ℝ),
+    2 ≤ p →
+      p < 7 →
+        ∀ (ε : ℝ),
+          0 < ε →
+            ∀ (τ : ℝ),
+              0 < τ →
+                ∃ T F,
+                  0 < T ∧
+                    T < τ ∧
+                      Calabi.Geometry.IsCalabiFlow T F ∧
+                        (∀ t ∈ Set.Ico 0 T, Calabi.Geometry.IsU7Invariant (F t)) ∧
+                          (∀ (v : Calabi.Geometry.Hom), v ≠ 0 → |F 0 v| < ε) ∧
+                            (∀ t ∈ Set.Ico 0 T,
+                                MeasureTheory.IsProbabilityMeasure (Calabi.Geometry.nu (Calabi.Geometry.pot (F t) 0)) ∧
+                                  MeasureTheory.eLpNorm
+                                        (fun Z => Calabi.Geometry.scal (Calabi.Geometry.pot (F t) 0) Z - 56)
+                                        (ENNReal.ofReal p) (Calabi.Geometry.nu (Calabi.Geometry.pot (F t) 0)) <
+                                      ENNReal.ofReal ε ∧
+                                    Calabi.Geometry.HasSobolevBound (Calabi.Geometry.pot (F t) 0) CS) ∧
+                              ∃ a,
+                                0 < a ∧
+                                  Filter.Tendsto
+                                    (fun t => √(T - t) * Calabi.Geometry.scal (Calabi.Geometry.pot (F t) 0) 0)
+                                    (nhdsWithin T (Set.Iio T)) (nhds a)
+def Calabi.Geometry.MainTheoremEnergy : Prop :=
+∃ CS,
+  ∀ (ε : ℝ),
+    0 < ε →
+      ∀ (τ : ℝ),
+        0 < τ →
+          ∃ T F,
+            0 < T ∧
+              T < τ ∧
+                Calabi.Geometry.IsCalabiFlow T F ∧
+                  (∀ t ∈ Set.Ico 0 T, Calabi.Geometry.IsU7Invariant (F t)) ∧
+                    (∀ (v : Calabi.Geometry.Hom), v ≠ 0 → |F 0 v| < ε) ∧
+                      (∀ t ∈ Set.Ico 0 T,
+                          MeasureTheory.IsProbabilityMeasure (Calabi.Geometry.nu (Calabi.Geometry.pot (F t) 0)) ∧
+                            MeasureTheory.eLpNorm (fun Z => Calabi.Geometry.scal (Calabi.Geometry.pot (F t) 0) Z - 56) 2
+                                  (Calabi.Geometry.nu (Calabi.Geometry.pot (F t) 0)) <
+                                ENNReal.ofReal ε ∧
+                              Calabi.Geometry.HasSobolevBound (Calabi.Geometry.pot (F t) 0) CS) ∧
+                        ∃ a,
+                          0 < a ∧
+                            Filter.Tendsto (fun t => √(T - t) * Calabi.Geometry.scal (Calabi.Geometry.pot (F t) 0) 0)
+                              (nhdsWithin T (Set.Iio T)) (nhds a)
+def Calabi.Radial.LocalizedCorrection : (ℝ → ℝ) → Prop :=
+fun G =>
+  ∃ δ κ₁ κ₂ C,
+    0 < δ ∧
+      δ ≤ 1 ∧
+        0 < κ₁ ∧
+          0 ≤ C ∧
+            ∀ (lam : ℝ),
+              0 < lam →
+                lam < 1 / 8 →
+                  ∃ e₀,
+                    0 < e₀ ∧
+                      ∀ (e : ℝ),
+                        0 < e →
+                          e ≤ e₀ →
+                            ∀ (T₀ : ℝ),
+                              0 < T₀ →
+                                ∃ T H,
+                                  0 < T ∧
+                                    T < T₀ ∧
+                                      Calabi.Radial.IsRadialFlow T H ∧
+                                        ∀ t ∈ Set.Ioo (-T) 0,
+                                          ∀ x ∈ Set.Icc 0 1,
+                                            κ₁ ≤ 1 + Calabi.Radial.vstar x * H t x ∧
+                                              1 + Calabi.Radial.vstar x * H t x ≤ κ₂ ∧
+                                                |H t x - Calabi.Radial.Flam G lam t x| ≤
+                                                    C * e * (x + √(-t)) ^ (-1 + δ) ∧
+                                                  |Calabi.Radial.Kop (H t) x -
+                                                        Calabi.Radial.Kop (Calabi.Radial.Flam G lam t) x| ≤
+                                                    C * e * (x + √(-t)) ^ (-1 + δ)

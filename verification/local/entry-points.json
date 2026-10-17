@@ -1,0 +1,14 @@
+[
+  {
+    "entry": "ordinary-library-root",
+    "exit_code": 0,
+    "seconds": 30.8,
+    "dependencies": "source-matched original checked cache"
+  },
+  {
+    "entry": "without-comparator-bridge",
+    "exit_code": 0,
+    "seconds": 14.22,
+    "dependencies": "source-matched original checked cache"
+  }
+]

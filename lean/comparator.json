@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "FCSolution",
+  "enable_nanoda": false,
+  "theorem_names": [
+    "CalabiFC.small_energy_singularity",
+    "CalabiFC.small_calabi_energy"
+  ],
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"]
+}

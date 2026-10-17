@@ -1,0 +1,425 @@
+{
+  "date": "2026-10-14",
+  "lean": "v4.34.1",
+  "kernel_arithmetic": {
+    "compiled": true,
+    "checked_declarations": [
+      "Calabi.Certificate.KernelChecks.product",
+      "Calabi.Certificate.KernelChecks.sum_products",
+      "Calabi.Certificate.KernelChecks.weighted_sum",
+      "Calabi.Certificate.KernelChecks.variation",
+      "Calabi.Certificate.KernelChecks.origin_variation",
+      "Calabi.Certificate.KernelChecks.q_linear",
+      "Calabi.Certificate.KernelChecks.identity_error",
+      "Calabi.Certificate.KernelChecks.jet_residual",
+      "Calabi.Certificate.KernelChecks.projected_residual",
+      "Calabi.Certificate.KernelChecks.d_row",
+      "Calabi.Certificate.KernelChecks.tail_negative",
+      "Calabi.Certificate.KernelChecks.tail_positive",
+      "Calabi.Certificate.KernelChecks.scale_positive"
+    ],
+    "axioms": []
+  },
+  "full_calabi_theorem": true,
+  "finite_ode_semantics": true,
+  "upstream_inverse_compiled": true,
+  "upstream_reuse": {
+    "compiled_modules": 285,
+    "checked_declarations": [
+      "Calabi.Reuse.dimension_eighteen_inverse",
+      "Calabi.Reuse.short_time_jets",
+      "Calabi.Reuse.shooting_fixed_point"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/integration-axioms.log"
+  },
+  "finite_shot": {
+    "statement": "Calabi.Shot.finite_shot",
+    "kernel_checked": [
+      "Calabi.Shot.Data.ok0 .. ok575",
+      "Calabi.Shot.Data.chain_ok",
+      "Calabi.Shot.Data.chain_start",
+      "Calabi.Shot.Data.chain_end",
+      "Calabi.Shot.Data.sums_range",
+      "Calabi.Shot.Data.radius_end"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/shot-axioms.log"
+  },
+  "tail_and_matching": {
+    "statement": "Calabi.Match.exists_matched",
+    "kernel_checked": [
+      "Calabi.Tail.Data.tail_ok"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/match-axioms.log"
+  },
+  "profile_theorem": {
+    "statement": "Calabi.exists_profile (structure Calabi.IsProfile), Calabi.shrinking_profile",
+    "file": "Calabi/ShrinkingProfile.lean",
+    "form_of_expansion": "H(u) = G(u^(-1/2)) is smooth on [0, infinity) with H(0) = c; the remainders O(y^(-2(J+1)-l)) of (3.3) are not stated separately",
+    "kernel_checked": [
+      "Calabi.Shot.Data.ok0 .. ok575",
+      "Calabi.Shot.Data.chain_ok",
+      "Calabi.Tail.Data.tail_ok",
+      "Calabi.Origin.Data.origin_ok"
+    ],
+    "closure_modules": 90,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/profile-axioms.log",
+    "build": "audit/profile-build.json",
+    "flat_equation": "Calabi.Flat.flat_equation (Calabi/Flat/SelfSimilar.lean): F(t,x) = h(x/rho)/rho solves the flat equation for t < 0, x >= 0, including x = 0"
+  },
+  "profile_with_inverse": {
+    "statement": "Calabi.Reuse.profile_with_inverse",
+    "file": "Integration/ProfileInverse.lean",
+    "closure_modules": 351,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/profile-inverse-axioms.log",
+    "build": "audit/profile-inverse-build.json"
+  },
+  "remaining_for_main_theorem": [],
+  "radial_layer": {
+    "conditional_theorem": "Calabi.Radial.radialMain_of_correction : IsProfile c G -> LocalizedCorrection G -> RadialMain G",
+    "checked_declarations": [
+      "Calabi.Flat.hfun_decay",
+      "Calabi.Radial.Kop_eq_div",
+      "Calabi.Radial.Flam_bounds",
+      "Calabi.Radial.radialMain_of_correction"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/radial-axioms.log",
+    "hypothesis": "Calabi.Radial.LocalizedCorrection (Proposition 6.1 of the manuscript, pointwise form); proved as Calabi.Weighted.localizedCorrection"
+  },
+  "geometry_layer": {
+    "checked_declarations": [
+      "Calabi.Geometry.levi_radial",
+      "Calabi.Geometry.gmat_radial",
+      "Calabi.Geometry.det_rank_one",
+      "Calabi.Geometry.scal_fubiniStudy",
+      "Calabi.Geometry.isKahlerPotential_zero",
+      "Calabi.Geometry.scal_radial"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/geometry-axioms.log",
+    "statements": [
+      "Calabi.Geometry.MainTheorem",
+      "Calabi.Geometry.MainTheoremEnergy"
+    ],
+    "proved_in": "Calabi/Main.lean"
+  },
+  "geometric_reduction": {
+    "statement": "Calabi.Geometry.mainTheorem_of_correction : IsProfile c G -> LocalizedCorrection G -> FubiniStudySobolev -> MainTheorem (and mainTheoremCore_of_correction without the Sobolev hypothesis and conclusion)",
+    "meaning": "Proposition 2.1, Lemma 2.3, Sections 7.1 (all 2 <= p < 7), 7.2, 7.3 (inequality (7.8), relative to the Fubini-Study Sobolev constant) and 7.4",
+    "checked_declarations": [
+      "Calabi.Strip.smooth_inverse",
+      "Calabi.Geometry.MomentumData.scal_eq",
+      "Calabi.Geometry.MomentumData.eLpNorm_scal_rpow",
+      "Calabi.Legendre.Flow.hasDerivAt_Psi",
+      "Calabi.Legendre.Flow.contDiffOn_Fhat",
+      "Calabi.Legendre.Flow.hasDerivAt_Fhat_chart",
+      "Calabi.Geometry.levi_chart_infinity_pos",
+      "Calabi.Legendre.Flow.isKahlerPotential_Fhat",
+      "Calabi.Legendre.Flow.abs_Fhat_le",
+      "Calabi.Radial.radialMainP_of_correction",
+      "Calabi.Geometry.isCalabiFlow_flowOf",
+      "Calabi.Geometry.eLpNorm_flowOf",
+      "Calabi.Geometry.tendsto_flowOf",
+      "Calabi.Geometry.mainTheoremCore_of_radialMainP",
+      "Calabi.Geometry.mainTheoremCore_of_correction",
+      "Calabi.Geometry.MomentumData.lintegral_theta",
+      "Calabi.Geometry.MomentumData.gradSq_theta_le",
+      "Calabi.Geometry.MomentumData.hasSobolevBound",
+      "Calabi.Geometry.mainTheorem_of_radialMainP",
+      "Calabi.Geometry.mainTheorem_of_correction"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/bridge-axioms.log",
+    "build": "audit/step6-build.json",
+    "not_included": [
+      "LocalizedCorrection is a hypothesis"
+    ]
+  },
+  "fubini_study_sobolev": {
+    "statement": "Calabi.Geometry.fubiniStudySobolev : FubiniStudySobolev (hasSobolevBound_fubiniStudy : exists C0 > 0, HasSobolevBound (fun W => 1 * log (1 + |W|^2)) C0)",
+    "meaning": "inequality (1.1) of the manuscript for the Fubini-Study metric of CP^7 with some constant; derived from Mathlib's Euclidean Gagliardo-Nirenberg-Sobolev inequality by the eight coordinate charts",
+    "consequence": "Calabi.Geometry.mainTheorem_of_forall_localizedCorrection : (forall c G, IsProfile c G -> LocalizedCorrection G) -> MainTheorem",
+    "files": [
+      "Calabi/Geometry/ChartSwap.lean",
+      "Calabi/Geometry/LocalSobolev.lean",
+      "Calabi/Geometry/FubiniStudySobolev.lean"
+    ],
+    "checked_declarations": [
+      "Calabi.Geometry.det_tauDeriv",
+      "Calabi.Geometry.lintegral_tau",
+      "Calabi.Geometry.quad_tau",
+      "Calabi.Geometry.gradSq_tau_le",
+      "Calabi.Geometry.gns_aff",
+      "Calabi.Geometry.local_sobolev",
+      "Calabi.Geometry.lintegral_tau_nu",
+      "Calabi.Geometry.swapHom_chart",
+      "Calabi.Geometry.hasSobolevBound_fubiniStudy",
+      "Calabi.Geometry.fubiniStudySobolev",
+      "Calabi.Geometry.mainTheorem_of_localizedCorrection",
+      "Calabi.Geometry.mainTheorem_of_forall_localizedCorrection"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/sobolev-axioms.log",
+    "build": "audit/step7-build.json",
+    "closure_modules": 376
+  },
+  "correction_layer": {
+    "status": "Proposition 6.1 proved: Calabi.Weighted.localizedCorrection : IsProfile c G -> LocalizedCorrection G (Calabi/Correction/Assembly.lean)",
+    "files": [
+      "Calabi/Correction/ApproxInverse.lean",
+      "Calabi/Correction/Assembly.lean",
+      "Calabi/Correction/Bundle.lean",
+      "Calabi/Correction/ChartCutoff.lean",
+      "Calabi/Correction/ChartFlow.lean",
+      "Calabi/Correction/ChartJets.lean",
+      "Calabi/Correction/ChartMaps.lean",
+      "Calabi/Correction/ChartPieces.lean",
+      "Calabi/Correction/ChartSymmetry.lean",
+      "Calabi/Correction/Coefficients.lean",
+      "Calabi/Correction/Commute.lean",
+      "Calabi/Correction/Compose.lean",
+      "Calabi/Correction/CutoffOsc.lean",
+      "Calabi/Correction/DiffQuot.lean",
+      "Calabi/Correction/DiffQuotStep.lean",
+      "Calabi/Correction/EulerJets.lean",
+      "Calabi/Correction/Extension.lean",
+      "Calabi/Correction/Factor.lean",
+      "Calabi/Correction/FirstStep.lean",
+      "Calabi/Correction/FlatSymmetry.lean",
+      "Calabi/Correction/FlatZero.lean",
+      "Calabi/Correction/ForwardBlock.lean",
+      "Calabi/Correction/FrozenOsc.lean",
+      "Calabi/Correction/InnerBlock.lean",
+      "Calabi/Correction/InteriorReal.lean",
+      "Calabi/Correction/Iteration.lean",
+      "Calabi/Correction/JointClass.lean",
+      "Calabi/Correction/JointSmooth.lean",
+      "Calabi/Correction/KopBound.lean",
+      "Calabi/Correction/Ladder.lean",
+      "Calabi/Correction/LocalSolve.lean",
+      "Calabi/Correction/Newton.lean",
+      "Calabi/Correction/Osc.lean",
+      "Calabi/Correction/OscChart.lean",
+      "Calabi/Correction/OuterEstimate.lean",
+      "Calabi/Correction/OuterGap.lean",
+      "Calabi/Correction/OuterOne.lean",
+      "Calabi/Correction/OuterOsc.lean",
+      "Calabi/Correction/OuterPair.lean",
+      "Calabi/Correction/OuterZero.lean",
+      "Calabi/Correction/OuterZeroBlock.lean",
+      "Calabi/Correction/PairLimit.lean",
+      "Calabi/Correction/PairSpace.lean",
+      "Calabi/Correction/ParabolicBox.lean",
+      "Calabi/Correction/ProfileChart.lean",
+      "Calabi/Correction/ProfileJets.lean",
+      "Calabi/Correction/ProfileOsc.lean",
+      "Calabi/Correction/RadialChart.lean",
+      "Calabi/Correction/RayBounds.lean",
+      "Calabi/Correction/RealSolvers.lean",
+      "Calabi/Correction/ResidualOsc.lean",
+      "Calabi/Correction/SigmaTheta.lean",
+      "Calabi/Correction/SmoothBase.lean",
+      "Calabi/Correction/SmoothClass.lean",
+      "Calabi/Correction/SmoothOps.lean",
+      "Calabi/Correction/Solution.lean",
+      "Calabi/Correction/Transfer.lean",
+      "Calabi/Correction/TwoCharts.lean",
+      "Calabi/Correction/TwoPoint.lean",
+      "Calabi/Correction/TwoPointJets.lean",
+      "Calabi/Correction/TwoPointMore.lean",
+      "Calabi/Correction/Whitney.lean",
+      "Calabi/Correction/WindowConvert.lean",
+      "Calabi/Correction/WindowEstimate.lean"
+    ],
+    "checked_groups": {
+      "chart_algebra": {
+        "log": "audit/correction-axioms.log",
+        "meaning": "16 A = (Delta_S - 40)(Delta_S - 72); in the flat charts R^18 and R^6 the operator 16 A is (1 - |z|^2)^2 times the flat bilaplacian plus terms of order at most three"
+      },
+      "flat_forward_problem": {
+        "log": "audit/flatzero-axioms.log",
+        "declarations": [
+          "Calabi.FlatZero.exists_zero_data_jets",
+          "Calabi.FlatZero.window_initial_estimate",
+          "Calabi.FlatZero.outer_estimate",
+          "Calabi.FlatZero.outer_lower_small",
+          "Calabi.FlatZero.outer_gap_small"
+        ],
+        "meaning": "Lemmas 4.4 and 4.5 of the manuscript on a flat space: existence with finite Hoelder norms down to the initial time, uniform weighted estimate, smallness of the lower jets and of all jets with an exponent gap"
+      },
+      "weighted_two_point_bounds": {
+        "log": "audit/weighted-axioms.log",
+        "declarations": [
+          "Calabi.Weighted.WJ.smul",
+          "Calabi.Weighted.commutator_WH",
+          "Calabi.Weighted.sSource_of_WH",
+          "Calabi.Weighted.WJ_of_sJet",
+          "Calabi.Weighted.yBound_of_WH",
+          "Calabi.Weighted.WJ_of_xBound",
+          "Calabi.Weighted.WH.exists_endpoint_extension"
+        ],
+        "meaning": "box-free form of the weighted norms of Definition 4.1, cut-offs, commutators, translation to and from the boxes of the reused library"
+      },
+      "lemma_6_2_momentum_coordinate": {
+        "log": "audit/weighted-axioms.log",
+        "declarations": [
+          "Calabi.Flat.hfun_jet_decay",
+          "Calabi.Flat.profile_jet_decay",
+          "Calabi.Osc.tower_Flam",
+          "Calabi.Osc.uosc_AFlam",
+          "Calabi.Osc.uosc_Elam",
+          "Calabi.Osc.uosc_Ein",
+          "Calabi.Osc.Elam_eq_Ein",
+          "Calabi.Osc.Elam_eq_zero",
+          "Calabi.Osc.uosc_Pmis",
+          "Calabi.Osc.uosc_cmis",
+          "Calabi.Osc.two_x_G_AhatF",
+          "Calabi.Osc.blam_mem"
+        ],
+        "meaning": "scaled bounds of Lemma 6.2 for F_lambda, A F_lambda, the residual E_lambda and the mismatch with the flat operator, uniformly in lambda and T <= min(lambda^2, 1); blam_mem is compiled but not in the axiom log"
+      },
+      "forward_block_chart_iteration": {
+        "log": "audit/block-axioms.log",
+        "declarations": [
+          "Calabi.Weighted.exists_forward_solution",
+          "Calabi.Weighted.OscE.toWH",
+          "Calabi.Weighted.chart_AFlam",
+          "Calabi.Weighted.chart_Elam",
+          "Calabi.Weighted.chart_Ein",
+          "Calabi.Weighted.chart_blam",
+          "Calabi.Weighted.chart_Pmis",
+          "Calabi.Weighted.chart_cmis",
+          "Calabi.Osc.blam_mem",
+          "Calabi.Osc.frozen_bounds",
+          "Calabi.Newton.newton_iteration"
+        ],
+        "meaning": "forward problem in box-free form with a time-independent coefficient; Lemma 6.2 in the flat chart x = |z|^2 as weighted two-point bounds for the scale sigma; abstract iteration with an approximate right inverse (not yet applied to the concrete spaces)"
+      }
+    },
+    "route_differs_from_manuscript": "two flat charts R^18 and R^6 instead of the auxiliary sphere S^23; time-independent coefficients for the outer problems; iteration with an approximate right inverse and an initial residual (the first step uses the outer solver only); inner mismatch O(sqrt(theta)); smoothness by difference quotients with the reused interior Schauder estimate in each chart, with a transfer of the second chart function on the overlap; smoothness at x = 0, 1 by Whitney's theorem on even functions with a parameter",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "build": "audit/main-closure.json",
+    "independent_checks_exit_zero": 62,
+    "final_declarations": [
+      "Calabi.Weighted.approx_inverse",
+      "Calabi.Weighted.first_step",
+      "Calabi.Weighted.pairLim_spec",
+      "Calabi.Weighted.exists_correction",
+      "Calabi.Weighted.interior_real",
+      "Calabi.Weighted.Sm.diffquot",
+      "Calabi.Weighted.chart_smooth",
+      "Calabi.Weighted.chartOp_transfer",
+      "Calabi.Weighted.chart0_smooth",
+      "Calabi.Weighted.chart1_smooth",
+      "Calabi.Whitney.whitney_chart",
+      "Calabi.Weighted.kop_diff_formula",
+      "Calabi.Weighted.Hsol_smooth",
+      "Calabi.Weighted.Hsol_eqn",
+      "Calabi.Weighted.localizedCorrection"
+    ],
+    "final_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "final_log": "audit/main-axioms.log",
+    "stale_independent_records": {
+      "Calabi.Correction.Bundle": "audit/independent-…Bundle.json is from 2026-10-13 23:38, when an imported OAI object file did not exist yet (import error after 2 s); the module compiles, see audit/clean-rebuild.json",
+      "Calabi.Correction.RealSolvers": "audit/independent-…RealSolvers.json has the hash of an earlier version of the file; the current file compiles, see audit/clean-rebuild.json"
+    },
+    "compiled_from_scratch": "63 of the 64 files of Calabi/Correction are in the import closure of Calabi.Main and are compiled from scratch in audit/clean-rebuild.json",
+    "not_in_the_closure_of_the_main_theorem": {
+      "Calabi.Correction.OuterGap": "outer_gap_small, the box form of (4.17); the form that is used is WJ.gap in Calabi/Correction/RealSolvers.lean. Independent check exit 0 (audit/independent-Calabi_Correction_OuterGap.json)"
+    }
+  },
+  "main_theorem": {
+    "statement": "Calabi.mainTheorem : Calabi.Geometry.MainTheorem (Theorem 1.1 of the manuscript); Calabi.mainTheoremEnergy : Calabi.Geometry.MainTheoremEnergy (the case p = 2)",
+    "file": "Calabi/Main.lean",
+    "hypotheses": [],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log": "audit/main-axioms.log",
+    "closure_modules": {
+      "total": 448,
+      "Calabi": 153,
+      "OAI": 295
+    },
+    "build": "audit/main-closure.json",
+    "clean_rebuild": {
+      "summary": "audit/clean-rebuild.json",
+      "total": 448,
+      "ok": 448,
+      "compiled_in_empty_directory": 448,
+      "complete": true,
+      "seconds_sum": 6636.2,
+      "wall_clock_seconds": 1853,
+      "jobs": 4,
+      "log": "audit/clean-rebuild.log",
+      "axioms_on_these_artifacts": "audit/main-axioms-clean.log (identical axiom lists)",
+      "how": "scripts/build_parallel.py with the output directory and the first LEAN_PATH entry redirected to an empty directory outside the project, so that no previously built local .olean could be used; Mathlib's cache was reused"
+    },
+    "not_in_the_formal_statement": [
+      "identification of the constructed flow with the maximal smooth Calabi flow from the same initial metric (uniqueness of smooth Calabi flows, end of Lemma 2.3); the singular time is expressed by the blow-up (1.5) of the scalar curvature at the fixed point"
+    ],
+    "routes_that_differ_from_the_manuscript": [
+      "Theorem 3.1: kernel-checked a-posteriori certificate on 1 <= s <= 56, contraction at the origin, tail around a certified approximation, matching by Brouwer's theorem",
+      "Proposition 6.1: two flat charts R^18 and R^6 instead of the sphere S^23",
+      "Proposition 6.1: outer problems with coefficients frozen at the singular time",
+      "Proposition 6.1: iteration with an approximate right inverse instead of a Neumann series and a contraction; the first step uses the outer solver only",
+      "Proposition 6.1: smoothness by difference quotients and the reused interior Schauder estimate; the ends x = 0, 1 by Whitney's theorem on even functions with a parameter",
+      "Section 7.3: the Sobolev inequality of the Fubini-Study metric is derived from the Euclidean Gagliardo-Nirenberg-Sobolev inequality instead of being quoted"
+    ],
+    "closure_source_digest": {
+      "sha256": "f8d3e3a9e4db28dcdbe0f4c063d05dde00935b3cbe7253d76c3434b881690dda",
+      "of": "for the 448 modules in sorted order: module name, NUL, sha256 of the source file"
+    }
+  }
+}

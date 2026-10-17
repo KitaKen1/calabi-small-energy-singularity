@@ -1,0 +1,25 @@
+{
+  "all_exact_checks_pass": true,
+  "root_real": [
+    "-212335371261/200000000000",
+    "-66354803519/62500000000"
+  ],
+  "root_imag": [
+    "866302348759/1000000000000",
+    "433151174381/500000000000"
+  ],
+  "M_upper": [
+    1.840870664922538,
+    1.8159857305098455,
+    1.7935802690200089
+  ],
+  "tail_lipschitz_upper": 0.3865289628507653,
+  "tail_homogeneous_upper": 0.22823987468112245,
+  "tail_residual_upper": 3.082995931708546e-22,
+  "tail_abs_upper": 0.00010851471242665944,
+  "tail_parameter_derivative_upper": 0.0008079146025896336,
+  "complex_H2_upper": 0.036366983933933866,
+  "complex_J_upper": 1.2368769619295332,
+  "real_partial_transfer_upper": 3,
+  "warning": "Necessary proof components only; finite shooting and geometric realization are separate."
+}

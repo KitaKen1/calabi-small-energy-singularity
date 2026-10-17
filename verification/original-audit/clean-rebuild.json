@@ -1,0 +1,1800 @@
+{
+  "targets": [
+    "Calabi.Main"
+  ],
+  "total": 448,
+  "modules": {
+    "Calabi.Correction.Newton": {
+      "exit_code": 0,
+      "seconds": 1.625
+    },
+    "Calabi.Correction.EulerJets": {
+      "exit_code": 0,
+      "seconds": 3.021
+    },
+    "Calabi.Correction.Osc": {
+      "exit_code": 0,
+      "seconds": 3.035
+    },
+    "Calabi.Analysis.GlobalODE": {
+      "exit_code": 0,
+      "seconds": 3.309
+    },
+    "Calabi.Geometry.Statement": {
+      "exit_code": 0,
+      "seconds": 2.999
+    },
+    "Calabi.Infinity.Bd": {
+      "exit_code": 0,
+      "seconds": 2.673
+    },
+    "Calabi.Radial.Basic": {
+      "exit_code": 0,
+      "seconds": 2.656
+    },
+    "Calabi.Origin.Linear": {
+      "exit_code": 0,
+      "seconds": 3.875
+    },
+    "Calabi.Geometry.RadialPotential": {
+      "exit_code": 0,
+      "seconds": 3.898
+    },
+    "Calabi.Correction.Factor": {
+      "exit_code": 0,
+      "seconds": 3.39
+    },
+    "Calabi.Shot.BlockODE": {
+      "exit_code": 0,
+      "seconds": 3.913
+    },
+    "Calabi.Radial.Strip": {
+      "exit_code": 0,
+      "seconds": 4.613
+    },
+    "Calabi.Geometry.FubiniStudy": {
+      "exit_code": 0,
+      "seconds": 3.333
+    },
+    "Calabi.Shot.Core": {
+      "exit_code": 0,
+      "seconds": 0.347
+    },
+    "Calabi.Origin.Cert": {
+      "exit_code": 0,
+      "seconds": 0.257
+    },
+    "Calabi.Correction.RadialChart": {
+      "exit_code": 0,
+      "seconds": 3.724
+    },
+    "Calabi.Shot.Certified": {
+      "exit_code": 0,
+      "seconds": 0.195
+    },
+    "Calabi.Shot.Chain": {
+      "exit_code": 0,
+      "seconds": 0.364
+    },
+    "Calabi.Shot.BlockAlgebra": {
+      "exit_code": 0,
+      "seconds": 1.685
+    },
+    "Calabi.Shot.Data.Params": {
+      "exit_code": 0,
+      "seconds": 0.19
+    },
+    "Calabi.Geometry.RadialScalar": {
+      "exit_code": 0,
+      "seconds": 3.362
+    },
+    "Calabi.Origin.Data": {
+      "exit_code": 0,
+      "seconds": 1.915
+    },
+    "Calabi.Shot.Physical": {
+      "exit_code": 0,
+      "seconds": 3.043
+    },
+    "Calabi.Shot.BlockFamily": {
+      "exit_code": 0,
+      "seconds": 8.363
+    },
+    "Calabi.Geometry.Gradient": {
+      "exit_code": 0,
+      "seconds": 4.009
+    },
+    "Calabi.Geometry.Momentum": {
+      "exit_code": 0,
+      "seconds": 3.882
+    },
+    "Calabi.Geometry.Legendre": {
+      "exit_code": 0,
+      "seconds": 4.492
+    },
+    "Calabi.Geometry.ChartInfinity": {
+      "exit_code": 0,
+      "seconds": 12.032
+    },
+    "Calabi.Geometry.Potential": {
+      "exit_code": 0,
+      "seconds": 3.32
+    },
+    "Calabi.Shot.Data.Blocks00": {
+      "exit_code": 0,
+      "seconds": 11.117
+    },
+    "Calabi.Shot.Data.Blocks01": {
+      "exit_code": 0,
+      "seconds": 10.259
+    },
+    "Calabi.Geometry.Volume": {
+      "exit_code": 0,
+      "seconds": 4.242
+    },
+    "Calabi.Geometry.Kahler": {
+      "exit_code": 0,
+      "seconds": 3.056
+    },
+    "Calabi.Geometry.PotentialBound": {
+      "exit_code": 0,
+      "seconds": 3.604
+    },
+    "Calabi.Shot.Data.Blocks02": {
+      "exit_code": 0,
+      "seconds": 13.02
+    },
+    "Calabi.Geometry.Dilation": {
+      "exit_code": 0,
+      "seconds": 13.897
+    },
+    "Calabi.Shot.Data.Blocks04": {
+      "exit_code": 0,
+      "seconds": 16.559
+    },
+    "Calabi.Shot.Data.Blocks03": {
+      "exit_code": 0,
+      "seconds": 17.653
+    },
+    "Calabi.Geometry.ChartSwap": {
+      "exit_code": 0,
+      "seconds": 6.764
+    },
+    "Calabi.Shot.Data.Blocks05": {
+      "exit_code": 0,
+      "seconds": 12.426
+    },
+    "Calabi.Geometry.SobolevTransfer": {
+      "exit_code": 0,
+      "seconds": 7.032
+    },
+    "Calabi.Geometry.LocalSobolev": {
+      "exit_code": 0,
+      "seconds": 5.624
+    },
+    "Calabi.Shot.Data.Blocks06": {
+      "exit_code": 0,
+      "seconds": 13.317
+    },
+    "Calabi.Shot.Data.Blocks07": {
+      "exit_code": 0,
+      "seconds": 11.88
+    },
+    "Calabi.Shot.Data.Blocks08": {
+      "exit_code": 0,
+      "seconds": 11.345
+    },
+    "Calabi.Shot.Data.Blocks09": {
+      "exit_code": 0,
+      "seconds": 11.005
+    },
+    "Calabi.Shot.Data.Blocks10": {
+      "exit_code": 0,
+      "seconds": 10.427
+    },
+    "Calabi.Shot.Data.Blocks11": {
+      "exit_code": 0,
+      "seconds": 10.42
+    },
+    "Calabi.Shot.Data.Blocks12": {
+      "exit_code": 0,
+      "seconds": 9.879
+    },
+    "Calabi.Shot.Data.Blocks13": {
+      "exit_code": 0,
+      "seconds": 9.907
+    },
+    "Calabi.Shot.Data.Blocks14": {
+      "exit_code": 0,
+      "seconds": 9.886
+    },
+    "Calabi.Shot.Data.Blocks15": {
+      "exit_code": 0,
+      "seconds": 9.069
+    },
+    "Calabi.Shot.Data.Blocks16": {
+      "exit_code": 0,
+      "seconds": 8.702
+    },
+    "Calabi.Tail.Cert": {
+      "exit_code": 0,
+      "seconds": 0.253
+    },
+    "Calabi.Tail.Data": {
+      "exit_code": 0,
+      "seconds": 0.22
+    },
+    "Calabi.Shot.PolyEval": {
+      "exit_code": 0,
+      "seconds": 2.584
+    },
+    "Calabi.Shot.Existence": {
+      "exit_code": 0,
+      "seconds": 4.01
+    },
+    "Calabi.Shot.BlockSound": {
+      "exit_code": 0,
+      "seconds": 3.657
+    },
+    "Calabi.Tail.Linear": {
+      "exit_code": 0,
+      "seconds": 3.914
+    },
+    "Calabi.Shot.Data.Blocks17": {
+      "exit_code": 0,
+      "seconds": 8.049
+    },
+    "Calabi.Shot.Data.All": {
+      "exit_code": 0,
+      "seconds": 0.198
+    },
+    "Calabi.Shot.BlockSpec": {
+      "exit_code": 0,
+      "seconds": 3.176
+    },
+    "Calabi.Shot.FrameAlgebra": {
+      "exit_code": 0,
+      "seconds": 3.015
+    },
+    "Calabi.Match.Bounds": {
+      "exit_code": 0,
+      "seconds": 8.43
+    },
+    "Calabi.Shot.StepBounds": {
+      "exit_code": 0,
+      "seconds": 2.969
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyGronwall": {
+      "exit_code": 0,
+      "seconds": 12.592
+    },
+    "Calabi.Shot.Data.ChainData": {
+      "exit_code": 0,
+      "seconds": 9.333
+    },
+    "Calabi.Tail.LinearExists": {
+      "exit_code": 0,
+      "seconds": 3.525
+    },
+    "Calabi.Shot.StepSound": {
+      "exit_code": 0,
+      "seconds": 2.915
+    },
+    "Calabi.Match.Numbers": {
+      "exit_code": 0,
+      "seconds": 3.166
+    },
+    "Calabi.Shot.StepCore": {
+      "exit_code": 0,
+      "seconds": 2.919
+    },
+    "Calabi.Tail.Nonlinear": {
+      "exit_code": 0,
+      "seconds": 4.59
+    },
+    "Calabi.Shot.StepMain": {
+      "exit_code": 0,
+      "seconds": 2.686
+    },
+    "Calabi.Shot.ChainSound": {
+      "exit_code": 0,
+      "seconds": 2.759
+    },
+    "Calabi.Origin.Nonlinear": {
+      "exit_code": 0,
+      "seconds": 5.11
+    },
+    "Calabi.Shot.FiniteShot": {
+      "exit_code": 0,
+      "seconds": 2.442
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyWeight": {
+      "exit_code": 0,
+      "seconds": 13.32
+    },
+    "Calabi.Shot": {
+      "exit_code": 0,
+      "seconds": 2.917
+    },
+    "OAI.Analysis.AncientFlat.Evolution.BCFTimeDerivative": {
+      "exit_code": 0,
+      "seconds": 12.795
+    },
+    "Calabi.Origin.Deriv": {
+      "exit_code": 0,
+      "seconds": 4.876
+    },
+    "Calabi.Origin.CertSound": {
+      "exit_code": 0,
+      "seconds": 9.783
+    },
+    "Calabi.Origin.Smooth": {
+      "exit_code": 0,
+      "seconds": 3.837
+    },
+    "Calabi.Tail.Profile": {
+      "exit_code": 0,
+      "seconds": 5.763
+    },
+    "Calabi.Infinity.Formal": {
+      "exit_code": 0,
+      "seconds": 3.697
+    },
+    "OAI.Analysis.AncientFlat.Evolution.C0Ascoli": {
+      "exit_code": 0,
+      "seconds": 13.505
+    },
+    "Calabi.Infinity.Decay": {
+      "exit_code": 0,
+      "seconds": 5.654
+    },
+    "Calabi.Infinity.Compact": {
+      "exit_code": 0,
+      "seconds": 3.804
+    },
+    "OAI.Analysis.AncientFlat.Evolution.DilationCore": {
+      "exit_code": 0,
+      "seconds": 13.939
+    },
+    "OAI.Analysis.AncientFlat.Evolution.FiniteDifference": {
+      "exit_code": 0,
+      "seconds": 13.939
+    },
+    "Calabi.Tail.CertSound": {
+      "exit_code": 0,
+      "seconds": 7.937
+    },
+    "OAI.Analysis.AncientFlat.Evolution.LocalExtensionAlgebra": {
+      "exit_code": 0,
+      "seconds": 13.703
+    },
+    "OAI.Analysis.AncientFlat.Evolution.DilationContinuity": {
+      "exit_code": 0,
+      "seconds": 13.302
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingEvaluation": {
+      "exit_code": 0,
+      "seconds": 14.196
+    },
+    "OAI.Analysis.AncientFlat.Evolution.StrongAction": {
+      "exit_code": 0,
+      "seconds": 13.351
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SupNorm": {
+      "exit_code": 0,
+      "seconds": 13.451
+    },
+    "OAI.Analysis.AncientFlat.Evolution.LocalExtensionContinuity": {
+      "exit_code": 0,
+      "seconds": 13.974
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TraceFour": {
+      "exit_code": 0,
+      "seconds": 14.613
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceStep": {
+      "exit_code": 0,
+      "seconds": 13.904
+    },
+    "OAI.Analysis.AncientFlat.Evolution.UniformC0": {
+      "exit_code": 0,
+      "seconds": 13.625
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TwistedDuhamel": {
+      "exit_code": 0,
+      "seconds": 14.344
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyIBP": {
+      "exit_code": 0,
+      "seconds": 14.332
+    },
+    "OAI.Analysis.AncientFlat.Evolution.DilationDerivatives": {
+      "exit_code": 0,
+      "seconds": 13.974
+    },
+    "OAI.Analysis.AncientFlat.Evolution.OrthogonalCalculus": {
+      "exit_code": 0,
+      "seconds": 14.163
+    },
+    "OAI.Analysis.AncientFlat.Evolution.DuhamelCocycle": {
+      "exit_code": 0,
+      "seconds": 14.518
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyProducts": {
+      "exit_code": 0,
+      "seconds": 14.431
+    },
+    "OAI.Analysis.AncientFlat.Evolution.WeakToStrong": {
+      "exit_code": 0,
+      "seconds": 15.075
+    },
+    "OAI.Analysis.AncientFlat.Geometry.InteriorCore": {
+      "exit_code": 0,
+      "seconds": 13.776
+    },
+    "OAI.Analysis.AncientFlat.Geometry.ParabolicAverage": {
+      "exit_code": 0,
+      "seconds": 14.232
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyLaplacian": {
+      "exit_code": 0,
+      "seconds": 13.81
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialCore": {
+      "exit_code": 0,
+      "seconds": 13.723
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TopSeminorm": {
+      "exit_code": 0,
+      "seconds": 14.35
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyQuadratic": {
+      "exit_code": 0,
+      "seconds": 14.223
+    },
+    "OAI.Analysis.AncientFlat.Kernel.FourierDecay": {
+      "exit_code": 0,
+      "seconds": 14.7
+    },
+    "OAI.Analysis.AncientFlat.Kernel.GreenConvolution": {
+      "exit_code": 0,
+      "seconds": 14.842
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyGradient": {
+      "exit_code": 0,
+      "seconds": 14.659
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyTime": {
+      "exit_code": 0,
+      "seconds": 15.385
+    },
+    "OAI.Analysis.AncientFlat.Kernel.ParameterDecay": {
+      "exit_code": 0,
+      "seconds": 15.158
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyPrincipal": {
+      "exit_code": 0,
+      "seconds": 15.027
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SchwartzIBP": {
+      "exit_code": 0,
+      "seconds": 14.958
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SymbolCore": {
+      "exit_code": 0,
+      "seconds": 14.735
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyCoercive": {
+      "exit_code": 0,
+      "seconds": 15.986
+    },
+    "OAI.Analysis.AncientFlat.Kernel.ClassicalBase": {
+      "exit_code": 0,
+      "seconds": 75.26
+    },
+    "OAI.Analysis.AncientFlat.Evolution.CompactDifferenceCore": {
+      "exit_code": 0,
+      "seconds": 14.232
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ChangingPair": {
+      "exit_code": 0,
+      "seconds": 15.401
+    },
+    "OAI.Analysis.AncientFlat.Energy.EnergyEquation": {
+      "exit_code": 0,
+      "seconds": 14.326
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalSpatial": {
+      "exit_code": 0,
+      "seconds": 15.375
+    },
+    "OAI.Analysis.AncientFlat.Evolution.HeatDilation": {
+      "exit_code": 0,
+      "seconds": 14.358
+    },
+    "OAI.Analysis.AncientFlat.Evolution.LocalWeakToStrong": {
+      "exit_code": 0,
+      "seconds": 14.465
+    },
+    "OAI.Analysis.AncientFlat.Evolution.HomogeneousUniqueness": {
+      "exit_code": 0,
+      "seconds": 14.495
+    },
+    "OAI.Analysis.AncientFlat.Evolution.RowContinuity": {
+      "exit_code": 0,
+      "seconds": 16.91
+    },
+    "OAI.Analysis.AncientFlat.Kernel.BilapNorm": {
+      "exit_code": 0,
+      "seconds": 15.879
+    },
+    "OAI.Analysis.AncientFlat.Kernel.KernelChangingPair": {
+      "exit_code": 0,
+      "seconds": 16.242
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EvolutionCore": {
+      "exit_code": 0,
+      "seconds": 14.997
+    },
+    "OAI.Analysis.AncientFlat.Evolution.BetaRow": {
+      "exit_code": 0,
+      "seconds": 16.422
+    },
+    "OAI.Analysis.AncientFlat.Kernel.KernelJetMajorant": {
+      "exit_code": 0,
+      "seconds": 16.557
+    },
+    "OAI.Analysis.AncientFlat.Kernel.AdjointKernel": {
+      "exit_code": 0,
+      "seconds": 16.73
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EvolutionAlgebra": {
+      "exit_code": 0,
+      "seconds": 16.608
+    },
+    "OAI.Analysis.AncientFlat.Evolution.RowIntegral": {
+      "exit_code": 0,
+      "seconds": 17.727
+    },
+    "OAI.Analysis.AncientFlat.Kernel.KernelMollifier": {
+      "exit_code": 0,
+      "seconds": 15.037
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SymbolBounds": {
+      "exit_code": 0,
+      "seconds": 14.82
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EvolutionUniqueness": {
+      "exit_code": 0,
+      "seconds": 14.887
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalRHS": {
+      "exit_code": 0,
+      "seconds": 16.344
+    },
+    "OAI.Analysis.AncientFlat.Profile.RadialRealCore": {
+      "exit_code": 0,
+      "seconds": 14.888
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingScalar": {
+      "exit_code": 0,
+      "seconds": 15.167
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SymbolJets": {
+      "exit_code": 0,
+      "seconds": 15.359
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PairClassical": {
+      "exit_code": 0,
+      "seconds": 15.754
+    },
+    "OAI.Analysis.AncientFlat.Profile.RotationCore": {
+      "exit_code": 0,
+      "seconds": 15.138
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingBounds": {
+      "exit_code": 0,
+      "seconds": 15.86
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SymbolDecay": {
+      "exit_code": 0,
+      "seconds": 16.123
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ActualClassical": {
+      "exit_code": 0,
+      "seconds": 17.068
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CommutatorJets": {
+      "exit_code": 0,
+      "seconds": 15.379
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingCoefficients": {
+      "exit_code": 0,
+      "seconds": 15.206
+    },
+    "OAI.Analysis.AncientFlat.Kernel.AdjointPairDerivative": {
+      "exit_code": 0,
+      "seconds": 15.137
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CommutatorHolder": {
+      "exit_code": 0,
+      "seconds": 15.529
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalEvolution": {
+      "exit_code": 0,
+      "seconds": 16.456
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingUnique": {
+      "exit_code": 0,
+      "seconds": 15.594
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ConstantResidual": {
+      "exit_code": 0,
+      "seconds": 15.757
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ActualBoundedJets": {
+      "exit_code": 0,
+      "seconds": 15.606
+    },
+    "OAI.Analysis.AncientFlat.Regularity.GammaCorrection": {
+      "exit_code": 0,
+      "seconds": 16.996
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ConstantEvolution": {
+      "exit_code": 0,
+      "seconds": 16.768
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingSymmetry": {
+      "exit_code": 0,
+      "seconds": 15.555
+    },
+    "OAI.Analysis.AncientFlat.Regularity.GeneralAbsorption": {
+      "exit_code": 0,
+      "seconds": 16.105
+    },
+    "OAI.Analysis.AncientFlat.Evolution.GammaBetaRow": {
+      "exit_code": 0,
+      "seconds": 16.784
+    },
+    "OAI.Analysis.AncientFlat.Regularity.GammaBoundedJets": {
+      "exit_code": 0,
+      "seconds": 16.218
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SemigroupSymmetry": {
+      "exit_code": 0,
+      "seconds": 15.844
+    },
+    "OAI.Analysis.AncientFlat.Regularity.GeometricAbsorption": {
+      "exit_code": 0,
+      "seconds": 14.642
+    },
+    "OAI.Analysis.AncientFlat.Regularity.PointInterpolation": {
+      "exit_code": 0,
+      "seconds": 14.707
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderAlgebra": {
+      "exit_code": 0,
+      "seconds": 15.552
+    },
+    "OAI.Analysis.AncientFlat.Evolution.GammaRowIntegral": {
+      "exit_code": 0,
+      "seconds": 17.463
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ProductJets": {
+      "exit_code": 0,
+      "seconds": 15.458
+    },
+    "OAI.Analysis.AncientFlat.Regularity.BallInterpolation": {
+      "exit_code": 0,
+      "seconds": 16.003
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderContinuity": {
+      "exit_code": 0,
+      "seconds": 15.546
+    },
+    "OAI.Analysis.AncientFlat.Evolution.GammaRHS": {
+      "exit_code": 0,
+      "seconds": 16.45
+    },
+    "OAI.Analysis.AncientFlat.Kernel.AdjointBounds": {
+      "exit_code": 0,
+      "seconds": 15.967
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderProducts": {
+      "exit_code": 0,
+      "seconds": 15.455
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CompactHolder": {
+      "exit_code": 0,
+      "seconds": 15.459
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceDerivative": {
+      "exit_code": 0,
+      "seconds": 15.617
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderC0Extension": {
+      "exit_code": 0,
+      "seconds": 15.43
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimePaste": {
+      "exit_code": 0,
+      "seconds": 15.452
+    },
+    "OAI.Analysis.AncientFlat.Geometry.InteriorCutoff": {
+      "exit_code": 0,
+      "seconds": 15.677
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceClassical": {
+      "exit_code": 0,
+      "seconds": 16.717
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CompactLocalHolder": {
+      "exit_code": 0,
+      "seconds": 15.059
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialCoefficients": {
+      "exit_code": 0,
+      "seconds": 14.599
+    },
+    "OAI.Analysis.AncientFlat.Evolution.CutoffCore": {
+      "exit_code": 0,
+      "seconds": 14.811
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialPaste": {
+      "exit_code": 0,
+      "seconds": 14.773
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceEvolves": {
+      "exit_code": 0,
+      "seconds": 15.989
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderExtension": {
+      "exit_code": 0,
+      "seconds": 15.583
+    },
+    "OAI.Analysis.AncientFlat.Regularity.HolderTimeChange": {
+      "exit_code": 0,
+      "seconds": 15.714
+    },
+    "OAI.Analysis.AncientFlat.Regularity.LowerJet": {
+      "exit_code": 0,
+      "seconds": 16.35
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderCancel": {
+      "exit_code": 0,
+      "seconds": 16.083
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialSource": {
+      "exit_code": 0,
+      "seconds": 15.263
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CutoffRegularity": {
+      "exit_code": 0,
+      "seconds": 15.103
+    },
+    "OAI.Analysis.AncientFlat.Regularity.InterpolationAlgebra": {
+      "exit_code": 0,
+      "seconds": 15.14
+    },
+    "OAI.Analysis.AncientFlat.Evolution.FamilyCancellation": {
+      "exit_code": 0,
+      "seconds": 16.001
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderJet": {
+      "exit_code": 0,
+      "seconds": 15.654
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderLag": {
+      "exit_code": 0,
+      "seconds": 15.884
+    },
+    "OAI.Analysis.AncientFlat.Regularity.JetSpaceHolder": {
+      "exit_code": 0,
+      "seconds": 16.302
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimeFamilyEnvelope": {
+      "exit_code": 0,
+      "seconds": 16.223
+    },
+    "OAI.Analysis.AncientFlat.Regularity.JetTimeHolder": {
+      "exit_code": 0,
+      "seconds": 16.166
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderJetTime": {
+      "exit_code": 0,
+      "seconds": 15.981
+    },
+    "OAI.Analysis.AncientFlat.Regularity.TimeScalarHolder": {
+      "exit_code": 0,
+      "seconds": 15.07
+    },
+    "OAI.Analysis.AncientFlat.Evolution.VariableTimeCancellation": {
+      "exit_code": 0,
+      "seconds": 16.022
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ParabolicInterpolation": {
+      "exit_code": 0,
+      "seconds": 16.007
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderSpace": {
+      "exit_code": 0,
+      "seconds": 16.129
+    },
+    "OAI.Analysis.AncientFlat.Regularity.UniformCorrection": {
+      "exit_code": 0,
+      "seconds": 16.514
+    },
+    "OAI.Analysis.AncientFlat.Regularity.InterpolationEpsilon": {
+      "exit_code": 0,
+      "seconds": 15.592
+    },
+    "OAI.Analysis.AncientFlat.Evolution.VariableRows": {
+      "exit_code": 0,
+      "seconds": 16.968
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FiniteLocalJets": {
+      "exit_code": 0,
+      "seconds": 16.687
+    },
+    "OAI.Analysis.AncientFlat.Evolution.StrongClassicalEvolution": {
+      "exit_code": 0,
+      "seconds": 15.408
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FourthInterpolation": {
+      "exit_code": 0,
+      "seconds": 16.074
+    },
+    "OAI.Analysis.AncientFlat.Evolution.VariableSpace": {
+      "exit_code": 0,
+      "seconds": 16.818
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderTime": {
+      "exit_code": 0,
+      "seconds": 16.942
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ShiftedEvolution": {
+      "exit_code": 0,
+      "seconds": 17.102
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SchauderKernel": {
+      "exit_code": 0,
+      "seconds": 16.027
+    },
+    "OAI.Analysis.AncientFlat.Regularity.UniformSourceCorrection": {
+      "exit_code": 0,
+      "seconds": 17.485
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MeasurableSpace": {
+      "exit_code": 0,
+      "seconds": 16.652
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EvolutionFamily": {
+      "exit_code": 0,
+      "seconds": 15.786
+    },
+    "OAI.Analysis.AncientFlat.Regularity.WithinInterpolation": {
+      "exit_code": 0,
+      "seconds": 16.55
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceResponse": {
+      "exit_code": 0,
+      "seconds": 16.954
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MeasurableTime": {
+      "exit_code": 0,
+      "seconds": 16.969
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SimilarityCovariance": {
+      "exit_code": 0,
+      "seconds": 17.015
+    },
+    "OAI.Analysis.AncientFlat.Spectral.CompactFredholm": {
+      "exit_code": 0,
+      "seconds": 16.312
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CorrectionSourceClassical": {
+      "exit_code": 0,
+      "seconds": 16.238
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EarlyIntegral": {
+      "exit_code": 0,
+      "seconds": 16.774
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SimilarityFamily": {
+      "exit_code": 0,
+      "seconds": 15.791
+    },
+    "OAI.Analysis.AncientFlat.Regularity.MeasurableHolder": {
+      "exit_code": 0,
+      "seconds": 15.188
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ConstantRepresentation": {
+      "exit_code": 0,
+      "seconds": 14.888
+    },
+    "OAI.Analysis.AncientFlat.Evolution.EarlyRows": {
+      "exit_code": 0,
+      "seconds": 14.775
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ZeroSourceResponse": {
+      "exit_code": 0,
+      "seconds": 15.294
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimeRescaling": {
+      "exit_code": 0,
+      "seconds": 15.62
+    },
+    "OAI.Analysis.AncientFlat.Kernel.SymbolSemigroup": {
+      "exit_code": 0,
+      "seconds": 15.91
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ConstantSchauder": {
+      "exit_code": 0,
+      "seconds": 15.819
+    },
+    "OAI.Analysis.AncientFlat.Evolution.FrozenAverage": {
+      "exit_code": 0,
+      "seconds": 16.142
+    },
+    "OAI.Analysis.AncientFlat.Profile.RadialRealSemigroup": {
+      "exit_code": 0,
+      "seconds": 15.388
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SpaceRescaling": {
+      "exit_code": 0,
+      "seconds": 15.884
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FrozenSchauder": {
+      "exit_code": 0,
+      "seconds": 15.666
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceInitialDerivative": {
+      "exit_code": 0,
+      "seconds": 15.559
+    },
+    "OAI.Analysis.AncientFlat.Evolution.UniformLipschitz": {
+      "exit_code": 0,
+      "seconds": 15.625
+    },
+    "OAI.Analysis.AncientFlat.Regularity.LocalHolder": {
+      "exit_code": 0,
+      "seconds": 15.837
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FrozenLongSchauder": {
+      "exit_code": 0,
+      "seconds": 16.363
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceEvolution": {
+      "exit_code": 0,
+      "seconds": 16.502
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimeOneLipschitz": {
+      "exit_code": 0,
+      "seconds": 15.713
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FrozenHolder": {
+      "exit_code": 0,
+      "seconds": 15.475
+    },
+    "OAI.Analysis.AncientFlat.Evolution.CutoffEvolution": {
+      "exit_code": 0,
+      "seconds": 16.117
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialModel": {
+      "exit_code": 0,
+      "seconds": 16.009
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingNorm": {
+      "exit_code": 0,
+      "seconds": 15.537
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MovingSource": {
+      "exit_code": 0,
+      "seconds": 15.564
+    },
+    "OAI.Analysis.AncientFlat.Evolution.LocalizedFrozen": {
+      "exit_code": 0,
+      "seconds": 15.917
+    },
+    "OAI.Analysis.AncientFlat.Regularity.InitialJetModel": {
+      "exit_code": 0,
+      "seconds": 16.535
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ConstantPowers": {
+      "exit_code": 0,
+      "seconds": 16.41
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceDuhamel": {
+      "exit_code": 0,
+      "seconds": 16.195
+    },
+    "OAI.Analysis.AncientFlat.Kernel.AdjointPairContinuity": {
+      "exit_code": 0,
+      "seconds": 15.174
+    },
+    "OAI.Analysis.AncientFlat.Evolution.BackwardModel": {
+      "exit_code": 0,
+      "seconds": 15.298
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SimilaritySource": {
+      "exit_code": 0,
+      "seconds": 15.886
+    },
+    "OAI.Analysis.AncientFlat.Regularity.FreezingResidual": {
+      "exit_code": 0,
+      "seconds": 17.001
+    },
+    "OAI.Analysis.AncientFlat.Kernel.AdjointPairEstimate": {
+      "exit_code": 0,
+      "seconds": 16.009
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialContinuation": {
+      "exit_code": 0,
+      "seconds": 17.637
+    },
+    "OAI.Analysis.AncientFlat.Spectral.EigenFlag": {
+      "exit_code": 0,
+      "seconds": 15.566
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ResidualBudget": {
+      "exit_code": 0,
+      "seconds": 15.957
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimeOneTails": {
+      "exit_code": 0,
+      "seconds": 16.08
+    },
+    "OAI.Analysis.AncientFlat.Regularity.UnitInterpolation": {
+      "exit_code": 0,
+      "seconds": 15.544
+    },
+    "OAI.Analysis.AncientFlat.Spectral.QuasiFinite": {
+      "exit_code": 0,
+      "seconds": 17.865
+    },
+    "OAI.Analysis.AncientFlat.Spectral.QuasiPowers": {
+      "exit_code": 0,
+      "seconds": 17.902
+    },
+    "OAI.Analysis.AncientFlat.Evolution.CompactDifference": {
+      "exit_code": 0,
+      "seconds": 17.742
+    },
+    "OAI.Analysis.AncientFlat.Evolution.NearConstant": {
+      "exit_code": 0,
+      "seconds": 21.413
+    },
+    "OAI.Analysis.AncientFlat.Geometry.ParabolicWindows": {
+      "exit_code": 0,
+      "seconds": 18.888
+    },
+    "OAI.Analysis.AncientFlat.Spectral.QuasiSpectrum": {
+      "exit_code": 0,
+      "seconds": 18.75
+    },
+    "OAI.Analysis.AncientFlat.Spectral.ResolventCoefficients": {
+      "exit_code": 0,
+      "seconds": 20.216
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedHolder": {
+      "exit_code": 0,
+      "seconds": 19.489
+    },
+    "OAI.Analysis.AncientFlat.Geometry.WindowGeometry": {
+      "exit_code": 0,
+      "seconds": 19.6
+    },
+    "OAI.Analysis.AncientFlat.Geometry.WindowJets": {
+      "exit_code": 0,
+      "seconds": 19.091
+    },
+    "Calabi.Correction.TwoPoint": {
+      "exit_code": 0,
+      "seconds": 23.855
+    },
+    "OAI.Analysis.AncientFlat.Regularity.MildHolder": {
+      "exit_code": 0,
+      "seconds": 19.266
+    },
+    "OAI.Analysis.AncientFlat.Spectral.Recursion": {
+      "exit_code": 0,
+      "seconds": 18.324
+    },
+    "OAI.Analysis.AncientFlat.Evolution.GeneralWindows": {
+      "exit_code": 0,
+      "seconds": 19.012
+    },
+    "Calabi.Correction.Extension": {
+      "exit_code": 0,
+      "seconds": 19.7
+    },
+    "Calabi.Correction.TwoPointJets": {
+      "exit_code": 0,
+      "seconds": 21.457
+    },
+    "OAI.Analysis.AncientFlat.Geometry.WindowEstimate": {
+      "exit_code": 0,
+      "seconds": 19.253
+    },
+    "OAI.Analysis.AncientFlat.Geometry.WindowHolderCover": {
+      "exit_code": 0,
+      "seconds": 19.191
+    },
+    "OAI.Analysis.AncientFlat.Spectral.RecursionUnique": {
+      "exit_code": 0,
+      "seconds": 19.88
+    },
+    "Calabi.Correction.ChartJets": {
+      "exit_code": 0,
+      "seconds": 22.746
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialCover": {
+      "exit_code": 0,
+      "seconds": 20.072
+    },
+    "OAI.Analysis.AncientFlat.Regularity.NestedEstimate": {
+      "exit_code": 0,
+      "seconds": 22.112
+    },
+    "OAI.Analysis.AncientFlat.Evolution.TimeGreen": {
+      "exit_code": 0,
+      "seconds": 20.22
+    },
+    "OAI.Analysis.AncientFlat.Evolution.AncientMild": {
+      "exit_code": 0,
+      "seconds": 21.761
+    },
+    "Calabi.Correction.KopBound": {
+      "exit_code": 0,
+      "seconds": 31.813
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialWindows": {
+      "exit_code": 0,
+      "seconds": 25.033
+    },
+    "OAI.Analysis.AncientFlat.Evolution.InitialClosure": {
+      "exit_code": 0,
+      "seconds": 25.393
+    },
+    "OAI.Analysis.AncientFlat.Evolution.MildSymmetry": {
+      "exit_code": 0,
+      "seconds": 30.187
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SemigroupNormalize": {
+      "exit_code": 0,
+      "seconds": 30.125
+    },
+    "OAI.Analysis.AncientFlat.Regularity.TopInteriorEstimate": {
+      "exit_code": 0,
+      "seconds": 30.178
+    },
+    "OAI.Analysis.AncientFlat.Spectral.SpectralCircle": {
+      "exit_code": 0,
+      "seconds": 30.181
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedLocalCore": {
+      "exit_code": 0,
+      "seconds": 27.998
+    },
+    "OAI.Analysis.AncientFlat.Geometry.NormalizedWindow": {
+      "exit_code": 0,
+      "seconds": 29.924
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PreliminaryAncient": {
+      "exit_code": 0,
+      "seconds": 29.84
+    },
+    "OAI.Analysis.AncientFlat.Geometry.InteriorSchauder": {
+      "exit_code": 0,
+      "seconds": 33.112
+    },
+    "OAI.Analysis.AncientFlat.Weighted.ExactYNorm": {
+      "exit_code": 0,
+      "seconds": 20.101
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedCharts": {
+      "exit_code": 0,
+      "seconds": 20.176
+    },
+    "OAI.Analysis.AncientFlat.Evolution.RenormalizedSource": {
+      "exit_code": 0,
+      "seconds": 21.25
+    },
+    "OAI.Analysis.AncientFlat.Geometry.WindowSchauder": {
+      "exit_code": 0,
+      "seconds": 20.699
+    },
+    "OAI.Analysis.AncientFlat.Regularity.InitialSchauder": {
+      "exit_code": 0,
+      "seconds": 20.48
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedRescaling": {
+      "exit_code": 0,
+      "seconds": 20.014
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalAncientCore": {
+      "exit_code": 0,
+      "seconds": 20.075
+    },
+    "OAI.Analysis.AncientFlat.Evolution.BoxOscillation": {
+      "exit_code": 0,
+      "seconds": 20.669
+    },
+    "Calabi.Correction.WindowEstimate": {
+      "exit_code": 0,
+      "seconds": 21.606
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SourceC0": {
+      "exit_code": 0,
+      "seconds": 20.168
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalAncientWindow": {
+      "exit_code": 0,
+      "seconds": 20.162
+    },
+    "OAI.Analysis.AncientFlat.Regularity.NestedL2": {
+      "exit_code": 0,
+      "seconds": 24.735
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedRow": {
+      "exit_code": 0,
+      "seconds": 19.692
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ClassicalAncient": {
+      "exit_code": 0,
+      "seconds": 20.341
+    },
+    "Calabi.Correction.OuterEstimate": {
+      "exit_code": 0,
+      "seconds": 22.62
+    },
+    "OAI.Analysis.AncientFlat.Geometry.InteriorL2Sup": {
+      "exit_code": 0,
+      "seconds": 21.218
+    },
+    "OAI.Analysis.AncientFlat.Evolution.RowLinearity": {
+      "exit_code": 0,
+      "seconds": 19.509
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalCore": {
+      "exit_code": 0,
+      "seconds": 19.047
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedSpatial": {
+      "exit_code": 0,
+      "seconds": 19.703
+    },
+    "OAI.Analysis.AncientFlat.Geometry.InteriorL2": {
+      "exit_code": 0,
+      "seconds": 20.166
+    },
+    "OAI.Analysis.AncientFlat.Evolution.Commutator": {
+      "exit_code": 0,
+      "seconds": 20.59
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalWindow": {
+      "exit_code": 0,
+      "seconds": 19.734
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedSource": {
+      "exit_code": 0,
+      "seconds": 18.612
+    },
+    "OAI.Analysis.AncientFlat.Geometry.AnnularCore": {
+      "exit_code": 0,
+      "seconds": 18.461
+    },
+    "OAI.Analysis.AncientFlat.Evolution.SharpPrincipal": {
+      "exit_code": 0,
+      "seconds": 21.176
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalFromWindow": {
+      "exit_code": 0,
+      "seconds": 20.172
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalFourthLocal": {
+      "exit_code": 0,
+      "seconds": 20.777
+    },
+    "OAI.Analysis.AncientFlat.Geometry.AnnularGeometry": {
+      "exit_code": 0,
+      "seconds": 19.864
+    },
+    "OAI.Analysis.AncientFlat.Profile.AnnularProfileCore": {
+      "exit_code": 0,
+      "seconds": 21.413
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SharpResidual": {
+      "exit_code": 0,
+      "seconds": 22.959
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalCompact": {
+      "exit_code": 0,
+      "seconds": 22.975
+    },
+    "OAI.Analysis.AncientFlat.Geometry.AnnularL2": {
+      "exit_code": 0,
+      "seconds": 19.423
+    },
+    "OAI.Analysis.AncientFlat.Profile.CompactificationDerivative": {
+      "exit_code": 0,
+      "seconds": 21.103
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedEstimateCore": {
+      "exit_code": 0,
+      "seconds": 19.84
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SharpCorrection": {
+      "exit_code": 0,
+      "seconds": 21.137
+    },
+    "OAI.Analysis.AncientFlat.Geometry.Annular": {
+      "exit_code": 0,
+      "seconds": 20.272
+    },
+    "OAI.Analysis.AncientFlat.Geometry.AnnularCompactHolder": {
+      "exit_code": 0,
+      "seconds": 25.03
+    },
+    "OAI.Analysis.AncientFlat.Weighted.ExactXNorm": {
+      "exit_code": 0,
+      "seconds": 24.686
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ClassicalHolder": {
+      "exit_code": 0,
+      "seconds": 23.696
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedScaling": {
+      "exit_code": 0,
+      "seconds": 33.668
+    },
+    "OAI.Analysis.AncientFlat.Profile.RadialHolderOn": {
+      "exit_code": 0,
+      "seconds": 37.311
+    },
+    "OAI.Analysis.AncientFlat.Regularity.SourceHolderEvolution": {
+      "exit_code": 0,
+      "seconds": 37.037
+    },
+    "OAI.Analysis.AncientFlat.Profile.CompactificationCoeff": {
+      "exit_code": 0,
+      "seconds": 37.32
+    },
+    "Calabi.Correction.WindowConvert": {
+      "exit_code": 0,
+      "seconds": 26.506
+    },
+    "OAI.Analysis.AncientFlat.Profile.CompactificationIdentity": {
+      "exit_code": 0,
+      "seconds": 19.986
+    },
+    "Calabi.Correction.Bundle": {
+      "exit_code": 0,
+      "seconds": 20.279
+    },
+    "OAI.Analysis.AncientFlat.Evolution.CoreProfile": {
+      "exit_code": 0,
+      "seconds": 20.61
+    },
+    "Calabi.Correction.OscChart": {
+      "exit_code": 0,
+      "seconds": 27.595
+    },
+    "OAI.Analysis.AncientFlat.Geometry.NormalizedGeometry": {
+      "exit_code": 0,
+      "seconds": 27.235
+    },
+    "Calabi.Correction.FlatSymmetry": {
+      "exit_code": 0,
+      "seconds": 27.568
+    },
+    "Calabi.Correction.TwoPointMore": {
+      "exit_code": 0,
+      "seconds": 30.257
+    },
+    "OAI.Analysis.AncientFlat.Profile.AnnularProfile": {
+      "exit_code": 0,
+      "seconds": 22.579
+    },
+    "OAI.Analysis.AncientFlat.Profile.ProfileFamilies": {
+      "exit_code": 0,
+      "seconds": 23.09
+    },
+    "Calabi.Correction.ChartMaps": {
+      "exit_code": 0,
+      "seconds": 21.076
+    },
+    "OAI.Analysis.AncientFlat.Profile.ProfileScaling": {
+      "exit_code": 0,
+      "seconds": 19.158
+    },
+    "Calabi.Correction.FlatZero": {
+      "exit_code": 0,
+      "seconds": 41.523
+    },
+    "OAI.Analysis.AncientFlat.Regularity.MovingFourthHolder": {
+      "exit_code": 0,
+      "seconds": 30.004
+    },
+    "OAI.Analysis.AncientFlat.Profile.ProfileScaleMatch": {
+      "exit_code": 0,
+      "seconds": 31.449
+    },
+    "OAI.Analysis.AncientFlat.Regularity.CoreSchauder": {
+      "exit_code": 0,
+      "seconds": 31.857
+    },
+    "Calabi.Correction.ForwardBlock": {
+      "exit_code": 0,
+      "seconds": 22.525
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ScaledJets": {
+      "exit_code": 0,
+      "seconds": 20.522
+    },
+    "OAI.Analysis.AncientFlat.Profile.ProfileSymbols": {
+      "exit_code": 0,
+      "seconds": 20.706
+    },
+    "OAI.Analysis.AncientFlat.Weighted.ExactNormCongr": {
+      "exit_code": 0,
+      "seconds": 19.954
+    },
+    "OAI.Analysis.AncientFlat.Weighted.ExactSourceSpace": {
+      "exit_code": 0,
+      "seconds": 21.04
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricBasic": {
+      "exit_code": 0,
+      "seconds": 2.757
+    },
+    "OAI.Analysis.SphereIsometry.DiameterBounds": {
+      "exit_code": 0,
+      "seconds": 1.994
+    },
+    "OAI.Analysis.SphereIsometry.ConvexDiameter": {
+      "exit_code": 0,
+      "seconds": 2.682
+    },
+    "OAI.Analysis.AncientFlat.Evolution.ScaledEquation": {
+      "exit_code": 0,
+      "seconds": 21.291
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricMesh": {
+      "exit_code": 0,
+      "seconds": 3.523
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedSourceHolder": {
+      "exit_code": 0,
+      "seconds": 21.07
+    },
+    "OAI.Analysis.AncientFlat.Regularity.NormalizedJets": {
+      "exit_code": 0,
+      "seconds": 21.259
+    },
+    "OAI.Analysis.SphereIsometry.FiniteComplex": {
+      "exit_code": 0,
+      "seconds": 2.028
+    },
+    "OAI.Analysis.SphereIsometry.ProbabilitySimplex": {
+      "exit_code": 0,
+      "seconds": 2.871
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricFlags": {
+      "exit_code": 0,
+      "seconds": 2.105
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricSupport": {
+      "exit_code": 0,
+      "seconds": 2.869
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricIncidence": {
+      "exit_code": 0,
+      "seconds": 2.532
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricPoints": {
+      "exit_code": 0,
+      "seconds": 2.658
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricRestriction": {
+      "exit_code": 0,
+      "seconds": 1.797
+    },
+    "OAI.Analysis.SphereIsometry.SpernerFacet": {
+      "exit_code": 0,
+      "seconds": 2.047
+    },
+    "OAI.Analysis.SphereIsometry.SimplexLimit": {
+      "exit_code": 0,
+      "seconds": 2.523
+    },
+    "OAI.Analysis.SphereIsometry.SpernerBoundary": {
+      "exit_code": 0,
+      "seconds": 2.123
+    },
+    "OAI.Analysis.SphereIsometry.SpernerIncidence": {
+      "exit_code": 0,
+      "seconds": 2.057
+    },
+    "OAI.Analysis.SphereIsometry.SubdivisionData": {
+      "exit_code": 0,
+      "seconds": 1.732
+    },
+    "OAI.Analysis.SphereIsometry.BarycentricZero": {
+      "exit_code": 0,
+      "seconds": 1.839
+    },
+    "OAI.Analysis.SphereIsometry.IteratedPoints": {
+      "exit_code": 0,
+      "seconds": 3.091
+    },
+    "OAI.Analysis.SphereIsometry.SubdivisionIncidence": {
+      "exit_code": 0,
+      "seconds": 1.693
+    },
+    "OAI.Analysis.SphereIsometry.SubdivisionRestriction": {
+      "exit_code": 0,
+      "seconds": 1.756
+    },
+    "OAI.Analysis.AncientFlat.Regularity.PhysicalFiniteJets": {
+      "exit_code": 0,
+      "seconds": 20.598
+    },
+    "OAI.Analysis.SphereIsometry.Sperner": {
+      "exit_code": 0,
+      "seconds": 2.157
+    },
+    "OAI.Analysis.AncientFlat.Regularity.ReferenceEstimate": {
+      "exit_code": 0,
+      "seconds": 22.559
+    },
+    "OAI.Analysis.SphereIsometry.SimplexFixedPoint": {
+      "exit_code": 0,
+      "seconds": 2.72
+    },
+    "OAI.Analysis.SphereIsometry.CompactApproximation": {
+      "exit_code": 0,
+      "seconds": 2.811
+    },
+    "OAI.Analysis.SphereIsometry.CompactConvexFixedPoint": {
+      "exit_code": 0,
+      "seconds": 2.631
+    },
+    "Calabi.Match.Matching": {
+      "exit_code": 0,
+      "seconds": 6.244
+    },
+    "OAI.Analysis.AncientFlat.Evolution.FinitePhysicalAncient": {
+      "exit_code": 0,
+      "seconds": 18.882
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedEstimate": {
+      "exit_code": 0,
+      "seconds": 18.152
+    },
+    "Calabi.Origin.Start": {
+      "exit_code": 0,
+      "seconds": 5.417
+    },
+    "Calabi.Origin.Global": {
+      "exit_code": 0,
+      "seconds": 3.719
+    },
+    "Calabi.ShrinkingProfile": {
+      "exit_code": 0,
+      "seconds": 5.395
+    },
+    "Calabi.Flat.SelfSimilar": {
+      "exit_code": 0,
+      "seconds": 4.576
+    },
+    "OAI.Analysis.AncientFlat.Evolution.PhysicalProfileBridge": {
+      "exit_code": 0,
+      "seconds": 14.271
+    },
+    "Calabi.Flat.ProfileDecay": {
+      "exit_code": 0,
+      "seconds": 5.527
+    },
+    "Calabi.Correction.ProfileJets": {
+      "exit_code": 0,
+      "seconds": 4.028
+    },
+    "Calabi.Radial.Cutoff": {
+      "exit_code": 0,
+      "seconds": 5.298
+    },
+    "Calabi.Correction.ProfileOsc": {
+      "exit_code": 0,
+      "seconds": 5.239
+    },
+    "OAI.Analysis.AncientFlat.Weighted.WeightedPhysicalAncient": {
+      "exit_code": 0,
+      "seconds": 16.827
+    },
+    "Calabi.Correction.Whitney": {
+      "exit_code": 0,
+      "seconds": 6.97
+    },
+    "Calabi.Correction.CutoffOsc": {
+      "exit_code": 0,
+      "seconds": 4.848
+    },
+    "Calabi.Correction.ResidualOsc": {
+      "exit_code": 0,
+      "seconds": 5.558
+    },
+    "Calabi.Correction.ChartCutoff": {
+      "exit_code": 0,
+      "seconds": 17.615
+    },
+    "Calabi.Correction.FrozenOsc": {
+      "exit_code": 0,
+      "seconds": 4.174
+    },
+    "OAI.Analysis.AncientFlat.Weighted.ExactWeightedInverse": {
+      "exit_code": 0,
+      "seconds": 17.885
+    },
+    "Calabi.Radial.Estimates": {
+      "exit_code": 0,
+      "seconds": 18.35
+    },
+    "Calabi.Correction.OuterOsc": {
+      "exit_code": 0,
+      "seconds": 6.16
+    },
+    "Calabi.Geometry.Bridge": {
+      "exit_code": 0,
+      "seconds": 5.326
+    },
+    "Calabi.Geometry.FubiniStudySobolev": {
+      "exit_code": 0,
+      "seconds": 5.576
+    },
+    "Calabi.Correction.ProfileChart": {
+      "exit_code": 0,
+      "seconds": 22.917
+    },
+    "Calabi.Correction.RealSolvers": {
+      "exit_code": 0,
+      "seconds": 20.165
+    },
+    "Calabi.Correction.InteriorReal": {
+      "exit_code": 0,
+      "seconds": 22.625
+    },
+    "Calabi.Correction.LocalSolve": {
+      "exit_code": 0,
+      "seconds": 22.627
+    },
+    "Calabi.Correction.TwoCharts": {
+      "exit_code": 0,
+      "seconds": 24.52
+    },
+    "Calabi.Correction.ParabolicBox": {
+      "exit_code": 0,
+      "seconds": 18.712
+    },
+    "Calabi.Correction.SmoothClass": {
+      "exit_code": 0,
+      "seconds": 19.667
+    },
+    "Calabi.Correction.RayBounds": {
+      "exit_code": 0,
+      "seconds": 18.919
+    },
+    "Calabi.Correction.OuterOne": {
+      "exit_code": 0,
+      "seconds": 24.447
+    },
+    "Calabi.Correction.Coefficients": {
+      "exit_code": 0,
+      "seconds": 20.371
+    },
+    "Calabi.Correction.SigmaTheta": {
+      "exit_code": 0,
+      "seconds": 23.278
+    },
+    "Calabi.Correction.SmoothOps": {
+      "exit_code": 0,
+      "seconds": 22.944
+    },
+    "Calabi.Correction.PairSpace": {
+      "exit_code": 0,
+      "seconds": 20.653
+    },
+    "Calabi.Correction.SmoothBase": {
+      "exit_code": 0,
+      "seconds": 15.082
+    },
+    "Calabi.Correction.OuterZero": {
+      "exit_code": 0,
+      "seconds": 18.133
+    },
+    "Calabi.Correction.InnerBlock": {
+      "exit_code": 0,
+      "seconds": 30.002
+    },
+    "Calabi.Correction.Compose": {
+      "exit_code": 0,
+      "seconds": 17.002
+    },
+    "Calabi.Correction.JointClass": {
+      "exit_code": 0,
+      "seconds": 15.504
+    },
+    "Calabi.Correction.OuterZeroBlock": {
+      "exit_code": 0,
+      "seconds": 73.623
+    },
+    "Calabi.Correction.OuterPair": {
+      "exit_code": 0,
+      "seconds": 15.347
+    },
+    "Calabi.Correction.PairLimit": {
+      "exit_code": 0,
+      "seconds": 15.131
+    },
+    "Calabi.Correction.ApproxInverse": {
+      "exit_code": 0,
+      "seconds": 15.897
+    },
+    "Calabi.Correction.ChartSymmetry": {
+      "exit_code": 0,
+      "seconds": 15.692
+    },
+    "Calabi.Correction.DiffQuot": {
+      "exit_code": 0,
+      "seconds": 15.695
+    },
+    "Calabi.Correction.FirstStep": {
+      "exit_code": 0,
+      "seconds": 17.515
+    },
+    "Calabi.Correction.Transfer": {
+      "exit_code": 0,
+      "seconds": 15.242
+    },
+    "Calabi.Correction.DiffQuotStep": {
+      "exit_code": 0,
+      "seconds": 19.545
+    },
+    "Calabi.Correction.Iteration": {
+      "exit_code": 0,
+      "seconds": 17.962
+    },
+    "Calabi.Correction.Commute": {
+      "exit_code": 0,
+      "seconds": 13.349
+    },
+    "Calabi.Correction.Ladder": {
+      "exit_code": 0,
+      "seconds": 14.443
+    },
+    "Calabi.Correction.JointSmooth": {
+      "exit_code": 0,
+      "seconds": 13.378
+    },
+    "Calabi.Correction.ChartPieces": {
+      "exit_code": 0,
+      "seconds": 13.662
+    },
+    "Calabi.Correction.ChartFlow": {
+      "exit_code": 0,
+      "seconds": 14.231
+    },
+    "Calabi.Correction.Solution": {
+      "exit_code": 0,
+      "seconds": 14.942
+    },
+    "Calabi.Correction.Assembly": {
+      "exit_code": 0,
+      "seconds": 16.74
+    },
+    "Calabi.Main": {
+      "exit_code": 0,
+      "seconds": 12.65
+    }
+  }
+}

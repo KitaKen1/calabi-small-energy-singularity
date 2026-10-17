@@ -1,0 +1,5 @@
+.lake/
+audit/*.log
+audit/staging/
+__pycache__/
+audit/build/
