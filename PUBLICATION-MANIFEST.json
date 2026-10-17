@@ -9,9 +9,13 @@
     "CalabiFC.small_calabi_energy"
   ],
   "verification": {
-    "local_review": "IN_PROGRESS",
+    "local_review": "COMPLETED_WITH_SCOPE_LIMITATION",
     "private_ci": "NOT_RUN",
-    "public_ci": "NOT_RUN"
+    "public_ci": "NOT_RUN",
+    "local_compilation": "PASS",
+    "local_statement_comparison": "PASS",
+    "local_transitive_axioms": "PASS",
+    "local_fresh_kernel_replay": "RUNNING"
   },
   "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized."
 }

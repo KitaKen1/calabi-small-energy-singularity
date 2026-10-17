@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "COMPLETE_WITH_SCOPE_LIMITATION",
   "date": "2026-10-17",
   "method": "AI-assisted clause-by-clause mathematical review, with independently compiled fixed definitions and theorem statements. Natural-language equivalence is not itself a machine-proved theorem.",
   "source": "PDF/calabi-small-energy.pdf, Theorem 1.1, equations (1.1)-(1.5), page 1",
@@ -9,5 +9,8 @@
   "uniform_supremum_clause": "One eta < epsilon controls the curvature norm at all times; obtained from the original theorem at epsilon/2.",
   "original_paper_maximal_flow_wording": "Not claimed in the public Lean target. Smooth uniqueness and identification with the maximal flow are not formalized.",
   "geometry": "Reviewed homogeneous-coordinate geometry, all eight chart positivity conditions, scalar and gradient conventions, normalized nondegenerate volume, actual time derivative, and left-sided positive blow-up limit.",
-  "fc_draft": "Same independent definitions and same two theorem bodies; statement holes are intentional and absent from the solution."
+  "fc_draft": "Same independent definitions and same two theorem bodies; statement holes are intentional and absent from the solution.",
+  "published_readme_statement_correspondence": "PASS",
+  "full_manuscript_theorem_formalized": false,
+  "reason": "Smooth uniqueness and maximal-flow identification are not formalized. The published natural-language target explicitly omits those claims."
 }

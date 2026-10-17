@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "tested_commit": null,
+  "tested_commit": "24f10a7a3a598e0f46bf0019d56cebdf28fa1feb",
   "targets": [
     "CalabiFC.small_energy_singularity",
     "CalabiFC.small_calabi_energy"

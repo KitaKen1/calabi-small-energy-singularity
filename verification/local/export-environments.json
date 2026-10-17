@@ -1,0 +1,49 @@
+{
+  "Challenge": {
+    "sha256": "1c0555daced3acdc9d36590956bb940ff0ed1ee5de76db0d2c6ce464324f9148",
+    "bytes": 165873917
+  },
+  "FCSolution": {
+    "sha256": "06377e0f9ae0c28f7cf07734cf931f665cea94b6d4f43d27664214073725f7a0",
+    "bytes": 777777476
+  },
+  "export_configuration": {
+    "targets": [
+      "CalabiFC.small_energy_singularity",
+      "CalabiFC.small_calabi_energy"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "primitives": [
+      "Nat.add",
+      "Nat.sub",
+      "Nat.mul",
+      "Nat.pow",
+      "Nat.gcd",
+      "Nat.div",
+      "Nat.mod",
+      "Nat.beq",
+      "Nat.ble",
+      "Nat.land",
+      "Nat.lor",
+      "Nat.xor",
+      "Nat.shiftLeft",
+      "Nat.shiftRight",
+      "String.ofList",
+      "Char.ofNat",
+      "List",
+      "eagerReduce",
+      "Nat",
+      "String",
+      "String.mk",
+      "Char",
+      "optParam",
+      "autoParam",
+      "semiOutParam",
+      "outParam"
+    ]
+  }
+}

@@ -1,3 +1,8 @@
+> Historical development guide. This publication uses `Calabi.Main` through both
+> `Calabi.lean` and the default `FCSolution` target. The original `audit/` paths and
+> older build-entry descriptions below refer to the development workspace.
+> Use the repository README and `lean/comparator/README.md` for current verification.
+
 # Calabi small-energy singularity: Lean implementation
 
 Lean 4.34.1. Mathlib is fixed at `d13f23b723b8a846827a245b89c10fc7d3f11612`.
