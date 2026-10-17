@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "command": "lake env lean ../FClikelean/CalabiSmallEnergy.lean",
+  "working_directory": "lean",
+  "exit_code": 0,
+  "intended_statement_hole_warnings": 2
+}

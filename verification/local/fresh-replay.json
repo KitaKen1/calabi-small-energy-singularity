@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "seconds": 1222.4,
+  "method": "leanchecker --fresh FCSolution; original source-matched compiled dependency cache"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "PENDING_ADDITIONAL_FRESH_REPLAY",
+  "status": "PASS_WITH_SCOPE_LIMITATION",
   "proof_source_commit": "24f10a7a3a598e0f46bf0019d56cebdf28fa1feb",
   "pinned_inputs_sha256": "65d525abf1e13eef461a30166db734eeeb84d8165f88d87f614c2cf4cf2b89f5",
   "statement_review": "COMPLETE_WITH_SCOPE_LIMITATION",
@@ -7,7 +7,9 @@
   "compile_entries": "PASS",
   "comparator_library_comparison": "PASS",
   "six_target_transitive_axiom_audit": "PASS",
-  "additional_fresh_whole_environment_replay": "RUNNING",
+  "additional_fresh_whole_environment_replay": "PASS",
   "method": "Local compilation reused source-matched checked dependency artifacts. Linux CI recompiles the proof in a fresh job.",
-  "scope_limitation": "Smooth uniqueness and maximal-flow identification are not formalized."
+  "scope_limitation": "Smooth uniqueness and maximal-flow identification are not formalized.",
+  "fresh_replay_seconds": 1222.4,
+  "lean_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
 }

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Local integration preview only; no public push has been performed.",
+  "original_public_commit": "516d623b1351033d555cbafdf97132a843ca3431",
+  "preserved_files": [
+    "PDF/calabi-small-energy.pdf",
+    "PDF/calabi-small-energy.pdf.ots",
+    "verification/check_identities.py",
+    "verification/identity-checks.json",
+    "verification/manuscript-checks.json",
+    "verification/profile7/calabi7_interval.py",
+    "verification/profile7/calabi7_ledger.py",
+    "verification/profile7/calabi7_ledger_1.json",
+    "verification/profile7/calabi7_newton_1.json",
+    "verification/profile7/calabi7_tail.py",
+    "verification/profile7/calabi7_tail_checks.json",
+    "verification/profile7/calabi7_verification.json",
+    "verification/profile7/calabi7_verify.py",
+    "verification/profile7/calabi7_widths_exact.json"
+  ],
+  "intentional_replacements": [
+    "README.md",
+    ".gitignore"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_WITH_SCOPE_LIMITATION",
+  "development_source": "FCissue\u6295\u7a3f/FCissue.html",
+  "development_source_sha256": "40dc4a2b7b155861734187995b58ec7e24e38111b6fc5307a1ea50e4a2db0e97",
+  "source_paper_repository": "KitaKen1/calabi-small-energy-singularity",
+  "source_paper_commit": "516d623b1351033d555cbafdf97132a843ca3431",
+  "paper_and_timestamp_files_identical_to_existing_public_repository": true,
+  "uniform_curvature_supremum": "Matched explicitly by one eta < epsilon in the new target.",
+  "positive_Sobolev_constant": "The draft explicitly asks C_S > 0. The target bound applied to the constant function 1 under its required probability volume forces C_S >= 1. Equivalently the witness may be enlarged to max(C_S,1). This consequence is not added as a separate Lean theorem.",
+  "maximal_flow_wording": "Not fully formalized. The published statement concerns the constructed smooth flow and its positive scalar blow-up; smooth uniqueness and maximal-flow identification are disclosed as outside the formal target.",
+  "original_draft_fully_formalized": false,
+  "issue_publication": "No issue or message has been posted."
+}
