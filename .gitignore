@@ -11,3 +11,10 @@ comparator-receipt/
 replay-receipt/
 tools/
 tmp/
+
+# Generated files from the original manuscript workspace.
+*.pickle
+*.aux
+*.out
+*.xdv
+# Verification .log files are retained as evidence.

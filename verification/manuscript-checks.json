@@ -1,0 +1,27 @@
+{
+  "pages": 32,
+  "metadata": {
+    "Creator": "LaTeX with hyperref",
+    "Title": "Small-energy finite-time singularities of Calabi flow",
+    "Producer": "xdvipdfmx (0.1)",
+    "CreationDate": "D:20261012025705-00'00'"
+  },
+  "outside_page": [],
+  "replacement_glyph": false,
+  "has_conclusion": true,
+  "forbidden": {
+    "Kenta Kitamura": false,
+    "AI Usage Disclosure": false,
+    "References": false,
+    "Bibliography": false
+  },
+  "visual_review": "All 32 pages rendered and inspected; first page, rational-data table, correction argument, and conclusion also inspected at page size.",
+  "latex_layout_warnings": [],
+  "profile_certificate_recomputed": true,
+  "symbolic_identities_pass": true,
+  "optimized_python_rejected": true,
+  "proof_status": "Proposed mathematical proof; finite checks are not a formal verification of the complete argument.",
+  "sha256": {
+    "PDF/calabi-small-energy.pdf": "b6177c3f0d0a14e126eacb785fc982f1764e5824dd10f4d39e158b6e680a61f3"
+  }
+}

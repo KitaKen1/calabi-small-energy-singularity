@@ -1,5 +1,5 @@
 {
-  "repository": "KitaKen1/calabi-small-energy-singularities",
+  "repository": "KitaKen1/calabi-small-energy-singularity",
   "created_date": "2026-10-17",
   "lean": "leanprover/lean4:v4.34.1",
   "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -20,5 +20,7 @@
     "private_ci_run_url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427",
     "private_ci_build": "PASS"
   },
-  "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized."
+  "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized.",
+  "private_ci_repository": "KitaKen1/calabi-small-energy-singularities",
+  "original_public_manuscript_commit": "516d623b1351033d555cbafdf97132a843ca3431"
 }

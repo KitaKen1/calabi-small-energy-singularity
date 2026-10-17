@@ -1,5 +1,8 @@
 /- Proposed Formal Conjectures style statement. Not an upstream FC submission.
-The only holes below are the two intended theorem statements. -/
+The only holes below are the two intended theorem statements.
+Pinned completed proof source (Lean 4.34.1):
+https://github.com/KitaKen1/calabi-small-energy-singularity/blob/b9465fa781c8cf12697e29a8d666dc43b79d2b8b/lean/FCSolution.lean
+-/
 
 import Mathlib.Analysis.Calculus.ContDiff.Basic
 import Mathlib.Analysis.Calculus.Deriv.Basic

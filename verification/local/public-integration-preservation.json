@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "original_public_commit": "516d623b1351033d555cbafdf97132a843ca3431",
+  "private_checked_source_commit": "b9465fa781c8cf12697e29a8d666dc43b79d2b8b",
+  "preserved_original_files": [
+    "PDF/calabi-small-energy.pdf",
+    "PDF/calabi-small-energy.pdf.ots",
+    "verification/check_identities.py",
+    "verification/identity-checks.json",
+    "verification/manuscript-checks.json",
+    "verification/profile7/calabi7_interval.py",
+    "verification/profile7/calabi7_ledger.py",
+    "verification/profile7/calabi7_ledger_1.json",
+    "verification/profile7/calabi7_newton_1.json",
+    "verification/profile7/calabi7_tail.py",
+    "verification/profile7/calabi7_tail_checks.json",
+    "verification/profile7/calabi7_verification.json",
+    "verification/profile7/calabi7_verify.py",
+    "verification/profile7/calabi7_widths_exact.json"
+  ],
+  "unchanged_common_lean_sources_per_copy": 466,
+  "two_copies_byte_identical_to_private_checked_sources": true,
+  "changes_outside_common_proof": "Publication metadata, FC draft proof-link comment, documentation, and original numerical files retained from the manuscript repository.",
+  "public_push_performed": false
+}

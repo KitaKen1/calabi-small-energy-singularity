@@ -1,5 +1,5 @@
 {
-  "publication_repository": "KitaKen1/calabi-small-energy-singularities",
+  "publication_repository": "KitaKen1/calabi-small-energy-singularity",
   "reference_repository": "KitaKen1/entropic-rogers-shephard",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -21,7 +21,7 @@
   "reference_status": "Local fixed mathematical reference; not an accepted upstream Formal Conjectures target.",
   "files_sha256": {
     ".github/workflows/comparator.yml": "80e93c921caada2c749157bc1b9c875371ec6a8a192343922e9f454e6fd9327d",
-    "FClikelean/CalabiSmallEnergy.lean": "1a0fac0231e4f7981a48faf78aae905f829a500cbded5f4b5148a696b462d2da",
+    "FClikelean/CalabiSmallEnergy.lean": "12afe86bada7d5d460941429eee83c97454f79f4e7230a2440805cad02d2441d",
     "FClikelean/lakefile.lean": "4b48567cdefa91f2d5f708bf92e2d6428ca33f1bc5b032fee03a4d1104d37a78",
     "PDF/calabi-small-energy.pdf": "b6177c3f0d0a14e126eacb785fc982f1764e5824dd10f4d39e158b6e680a61f3",
     "PDF/calabi-small-energy.pdf.ots": "52f67e140299f7a55316070f2a82055b6f0f35878771de757e57273e567212f0",
@@ -46,6 +46,7 @@
     "leanWithoutComparator/lakefile.lean": "543305617668247253105e8149b90727efbc8e23c9f09a70510eb0a1ee6c6330",
     "README.md": "6ef1ea64b64dd7e57af0e50e89a3a557490e0bcc66e3887aa2424fa6d71ac6f2",
     "lean/comparator/TARGET-CORRESPONDENCE.md": "0bc4ec59db29bdb4fed3fe5566a0c880a5701905d23c74f3fefa6f1c9498d9b8",
-    "FClikelean/README.md": "bd0c619f61146d1f2aa5099aeaef9771bf7f0daac81c786aa0ba84602c5fed66"
-  }
+    "FClikelean/README.md": "db5bb544223929765d0efcf6896d851d26ec61f00e98782250af367c4fa2b596"
+  },
+  "private_repository": "KitaKen1/calabi-small-energy-singularities"
 }
