@@ -10,15 +10,21 @@ considers Calabi flow on complex projective seven-space. The result formalized h
 > $`U(7)`$-invariant Calabi flow $`\omega(t)`$ in the Fubini–Study class of $`\mathbb{CP}^7`$
 > on $`[0,T)`$, with initial global potential $`\|\varphi_0\|_{C^0}<\varepsilon`$ and
 >
-> $$\sup_{0\le t<T}\|S(\omega(t))-56\|_{L^p(\nu_t)}<\varepsilon.$$
+> ```math
+> \sup_{0\le t\lt T}\|S(\omega(t))-56\|_{L^p(\nu_t)}\lt\varepsilon.
+> ```
 >
 > The same flow satisfies the Sobolev bound
 >
-> $$\|f\|_{L^{7/3}(\nu_t)}^2\le C_S\bigl(\|\nabla f\|_{L^2(\nu_t)}^2+\|f\|_{L^2(\nu_t)}^2\bigr)$$
+> ```math
+> \|f\|_{L^{7/3}(\nu_t)}^2\le C_S\bigl(\|\nabla f\|_{L^2(\nu_t)}^2+\|f\|_{L^2(\nu_t)}^2\bigr)
+> ```
 >
 > at every time, and, at the fixed origin $`o`$,
 >
-> $$\sqrt{T-t}\,S(\omega(t))(o)\longrightarrow a>0\qquad(t\uparrow T).$$
+> ```math
+> \sqrt{T-t}\,S(\omega(t))(o)\longrightarrow a>0\qquad(t\uparrow T).
+> ```
 
 Here $`\nu_t`$ is the volume normalized to total mass one. The Fubini–Study normalization
 has scalar curvature $`56`$, and the same $`C_S`$ works for every $`p,\varepsilon,\tau`$ and $`t`$.
