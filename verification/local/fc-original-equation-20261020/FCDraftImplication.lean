@@ -1,0 +1,269 @@
+import FCTargetDefinitions
+import CalabiSmallEnergy
+import Mathlib.Analysis.Calculus.ContDiff.Deriv
+import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Analysis.InnerProductSpace.Calculus
+
+open Set Filter MeasureTheory
+open scoped Topology ENNReal ContDiff
+set_option maxRecDepth 4096
+set_option maxHeartbeats 1000000
+local notation "ℂ⁷" => EuclideanSpace ℂ (Fin 7)
+local notation "ℂ⁸" => (Fin 8 → ℂ)
+
+namespace CalabiFC
+
+def DraftTen : Prop :=  answer(False) ↔ CalabiFlowConjecture 10
+def DraftSeven : Prop :=  answer(False) ↔ CalabiFlowConjecture 7
+
+end CalabiFC
+
+namespace CalabiFCDraftCheck
+open Calabi.Geometry
+
+def ReferenceMain : Prop := 
+    ∃ CS : ℝ, ∀ p : ℝ, 2 ≤ p → p < 7 → ∀ ε : ℝ, 0 < ε → ∀ τ : ℝ, 0 < τ →
+      ∃ (T : ℝ) (F : ℝ → Hom → ℝ) (η : ℝ),
+        0 < T ∧ T < τ ∧ 0 < η ∧ η < ε ∧ IsCalabiFlow T F ∧
+        (∀ t ∈ Ico 0 T, IsU7Invariant (F t)) ∧
+        (∀ v : Hom, v ≠ 0 → |F 0 v| < ε) ∧
+        (∀ t ∈ Ico 0 T, IsProbabilityMeasure (nu (pot (F t) 0)) ∧
+          eLpNorm (fun Z => scal (pot (F t) 0) Z - 56) (ENNReal.ofReal p)
+            (nu (pot (F t) 0)) ≤ ENNReal.ofReal η ∧
+          HasSobolevBound (pot (F t) 0) CS) ∧
+        ∃ a : ℝ, 0 < a ∧
+          Tendsto (fun t => Real.sqrt (T - t) * scal (pot (F t) 0) 0) (𝓝[<] T) (𝓝 a)
+
+/-- Recording the answer as `False` is logically equivalent to negation. -/
+theorem negative_answer_iff (P : Prop) : (answer(False) ↔ P) ↔ ¬ P := by
+  constructor
+  · intro h
+    exact h.mpr
+  · intro h
+    exact ⟨False.elim, h⟩
+
+lemma chart_smooth (j : Fin 8) : ContDiff ℝ ∞ (CalabiFC.chart (n := 7) j) := by
+  refine contDiff_pi' fun i => ?_
+  refine Fin.succAboveCases j ?_ (fun k => ?_) i
+  · simp only [CalabiFC.chart, Fin.insertNth_apply_same]
+    exact contDiff_const
+  · simp only [CalabiFC.chart, Fin.insertNth_apply_succAbove]
+    exact ((EuclideanSpace.proj k : Aff →L[ℂ] ℂ).restrictScalars ℝ).contDiff
+
+lemma chart_ne_zero (j : Fin 8) (Z : Aff) : CalabiFC.chart j Z ≠ 0 := by
+  intro hz
+  have h := congrFun hz j
+  simp [CalabiFC.chart] at h
+
+lemma smooth_local {f : Hom → ℝ} (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) (j : Fin 8) :
+    ContDiff ℝ ∞ (fun Z => f (CalabiFC.chart j Z)) :=
+  hf.comp_contDiff (chart_smooth j) (fun Z => chart_ne_zero j Z)
+
+lemma fs_smooth : ContDiff ℝ ∞ (fun Z : Aff => Real.log (1 + ‖Z‖ ^ 2)) := by
+  exact (contDiff_const.add (contDiff_norm_sq ℂ)).log (fun Z => by positivity)
+
+lemma levi_add {u v : Aff → ℝ} (hu : ContDiff ℝ ∞ u) (hv : ContDiff ℝ ∞ v) :
+    CalabiFC.levi (u + v) = CalabiFC.levi u + CalabiFC.levi v := by
+  funext Z a b
+  unfold CalabiFC.levi
+  rw [iteratedFDeriv_add (hu.of_le (by norm_num)) (hv.of_le (by norm_num))]
+  simp only [Pi.add_apply, ContinuousMultilinearMap.add_apply, Complex.ofReal_add, Complex.ofReal_sub, Complex.ofReal_add]
+  ring
+
+lemma levi_sub {u v : Aff → ℝ} (hu : ContDiff ℝ ∞ u) (hv : ContDiff ℝ ∞ v) :
+    CalabiFC.levi (u - v) = CalabiFC.levi u - CalabiFC.levi v := by
+  funext Z a b
+  unfold CalabiFC.levi
+  rw [iteratedFDeriv_sub (hu.of_le (by norm_num)) (hv.of_le (by norm_num))]
+  simp only [Pi.sub_apply, ContinuousMultilinearMap.sub_apply, Complex.ofReal_sub, Complex.ofReal_add]
+  ring
+
+lemma form_eq {f : Hom → ℝ} (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) :
+    CalabiFC.fubiniStudy 7 + CalabiFC.ddbar f =
+      fun j => levi (pot f j) := by
+  funext j Z a b
+  change CalabiFC.levi _ Z a b + CalabiFC.levi _ Z a b = CalabiFC.levi _ Z a b
+  exact (congrFun (congrFun (congrFun (levi_add fs_smooth (smooth_local hf j)) Z) a) b).symm
+
+lemma ddbar_sub {f g : Hom → ℝ}
+    (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) (hg : ContDiffOn ℝ ∞ g {v | v ≠ 0}) :
+    CalabiFC.ddbar (f - g) = CalabiFC.ddbar f - CalabiFC.ddbar g := by
+  funext j Z a b
+  exact congrFun (congrFun (congrFun (levi_sub (smooth_local hf j) (smooth_local hg j)) Z) a) b
+
+lemma ddbar_add {f g : Hom → ℝ}
+    (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) (hg : ContDiffOn ℝ ∞ g {v | v ≠ 0}) :
+    CalabiFC.ddbar (f + g) = CalabiFC.ddbar f + CalabiFC.ddbar g := by
+  funext j Z a b
+  exact congrFun (congrFun (congrFun (levi_add (smooth_local hf j) (smooth_local hg j)) Z) a) b
+
+lemma scal_eq (f : Hom → ℝ) (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) (Z : Aff) :
+    CalabiFC.scal (CalabiFC.fubiniStudy 7 + CalabiFC.ddbar f) Z = scal (pot f 0) Z := by
+  rw [form_eq hf]
+  rfl
+
+lemma slice_smooth {T : ℝ} {φ : ℝ → Hom → ℝ}
+    (h : ContDiffOn ℝ ∞ (fun p : ℝ × Hom => φ p.1 p.2) (Ico 0 T ×ˢ {v | v ≠ 0}))
+    {t : ℝ} (ht : t ∈ Ico 0 T) : ContDiffOn ℝ ∞ (φ t) {v | v ≠ 0} :=
+  h.comp (contDiffOn_const.prodMk contDiffOn_id) (fun _ hv => ⟨ht, hv⟩)
+
+lemma constant_smooth {T : ℝ} {f : Hom → ℝ} (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) :
+    ContDiffOn ℝ ∞ (fun p : ℝ × Hom => f p.2) (Ico 0 T ×ˢ {v | v ≠ 0}) :=
+  hf.comp contDiffOn_snd (fun _ hp => hp.2)
+
+lemma form_sum {f g : Hom → ℝ}
+    (hf : ContDiffOn ℝ ∞ f {v | v ≠ 0}) (hg : ContDiffOn ℝ ∞ g {v | v ≠ 0}) :
+    (CalabiFC.fubiniStudy 7 + CalabiFC.ddbar f) + CalabiFC.ddbar g =
+      CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (f + g) := by
+  rw [ddbar_add hf hg]
+  abel
+
+lemma flow_to_reference {T : ℝ} {ω₀ : CalabiFC.Form 7} {φ : ℝ → Hom → ℝ}
+    (h : CalabiFC.IsCalabiFlow 7 T ω₀ φ) {f : Hom → ℝ}
+    (hf : CalabiFC.IsSmoothCP f) (heq : ω₀ = CalabiFC.fubiniStudy 7 + CalabiFC.ddbar f) :
+    IsCalabiFlow T (fun t => f + φ t) := by
+  rcases h with ⟨_, _, ⟨hs, hi⟩, hp, hd⟩
+  have ht_smooth := fun t ht => slice_smooth hs (t := t) ht
+  have hform (t : ℝ) (ht : t ∈ Ico 0 T) :
+      ω₀ + CalabiFC.ddbar (φ t) = CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (f + φ t) := by
+    rw [heq]
+    exact form_sum hf.1 (ht_smooth t ht)
+  refine ⟨(constant_smooth hf.1).add hs, ?_, ?_⟩
+  · intro t ht
+    refine ⟨⟨hf.1.add (ht_smooth t ht), ?_⟩, ?_⟩
+    · intro c v hc
+      exact congrArg₂ (· + ·) (hf.2 c v hc) (hi t ht c v hc)
+    · intro j Z a ha
+      have hpos := hp t ht j Z a ha
+      dsimp only at hpos
+      rw [hform t ht, form_eq (f := f + φ t) (hf.1.add (ht_smooth t ht))] at hpos
+      exact hpos
+  · intro t ht Z
+    have hderiv := (hd t ht Z).const_add (f (chart 0 Z))
+    dsimp only at hderiv
+    rw [hform t ht, scal_eq (f + φ t) (hf.1.add (ht_smooth t ht))] at hderiv
+    norm_num only [Nat.cast_ofNat] at hderiv
+    simpa only [Pi.add_apply, CalabiFC.chart, chart,
+      show (7 : ℝ) * (7 + 1) = 56 by norm_num] using hderiv
+
+lemma flow_from_reference {T : ℝ} {F : ℝ → Hom → ℝ}
+    (hT : 0 < T) (h : IsCalabiFlow T F) :
+    CalabiFC.IsCalabiFlow 7 T (CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (F 0))
+      (fun t => F t - F 0) := by
+  have hz : (0 : ℝ) ∈ Ico 0 T := ⟨le_rfl, hT⟩
+  have h0 := (h.kahler 0 hz).smoothCP
+  have hs := h.smooth.sub (constant_smooth h0.smooth)
+  have ht_smooth := fun t ht => (h.kahler t ht).smoothCP.smooth
+  have hform (t : ℝ) (ht : t ∈ Ico 0 T) :
+      (CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (F 0)) + CalabiFC.ddbar (F t - F 0) =
+        CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (F t) := by
+    rw [ddbar_sub (ht_smooth t ht) h0.smooth]
+    abel
+  refine ⟨⟨⟨F 0, ⟨h0.smooth, h0.invariant⟩, rfl⟩, ?_⟩,
+    sub_self _, ⟨hs, ?_⟩, ?_, ?_⟩
+  · rw [form_eq h0.smooth]
+    exact (h.kahler 0 hz).pos
+  · intro t ht c v hc
+    exact congrArg₂ (· - ·) ((h.kahler t ht).smoothCP.invariant c v hc) (h0.invariant c v hc)
+  · intro t ht
+    dsimp only
+    rw [hform t ht, form_eq (ht_smooth t ht)]
+    exact (h.kahler t ht).pos
+  · intro t ht Z
+    dsimp only
+    rw [hform t ht, scal_eq _ (ht_smooth t ht)]
+    have hderiv := (h.flow t ht Z).sub_const (F 0 (chart 0 Z))
+    simpa only [Pi.sub_apply, CalabiFC.chart, chart, Nat.cast_ofNat,
+      show (7 : ℝ) * (7 + 1) = 56 by norm_num] using hderiv
+
+/-- Coordinate change between the initial-form and fixed-Fubini–Study descriptions. -/
+lemma flow_iff {T : ℝ} (hT : 0 < T) (ω₀ : CalabiFC.Form 7) (φ : ℝ → Hom → ℝ) :
+    CalabiFC.IsCalabiFlow 7 T ω₀ φ ↔
+      φ 0 = 0 ∧ ∃ f : Hom → ℝ, CalabiFC.IsSmoothCP f ∧
+        ω₀ = CalabiFC.fubiniStudy 7 + CalabiFC.ddbar f ∧
+        IsCalabiFlow T (fun t => f + φ t) := by
+  constructor
+  · intro h
+    obtain ⟨f, hf, heq⟩ := h.1.1
+    exact ⟨h.2.1, f, hf, heq, flow_to_reference h hf heq⟩
+  · rintro ⟨hz, f, hf, rfl, h⟩
+    have hn := flow_from_reference hT h
+    simp only [hz, add_zero] at hn
+    have hcancel : (fun t => f + φ t - f) = φ := by
+      funext t v
+      simp
+    rw [hcancel] at hn
+    exact hn
+
+
+/-- Smooth extension makes the time derivative at the origin continuous. The
+Calabi equation identifies that derivative with scalar curvature minus 56. -/
+theorem blowup_prevents_extension {T : ℝ} {F : ℝ → ℂ⁸ → ℝ}
+    (hT : 0 < T) (hF : IsCalabiFlow T F) {a : ℝ} (ha : 0 < a)
+    (hblow : Tendsto (fun t => Real.sqrt (T - t) * scal (pot (F t) 0) 0)
+      (𝓝[<] T) (𝓝 a)) : ¬ CalabiFC.CalabiFlowConjecture 7 := by
+  intro h
+  have h0 := (hF.kahler 0 ⟨le_rfl, hT⟩).smoothCP
+  obtain ⟨T', ψ, hTT', hψ, hmatchψ⟩ := h T
+    (CalabiFC.fubiniStudy 7 + CalabiFC.ddbar (F 0))
+    (fun t => F t - F 0) hT (flow_from_reference hT hF)
+  let G : ℝ → ℂ⁸ → ℝ := fun t => F 0 + ψ t
+  have hG : IsCalabiFlow T' G :=
+    flow_to_reference hψ ⟨h0.smooth, h0.invariant⟩ rfl
+  have hmatch : ∀ t ∈ Ico 0 T, ∀ v : ℂ⁸, v ≠ 0 → G t v = F t v := by
+    intro t ht v hv
+    change F 0 v + ψ t v = F t v
+    rw [hmatchψ t ht v hv]
+    simp
+  let v : ℂ⁸ := chart 0 0
+  have hv : v ≠ 0 := by
+    intro hz
+    have hh := congrFun hz 0
+    simpa [v, chart] using hh
+  have hcurve : ContDiffOn ℝ ∞ (fun t => G t v) (Ico 0 T') :=
+    hG.smooth.comp (contDiffOn_id.prodMk contDiffOn_const) (fun t ht => ⟨ht, hv⟩)
+  have hc : ContinuousAt (fun t => deriv (fun s => G s v) t + 56) T :=
+    ((hcurve.contDiffAt (Ico_mem_nhds_iff.mpr ⟨hT, hTT'⟩)).derivWithin
+      (m := 0) (by simp)).continuousAt.add continuousAt_const
+  have heq : (fun t => deriv (fun s => G s v) t + 56) =ᶠ[𝓝[<] T]
+      (fun t => scal (pot (F t) 0) 0) := by
+    filter_upwards [self_mem_nhdsWithin,
+      (eventually_gt_nhds hT).filter_mono inf_le_left] with t ht hpos
+    have hnhds : Ico 0 T ∈ 𝓝 t := Ico_mem_nhds_iff.mpr ⟨hpos, ht⟩
+    have heq' : (fun s => G s v) =ᶠ[𝓝 t] (fun s => F s v) := by
+      filter_upwards [hnhds] with s hs
+      exact hmatch s hs v hv
+    have hd := ((hF.flow t ⟨hpos.le, ht⟩ 0).hasDerivAt hnhds).congr_of_eventuallyEq heq'
+    have hd' := hd.deriv
+    change deriv (fun s => G s v) t = scal (pot (F t) 0) 0 - 56 at hd'
+    linarith
+  have hsqrt : Tendsto (fun t : ℝ => Real.sqrt (T - t)) (𝓝[<] T) (𝓝 0) := by
+    have hs : Continuous (fun t : ℝ => Real.sqrt (T - t)) :=
+      Real.continuous_sqrt.comp (continuous_const.sub continuous_id)
+    simpa using (hs.tendsto T).mono_left (show 𝓝[<] T ≤ 𝓝 T from inf_le_left)
+  have hz : Tendsto (fun t => Real.sqrt (T - t) * scal (pot (F t) 0) 0)
+      (𝓝[<] T) (𝓝 0) := by
+    have hh := hsqrt.mul (hc.tendsto.mono_left inf_le_left)
+    simp only [zero_mul] at hh
+    exact hh.congr' (heq.mono fun t ht => congrArg (fun x => Real.sqrt (T - t) * x) ht)
+  exact (ne_of_gt ha) (tendsto_nhds_unique hblow hz)
+
+theorem reference_implies_seven : ReferenceMain → CalabiFC.DraftSeven := by
+  rintro ⟨CS, h⟩
+  obtain ⟨T, F, η, hT, _, _, _, hF, _, _, _, a, ha, hblow⟩ :=
+    h 2 le_rfl (by norm_num) 1 (by norm_num) 1 (by norm_num)
+  exact ⟨False.elim, blowup_prevents_extension hT hF ha hblow⟩
+
+theorem reference_implies_projective_failure :
+    ReferenceMain → ¬ ∀ n : ℕ, CalabiFC.CalabiFlowConjecture n := by
+  intro h hglobal
+  exact (reference_implies_seven h).mpr (hglobal 7)
+
+#print axioms reference_implies_projective_failure
+#print axioms negative_answer_iff
+#print axioms flow_iff
+#print axioms flow_from_reference
+#print axioms flow_to_reference
+#print axioms reference_implies_seven
+
+end CalabiFCDraftCheck

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "requestedSections": [
+    "statement",
+    "explanation",
+    "lean",
+    "correspondence",
+    "syntax"
+  ],
+  "embeddedLeanByteIdentical": true,
+  "codeLines": 93,
+  "leanSha256": "339a0cf4f44756da5da62733a8ac9678e5f2b26834b475f576ffa2b6955e1c16",
+  "formulaCount": 1,
+  "localLinksResolve": 8,
+  "externalRequests": [],
+  "scriptErrors": [],
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "codeJump": {
+    "selected": [
+      81
+    ],
+    "visible": true,
+    "scrollTop": 1431,
+    "paneTop": 263.765625
+  },
+  "copyButton": "PASS",
+  "clearHighlight": "PASS",
+  "screenshots": "/private/tmp/calabi-fc-explain-definition-trim-qa",
+  "html_file": "\u4eba\u9593\u7406\u89e3\u7528/FClikeleanExplainv2.html",
+  "html_sha256": "7efd2c42b39ace7a619047293864d2914edacf69c63ffe41b5a5cba052bbf055"
+}

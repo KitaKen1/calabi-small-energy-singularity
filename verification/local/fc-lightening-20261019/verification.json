@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "command": "lake build",
+  "working_directory": "FClikelean",
+  "exit_code": 0,
+  "seconds": 34.36,
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "3ab5a4d15f4b6091655856c48edb3040a57205b12477719adc15ae92e54f7157",
+    "FClikelean/CalabiSmallEnergy/Geometry.lean": "f77336f6baa6fd360e6652644c7d1b6e7f9fd3e30258a1a2c8068ce07c4177b2"
+  },
+  "matches_independent_reference": true,
+  "intended_statement_holes": 2,
+  "remote_actions_performed": false
+}

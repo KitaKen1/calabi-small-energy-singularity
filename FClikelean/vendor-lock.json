@@ -1,0 +1,21 @@
+{
+  "repository": "google-deepmind/formal-conjectures",
+  "commit": "c6f4b4bdab8fdabb19191a8a1648be21b81253b0",
+  "license": "Apache-2.0",
+  "purpose": "Official category/AMS attributes and pre-migration answer elaborator; no mathematical definitions.",
+  "files_sha256": {
+    "FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
+    "FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
+    "FormalConjecturesUtil/Answer.lean": "1c942303a43be1add611dc8ab6d94563e8834fb7128482b1c969fe314b949724",
+    "FormalConjecturesUtil/Answer/Syntax.lean": "4572fc294df840c091b79350951760f742eb26f890b48cd329a19995a1e2344c"
+  },
+  "local_files_sha256": {
+    "FormalConjecturesUtil.lean": "3d1edfbe4f1a8b23c6cfdcf3934585697f3cedff8b5dd429d06a88f626d47d70"
+  },
+  "answer_commit": "df32117054f5f230e6d2be989d882d9f88b75255",
+  "answer_version_note": "Official answer syntax before the 2026-10-15 migration; retained for the user-requested answer(False) format.",
+  "file_commits": {
+    "FormalConjecturesUtil/Answer.lean": "df32117054f5f230e6d2be989d882d9f88b75255",
+    "FormalConjecturesUtil/Answer/Syntax.lean": "df32117054f5f230e6d2be989d882d9f88b75255"
+  }
+}

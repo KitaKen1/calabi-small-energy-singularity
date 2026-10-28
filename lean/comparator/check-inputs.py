@@ -20,7 +20,49 @@ def require(condition, message):
 
 
 def declarations(text):
-    return re.findall(r"^theorem (\w+)\s*:(.*?) :=(?: by\n|\n)", text, re.M | re.S)
+    return re.findall(r"^theorem ([\w.]+)\s*:(.*?) :=(?: by\n|\n)", text, re.M | re.S)
+
+
+def lean_code(text):
+    """Ignore documentation while retaining exact nonblank Lean code lines."""
+    code = []
+    i = 0
+    depth = 0
+    in_string = False
+    while i < len(text):
+        if depth:
+            if text.startswith('/-', i):
+                depth += 1
+                i += 2
+            elif text.startswith('-/', i):
+                depth -= 1
+                i += 2
+            else:
+                code.append('\n' if text[i] == '\n' else ' ')
+                i += 1
+        elif in_string:
+            code.append(text[i])
+            if text[i] == '\\' and i + 1 < len(text):
+                code.append(text[i + 1])
+                i += 2
+                continue
+            if text[i] == '"':
+                in_string = False
+            i += 1
+        elif text.startswith('/-', i):
+            code.append(' ')
+            depth = 1
+            i += 2
+        elif text.startswith('--', i):
+            code.append(' ')
+            while i < len(text) and text[i] != '\n':
+                i += 1
+        else:
+            code.append(text[i])
+            in_string = text[i] == '"'
+            i += 1
+    require(depth == 0 and not in_string, 'Unclosed Lean comment or string')
+    return '\n'.join(line.rstrip() for line in ''.join(code).splitlines() if line.strip())
 
 
 def main():
@@ -78,9 +120,34 @@ def main():
             'Reference imports a submitted proof')
     require(not re.search(r'\b(?:sorry|admit)\b|^\s*axiom\b', defs, re.M), 'Hole in fixed definitions')
     draft = (ROOT / 'FClikelean/CalabiSmallEnergy.lean').read_text()
-    require(draft.endswith(defs + '\n' + challenge.replace('import FCTargetDefinitions\n', '')),
-            'FC-style mathematical body differs from the independent reference')
+    draft_sources = {p.relative_to(ROOT / 'FClikelean').as_posix()
+                     for p in (ROOT / 'FClikelean').rglob('*.lean')
+                     if '.lake' not in p.parts and 'vendor' not in p.relative_to(ROOT / 'FClikelean').parts
+                     and p.name != 'lakefile.lean'}
+    require(draft_sources == {'CalabiSmallEnergy.lean'}, 'FC-style draft must be a single file')
+    draft_imports = re.findall(r'^(?:public )?import (\S+)', draft, re.M)
+    require(draft_imports == ['FormalConjecturesUtil'],
+            'FC-style statement imports a mathematical local module or submitted proof')
+    metadata = json.loads((ROOT / 'FClikelean/vendor-lock.json').read_text())
+    metadata_files = {p.relative_to(ROOT / 'FClikelean/vendor').as_posix()
+                      for p in (ROOT / 'FClikelean/vendor').rglob('*.lean')}
+    require(metadata_files == set(metadata['files_sha256']) | set(metadata['local_files_sha256']),
+            'Unexpected FC metadata source')
+    for name, expected in {**metadata['files_sha256'], **metadata['local_files_sha256']}.items():
+        require(digest(ROOT / 'FClikelean/vendor' / name) == expected,
+                'Official FC metadata source changed: ' + name)
+    require(draft.count('@[category research solved, AMS 53 58]') == 2,
+            'Expected the OpenAI counterexample and one variant')
+    require([name for name, _ in declarations(draft)] == ['calabi_flow', 'calabi_flow.variants.dimension_seven'],
+            'FC-style target list changed')
+    require(pins['fc_draft_targets'] == ['CalabiFC.calabi_flow', 'CalabiFC.calabi_flow.variants.dimension_seven'],
+            'Pinned FC-style target list changed')
     require(draft.count('  sorry\n') == 2, 'Unexpected FC-style holes')
+    draft_code = lean_code(draft).replace('  sorry\n', '')
+    require(not re.search(r'\b(?:sorry|admit|native_decide|unsafe|implemented_by)\b|^\s*axiom\b',
+                          draft_code, re.M), 'Unreviewed FC-style hole or proof escape')
+    # check-fc-draft.py proves the CP7 target and the projective extension corollary.
+    # The main CP10 theorem is explicitly statement only.
     # Hash the actual closure in the exact format used by the original clean audit.
     closure = json.loads((ROOT / 'verification/original-audit/clean-rebuild.json').read_text())
     state = hashlib.sha256()
@@ -99,7 +166,10 @@ def main():
     result = {'status': 'PASS', 'tested_commit': commit.stdout.strip() if commit.returncode == 0 else None,
               'targets': pins['targets'], 'original_closure_modules': 448,
               'original_closure_digest': state.hexdigest(), 'identical_shared_sources': len(expected_sources),
-              'fixed_reference_definitions': True, 'fc_draft_matches_reference': True}
+              'fixed_reference_definitions': True, 'fc_draft_source_pinned': True,
+              'fc_draft_implication_check': 'Run check-fc-draft.py under lake env; the main CP10 theorem is statement only'}
+    result['fc_draft_single_file'] = True
+    result['fc_draft_targets'] = pins['fc_draft_targets']
     if args.receipt_dir:
         args.receipt_dir.mkdir(parents=True, exist_ok=True)
         (args.receipt_dir / 'input-check.json').write_text(json.dumps(

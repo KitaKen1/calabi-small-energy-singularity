@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "readme_sha256": "c633c9aeb5743ff773f3d8cdfcf76687b47497bbc2a15adeec1b6c66db7d41e0",
+  "reference_url": "https://github.com/KitaKen1/entropic-rogers-shephard",
+  "reference_readme_sha256": "59ec24331081593f50d9fcec2f6059410a8a4c7e76013ac4135b5c47041619be",
+  "local_link_count": 42,
+  "all_local_links_resolve": true,
+  "proof_and_target_input_check": "PASS",
+  "private_ci_status": "CANCELLED",
+  "public_ci_status": "NOT_RUN",
+  "remote_mutations_performed": false
+}

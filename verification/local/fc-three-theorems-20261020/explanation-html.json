@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "requestedSections": [
+    "statement",
+    "explanation",
+    "lean",
+    "correspondence",
+    "syntax"
+  ],
+  "embeddedLeanByteIdentical": true,
+  "codeLines": 100,
+  "leanSha256": "bab0ce9bd9f5d947cdde8813d0dbe75e17836cbd3449798fa4c6035cac449d7e",
+  "formulaCount": 1,
+  "localLinksResolve": 8,
+  "externalRequests": [],
+  "scriptErrors": [],
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "codeJump": {
+    "selected": [
+      88
+    ],
+    "visible": true,
+    "scrollTop": 1587,
+    "paneTop": 263.765625
+  },
+  "copyButton": "PASS",
+  "clearHighlight": "PASS",
+  "screenshots": "/private/tmp/calabi-fc-explain-three-theorems-qa",
+  "html_file": "\u4eba\u9593\u7406\u89e3\u7528/FClikeleanExplainv2.html",
+  "html_sha256": "7d5f0e88d2f67e7c3b7d05eef3fe465870863803e147a9d38527c39384849bea"
+}

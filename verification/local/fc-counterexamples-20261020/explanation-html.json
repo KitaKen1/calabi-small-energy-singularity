@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "requestedSections": [
+    "statement",
+    "explanation",
+    "lean",
+    "correspondence",
+    "syntax"
+  ],
+  "embeddedLeanByteIdentical": true,
+  "codeLines": 96,
+  "leanSha256": "02f90a2e7a7dc48aa703938d19cfaa314afc138551b04aab882689083dcb9ace",
+  "formulaCount": 1,
+  "localLinksResolve": 8,
+  "externalRequests": [],
+  "scriptErrors": [],
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "codeJump": {
+    "selected": [
+      92
+    ],
+    "visible": true,
+    "scrollTop": 1498,
+    "paneTop": 261.171875
+  },
+  "copyButton": "PASS",
+  "clearHighlight": "PASS",
+  "screenshots": "/private/tmp/calabi-fc-explain-counterexamples-qa",
+  "html_sha256": "5f8c7a87e05f290303efed087d47945323edce8add3f68bda64eb2ffd2f39134",
+  "html_file": "\u4eba\u9593\u7406\u89e3\u7528/FClikeleanExplainv2.html"
+}

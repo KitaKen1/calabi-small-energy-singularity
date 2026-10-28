@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proof: independent small-energy reference implies the main negative answer and CP7 counterexample",
+  "axioms": {
+    "CalabiFCDraftCheck.flow_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_calabi_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-AMS",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-Basic",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-entrypoint",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "implication",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "dd52472991f0527e81321dab732a9005561349be77c20a06cf0bf806d0cf822c",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "6f86b1963096af918252ba77da4ab834721c6f6f07bc4c1738b46be1b5f1e98d",
+    "lean/comparator/fc-draft-equivalence.lean.in": "1e0b99377228f2ff7d621be61cfb41de4b25ad04a84178b9f2b479940f656d0b",
+    "FClikelean/vendor-lock.json": "3a5f85b503671e3bc525ded5296f51c1f1de607d6faa8a9fd4e14fe4aa095ba6",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
+    "FClikelean/vendor/FormalConjecturesUtil.lean": "04e499d8b2be54d31fc5fa4bbbb9f3f6c14938d0d40e1ea604b3b40643e86e29"
+  },
+  "fc_draft_targets": [
+    "CalabiFC.calabi_flow",
+    "CalabiFC.calabi_flow_dimension_ten",
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "verified_targets": [
+    "CalabiFC.calabi_flow",
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "unverified_targets": {
+    "CalabiFC.calabi_flow_dimension_ten": "Statement only; OpenAI source proof is not included in this verification."
+  },
+  "scope": "All three statements compile; the general negative answer and CP7 follow from the reference. CP10 is statement only.",
+  "seconds": 31.23
+}

@@ -1,0 +1,15 @@
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-original-equation-20261020/FCDraftImplication.lean:70:27: warning: `ContinuousMultilinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-original-equation-20261020/FCDraftImplication.lean:78:27: warning: `ContinuousMultilinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-original-equation-20261020/FCDraftImplication.lean:222:4: warning: Try `simp at hh` instead of `simpa using hh`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'CalabiFCDraftCheck.reference_implies_projective_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.negative_answer_iff' does not depend on any axioms
+'CalabiFCDraftCheck.flow_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.flow_from_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.flow_to_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.reference_implies_seven' depends on axioms: [propext, Classical.choice, Quot.sound]

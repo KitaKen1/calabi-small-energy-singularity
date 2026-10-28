@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proof: independent small-energy reference implies the CP7 counterexample and projective extension failure",
+  "axioms": {
+    "CalabiFCDraftCheck.flow_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_projective_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-AMS",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-Basic",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-entrypoint",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "implication",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "48c85da41dd81b65609efac2c76da584b5598809f30ddccf7071aaa7b0fc99d1",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "cd61e250448737091e3b710452b00dce9eeafc0549bd9b809e5aa6a3cbdec435",
+    "lean/comparator/fc-draft-equivalence.lean.in": "f2ed735cdba6d775a28b5353edebcd98c6f12bbfbb64ff7b55134b043cca4c0e",
+    "FClikelean/vendor-lock.json": "15a61c90c82e8cf9d0c5670a7b638881ffc967f2542a9f656f0e654d2d998eec",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
+    "FClikelean/vendor/FormalConjecturesUtil.lean": "fd2b13494ffcbcbc11aeca7d0cc02bb1dc42dc40482b84b6f65c2810109c44d9"
+  },
+  "fc_draft_targets": [
+    "CalabiFC.calabi_flow",
+    "CalabiFC.calabi_flow_dimension_ten",
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "verified_targets": [
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "verified_corollaries": [
+    "Not every CPn satisfies CalabiFlowConjecture n"
+  ],
+  "unverified_targets": {
+    "CalabiFC.calabi_flow": "Original global-existence conjecture: statement only. The general geometric specialization and smooth uniqueness connection are not formalized.",
+    "CalabiFC.calabi_flow_dimension_ten": "Statement only; OpenAI source proof is not included in this verification."
+  },
+  "scope": "All three statements compile. CP7 and the projective extension corollary follow from the reference. The original general conjecture and CP10 are statement only.",
+  "seconds": 45.98
+}

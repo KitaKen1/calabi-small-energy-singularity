@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "readme_sha256": "c557044d851927d0d4a03cd1e5795b84dd2b81cdc9e8b81f08250171ce5837ce",
+  "reference_url": "https://github.com/KitaKen1/riesz-energy-spheres",
+  "reference_readme_sha256": "ad9ff0d4ec37df17731d37b58508628c2953aa21a5ff20435c4867213e47d126",
+  "changed_sections": [
+    "Mathematical explanation (AI generated)",
+    "Appendix: timeline (AI generated)"
+  ],
+  "other_readme_sections_unchanged": true,
+  "local_link_count": 32,
+  "all_local_links_resolve": true,
+  "proof_inputs_unchanged": true,
+  "source_manuscript_sha256": "b6177c3f0d0a14e126eacb785fc982f1764e5824dd10f4d39e158b6e680a61f3",
+  "historical_sources": [
+    "https://doi.org/10.1515/9781400881918-016",
+    "https://arxiv.org/abs/math/0603523",
+    "https://doi.org/10.1353/ajm.2008.0018"
+  ],
+  "remote_mutations_performed": false
+}

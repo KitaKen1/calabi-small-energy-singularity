@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "format": "All three declarations use answer(False) \u2194 the positive question.",
+  "original_conjecture": "General compact complex manifolds, arbitrary smooth initial K\u00e4hler metrics, and a smooth flow on [0,\u221e).",
+  "initial_condition": "The initial background metric is arbitrary; F(0)=0 records zero change at the initial time.",
+  "scope": "The general conjecture and CP10 remain statement-only checks. CP7 is linked to the independent small-energy reference by a kernel proof.",
+  "answer_equivalence_axioms": [],
+  "source_sha256": "fa3c38afaaa70224b6fbac1147ad8f908dd7b7bc365bc50f420fb99cb1c67f59",
+  "html_qa": "/private/tmp/original-vs-lean-general-answer-qa/checks.json"
+}

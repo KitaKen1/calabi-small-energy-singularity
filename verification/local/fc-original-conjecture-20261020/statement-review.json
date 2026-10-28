@@ -1,0 +1,12 @@
+{
+  "original_source": "He–Zeng, Conjecture 1.1 (Chen), https://arxiv.org/pdf/1701.06943v2#page=2",
+  "original_conjecture_formulation": "All compact complex manifolds and all smooth initial Kähler metrics; a smooth flow on [0,∞) starts from each initial metric.",
+  "initial_potential_zero": "The quantified background metric itself is the arbitrary initial metric; F(0)=0 places no restriction on initial metrics.",
+  "kahler_metric_representation": "Local smooth strictly plurisubharmonic potentials, Hermitian transition compatibility, and the determinant volume density; charts can be refined to admit local potentials.",
+  "equation": "dF/dt = scalar curvature - initial average scalar curvature; the global potential preserves the Kähler class.",
+  "projective_predicates_unchanged": true,
+  "cp10_and_cp7_statements_unchanged": true,
+  "new_general_proof": "Not formalized; statement-only check. Original three FC theorem placeholders are preserved.",
+  "theorem_count": 3,
+  "source_sha256": "48c85da41dd81b65609efac2c76da584b5598809f30ddccf7071aaa7b0fc99d1"
+}

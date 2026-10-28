@@ -12,6 +12,37 @@ copies, the standalone draft and the original 448-module closure digest.
 two intended statement holes. `FCSolution` imports the actual completed proof
 and no reference module. The two environments are compared independently.
 
+The single-file FC draft has two statements: OpenAI’s CP10 counterexample
+`calabi_flow`, and the CP7 variant `calabi_flow.variants.dimension_seven`.
+The independent reference and solution retain the two stronger small-energy
+declarations. To check the CP7 connection, run from `lean/`:
+
+```sh
+lake env python3 comparator/check-fc-draft.py --receipt-dir ../fc-draft-receipt
+```
+
+This compiles both statements in a fresh draft environment. In the Lean kernel,
+it proves that the dimension-seven flow predicate agrees with the independent
+coordinate geometry after the initial-form normalization, that `answer(False) ↔ P` is equivalent to `¬ P`, and that the independent
+main reference implies the CP7 variant and the projective corollary
+`¬ ∀ n, CalabiFlowConjecture n`. A smooth extension would have a continuous time
+derivative at the origin; the Calabi equation and positive scalar blow-up
+contradict this. The proof uses neither draft placeholder and is audited against
+the same three permitted axioms. The instantiated proof and source hashes are
+saved with the receipt.
+
+The normalization writes `ω₀ = ω_FS + ddbar (F 0)` and
+`φ t = F t - F 0`, so the initial condition is explicitly zero. The proof
+checks both directions of this change, including linearity of the Hessian,
+preservation of curvature and transfer of extensions. These coordinate
+lemmas do not certify the complete intrinsic differential geometry of the
+original equation on arbitrary Kähler manifolds.
+
+The main CP10 proof is explicitly excluded: the repository records the cited
+OpenAI statement and does not certify its proof. The template filename retains
+`equivalence` for compatibility; only the flow predicates are equivalent, while
+the small-energy connection is an implication.
+
 The workflow builds the trusted reference before restoring solution products,
 then uses the unmodified pinned Comparator to compare dependent definitions,
 audit allowed axioms and replay the exported proof in the builtin kernel.
@@ -28,7 +59,15 @@ On Linux, set `COMPARATOR_TOOLS` to a fresh directory, run `install-tools.sh`,
 and run `run-check.sh` on an appropriately prepared systemd host.
 The supplied workflow prepares a disposable GitHub-hosted runner.
 
-The publication sequence is local review, private Linux CI, then public Linux
-CI. Status files must record completed results and exact commits. A failed or
-pending run must never be reported as passing. Historical development audits
-are kept under `verification/original-audit/` and retain their original scope.
+The 28 October 2026 publication is made without CI at the user’s request.
+The workflow accepts manual dispatch only. If CI is later requested, status files
+must record completed results and exact commits; failed or pending runs must
+not be reported as passing. Historical development audits are kept under
+`verification/original-audit/` and retain their original scope.
+
+The draft uses the standard `FormalConjecturesUtil` import. The standalone
+build compiles a local entry point and the two unchanged official FC attribute
+modules from `FClikelean/vendor/` before compiling the mathematical statement.
+Their sources and commit are pinned in `FClikelean/vendor-lock.json`; input
+checks distinguish those upstream sources from the local entry point.
+The complete upstream FC linter suite is not run by this checker.

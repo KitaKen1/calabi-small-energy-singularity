@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "command": "lake env lean CalabiSmallEnergy.lean",
+  "working_directory": "FClikelean",
+  "exit_code": 0,
+  "seconds": 30.39,
+  "source_sha256": "adfa39dff6d06fb29e66e67a14bf7a9f4f33abcfcfb8c81f92917d54400861b5",
+  "noncomment_lean_code_unchanged": true,
+  "matches_independent_reference": true,
+  "intended_statement_holes": 2,
+  "remote_actions_performed": false,
+  "reference_style": "https://github.com/KitaKen1/qubit-strong-additivity/blob/main/FClikelean/QubitHolevoAdditivity.lean"
+}

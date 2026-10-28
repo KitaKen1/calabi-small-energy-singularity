@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "command": "lake build CalabiSmallEnergy",
+  "project": "FClikelean",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "dd52472991f0527e81321dab732a9005561349be77c20a06cf0bf806d0cf822c",
+    "FClikelean/lakefile.lean": "b751234bb0020a2c843a121efa4a2b1e0e536efe4c2c24aee1950f7017ecd180",
+    "FClikelean/vendor-lock.json": "3a5f85b503671e3bc525ded5296f51c1f1de607d6faa8a9fd4e14fe4aa095ba6"
+  },
+  "expected_statement_placeholders": 3
+}

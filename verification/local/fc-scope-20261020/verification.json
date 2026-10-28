@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proofs of both target iff statements",
+  "axioms": {
+    "CalabiFCDraftCheck.main_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.energy_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "equivalence",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "caee163a67cb13c117542b74e1189f7ade3e3be78b0b72e557f155653819b9fb",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "eb1c7ea61285aa8dd977d9328dbe075f1cd0eec6c180a97696934b8a7b024f92",
+    "lean/comparator/fc-draft-equivalence.lean.in": "116f2f3c06b1967fae223851a4008778adf639e4e5678e5f42af66a614642c96"
+  },
+  "seconds": 50.62
+}

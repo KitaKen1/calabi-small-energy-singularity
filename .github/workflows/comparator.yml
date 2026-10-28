@@ -1,9 +1,7 @@
 name: Calabi theorem verification
 
+# Automatic CI is disabled for this publication at the user's request.
 on:
-  push:
-    branches: [main]
-    paths: ['lean/**', 'leanWithoutComparator/**', 'FClikelean/**', '.github/workflows/comparator.yml']
   workflow_dispatch:
 
 permissions:
@@ -35,8 +33,8 @@ jobs:
       - name: Build proof, ordinary entry point and transitive axiom audit
         run: bash comparator/build-proof.sh
         working-directory: lean
-      - name: Compile the exact standalone draft against the pinned Mathlib
-        run: lake env lean ../FClikelean/CalabiSmallEnergy.lean > ../build-receipt/fc-draft.log 2>&1
+      - name: Compile the standalone draft and prove the CP7 consequence
+        run: lake env python3 comparator/check-fc-draft.py --receipt-dir ../build-receipt/fc-draft
         working-directory: lean
       - uses: actions/cache/save@v4
         with:

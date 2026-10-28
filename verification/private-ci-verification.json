@@ -1,0 +1,36 @@
+{
+  "status": "CANCELLED",
+  "repository": "KitaKen1/calabi-small-energy-singularities",
+  "phase": "private",
+  "visibility_at_start": "private",
+  "tested_commit": "b9465fa781c8cf12697e29a8d666dc43b79d2b8b",
+  "run_id": 39035916427,
+  "run_attempt": 1,
+  "run_url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427",
+  "workflow_conclusion": "cancelled",
+  "all_required_jobs_passed": false,
+  "created_at": "2026-10-17T13:16:57Z",
+  "updated_at": "2026-10-17T14:17:16Z",
+  "jobs": [
+    {
+      "id": 117405530223,
+      "name": "build",
+      "conclusion": "success",
+      "url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427/job/117405530223"
+    },
+    {
+      "id": 117415027335,
+      "name": "comparator",
+      "conclusion": "cancelled",
+      "url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427/job/117415027335"
+    },
+    {
+      "id": 117415027372,
+      "name": "replay",
+      "conclusion": "cancelled",
+      "url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427/job/117415027372"
+    }
+  ],
+  "recorded_at_utc": "2026-10-17T14:17:31.685363+00:00",
+  "reason": "The agent started this run prematurely before the user reviewed the local contents. The user corrected the sequence; the agent cancelled the run. This is not a proof failure or a successful CI receipt."
+}

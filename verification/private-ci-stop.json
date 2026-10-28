@@ -1,0 +1,11 @@
+{
+  "id": 39035916427,
+  "head_sha": "b9465fa781c8cf12697e29a8d666dc43b79d2b8b",
+  "status": "completed",
+  "conclusion": "cancelled",
+  "updated_at": "2026-10-17T14:17:16Z",
+  "html_url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427",
+  "private": true,
+  "stop_reason": "Started prematurely before user local content review; cancellation and force-cancellation requested following user correction.",
+  "public_push_performed": false
+}

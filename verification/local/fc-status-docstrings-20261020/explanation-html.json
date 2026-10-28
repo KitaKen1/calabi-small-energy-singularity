@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "requestedSections": [
+    "statement",
+    "explanation",
+    "lean",
+    "correspondence",
+    "syntax"
+  ],
+  "embeddedLeanByteIdentical": true,
+  "codeLines": 88,
+  "leanSha256": "dd52472991f0527e81321dab732a9005561349be77c20a06cf0bf806d0cf822c",
+  "formulaCount": 1,
+  "localLinksResolve": 8,
+  "externalRequests": [],
+  "scriptErrors": [],
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "codeJump": {
+    "selected": [
+      72
+    ],
+    "visible": true,
+    "scrollTop": 1320,
+    "paneTop": 263.765625
+  },
+  "copyButton": "PASS",
+  "clearHighlight": "PASS",
+  "screenshots": "/private/tmp/calabi-fc-explain-status-docstrings-qa",
+  "html_file": "\u4eba\u9593\u7406\u89e3\u7528/FClikeleanExplainv2.html",
+  "html_sha256": "08d366db86a7b7ee4bad2686d84668f787bb2c209ee5b613af8a1615a2c17f7a"
+}

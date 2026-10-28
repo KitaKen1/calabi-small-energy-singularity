@@ -1,0 +1,43 @@
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-definition-trim-20261020/FCDraftImplication.lean:46:4: error: unsolved goals
+T : ℝ
+F : ℝ → (Fin 8 → ℂ) → ℝ
+hs : ContDiffOn ℝ ∞ (fun p => F p.1 p.2) (Ico 0 T ×ˢ {v | v ≠ 0})
+hk :
+  ∀ t ∈ Ico 0 T,
+    (∀ (c : ℂ) (v : CalabiFC.Hom 7), c ≠ 0 → F t (c • v) = F t v) ∧
+      ∀ (j : Fin (7 + 1)) (Z a : CalabiFC.Aff 7),
+        a ≠ 0 → 0 < (CalabiFC.levi ((fun t j Z => Real.log (1 + ‖Z‖ ^ 2) + F t (CalabiFC.chart j Z)) t j) Z a a).re
+hf :
+  ∀ t ∈ Ico 0 T,
+    ∀ (Z : CalabiFC.Aff 7),
+      HasDerivWithinAt (fun s => F s (CalabiFC.chart 0 Z))
+        (CalabiFC.scal ((fun t j Z => Real.log (1 + ‖Z‖ ^ 2) + F t (CalabiFC.chart j Z)) t 0) Z - ↑7 * (↑7 + 1))
+        (Ico 0 T) t
+a✝ : ℝ
+⊢ (0 ≤ a✝ →
+      a✝ < T →
+        ∀ (Z : Aff), HasDerivWithinAt (fun s => F s (Fin.cons 1 Z.ofLp)) (scal (pot (F a✝) 0) Z - 56) (Ico 0 T) a✝) ↔
+    0 ≤ a✝ →
+      a✝ < T →
+        ∀ (Z : CalabiFC.Aff 7),
+          HasDerivWithinAt (fun s => F s (Fin.cons 1 Z.ofLp))
+            (scal (fun Z => Real.log (1 + ‖Z‖ ^ 2) + F a✝ (Fin.cons 1 Z.ofLp)) Z - 56) (Ico 0 T) a✝
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-definition-trim-20261020/FCDraftImplication.lean:51:4: error: unsolved goals
+T : ℝ
+F : ℝ → (Fin 8 → ℂ) → ℝ
+h : IsCalabiFlow T F
+a✝ : ℝ
+⊢ (0 ≤ a✝ →
+      a✝ < T →
+        ∀ (Z : CalabiFC.Aff 7),
+          HasDerivWithinAt (fun s => F s (Fin.cons 1 Z.ofLp))
+            (scal (fun Z => Real.log (1 + ‖Z‖ ^ 2) + F a✝ (Fin.cons 1 Z.ofLp)) Z - 56) (Ico 0 T) a✝) ↔
+    0 ≤ a✝ →
+      a✝ < T →
+        ∀ (Z : Aff), HasDerivWithinAt (fun s => F s (Fin.cons 1 Z.ofLp)) (scal (pot (F a✝) 0) Z - 56) (Ico 0 T) a✝
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-definition-trim-20261020/FCDraftImplication.lean:65:4: warning: Try `simp at hh` instead of `simpa using hh`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'CalabiFCDraftCheck.reference_implies_calabi_flow' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.flow_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.reference_implies_seven' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

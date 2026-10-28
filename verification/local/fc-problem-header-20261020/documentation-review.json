@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Documentation-only edit: module introduction states the Calabi-flow long-time existence question; the CP7 source citation is in its theorem docstring.",
+  "source_sha256": "5745b28f9c11e4faee83c884b67a7ac32ad946087b4724d12bad777dd0f23aff",
+  "previous_source_sha256": "916cd5a4b4b2f74ff7b653b2fa39ead0c5b24628665a526d273aae2fed79c0b6",
+  "lean_code_unchanged": true,
+  "theorem_types_unchanged": true,
+  "previous_kernel_receipt": "verification/local/fc-oai-variant-20261020/verification.json",
+  "normalized_lean_code_sha256": "4be54048423b1cec5e34cda56c71e0cd5345d8428ca70af44d2b64baf03424e6"
+}

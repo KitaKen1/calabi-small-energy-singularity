@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "target_scope": "OpenAI CP10 counterexample and the CP7 variant only.",
+  "target_names": [
+    "calabi_flow",
+    "calabi_flow.variants.dimension_seven"
+  ],
+  "general_conjecture_target_removed": true,
+  "general_metric_and_global_flow_definitions_removed": true,
+  "five_projective_definitions_unchanged": true,
+  "format": "answer(False) \u2194 CalabiFlowConjecture n",
+  "proof_scope": "CP7 variant linked to the independent small-energy reference; CP10 statement only.",
+  "source_sha256": "916cd5a4b4b2f74ff7b653b2fa39ead0c5b24628665a526d273aae2fed79c0b6"
+}

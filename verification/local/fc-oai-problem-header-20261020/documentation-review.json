@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "Documentation only: explicitly attributes the negative resolution of the stated long-time existence question to OAI26 and identifies its CP10 Fubini\u2013Study counterexample.",
+  "source_sha256": "6a76ad53ee2fabd031cd816d4a236210d9ffdea459756b56a134908fbd4517be",
+  "previous_source_sha256": "5745b28f9c11e4faee83c884b67a7ac32ad946087b4724d12bad777dd0f23aff",
+  "lean_code_unchanged": true,
+  "theorem_types_unchanged": true,
+  "previous_kernel_receipt": "verification/local/fc-oai-variant-20261020/verification.json"
+}

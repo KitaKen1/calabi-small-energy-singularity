@@ -30,7 +30,7 @@ Primary target: `CalabiFC.small_energy_singularity` in `Challenge.lean` and
 ## Boundaries of this check
 
 All target definitions are fixed, without definition holes, and import only
-Mathlib. Only the two challenge theorem proofs and the corresponding draft
+Mathlib. Only the two challenge theorem proofs and the two FC draft theorem
 proofs contain intended holes. No such holes are admitted in the solution.
 Comparator checks types and their dependent definitions against this independent
 reference. The correspondence review is necessary because Lean and Comparator
@@ -39,3 +39,55 @@ do not check the interpretation of natural-language text.
 The unchanged PDF retains its original maximal-flow wording. The README states
 the exact formal result and discloses the additional smooth-uniqueness step.
 No claim is made that every intermediate proof follows the manuscript's route.
+
+## OpenAI counterexample and seven-dimensional variant
+
+`FClikelean/CalabiSmallEnergy.lean` has two targets:
+
+- `CalabiFC.calabi_flow`: `answer(False) ↔ CalabiFlowConjecture 10`, the cited
+  OpenAI counterexample.
+- `CalabiFC.calabi_flow.variants.dimension_seven`:
+  `answer(False) ↔ CalabiFlowConjecture 7`, the present variant.
+
+`CalabiFlowConjecture n` asks for extension of every finite-interval smooth
+Calabi flow in the Fubini–Study class of CPⁿ, agreeing throughout its original
+interval. The file is restricted to these projective counterexamples. It does
+not state the original conjecture for arbitrary Kähler manifolds.
+
+The CP10 theorem is checked as a statement only; the OpenAI proof is not
+included in local certification. For the CP7 variant, `check-fc-draft.py` proves
+an implication from the independent small-energy reference, with only
+`propext`, `Classical.choice` and `Quot.sound`. The small-energy, symmetry and
+common Sobolev bounds are stronger conclusions in the independent targets.
+A further kernel-checked corollary gives `¬ ∀ n, CalabiFlowConjecture n`.
+
+The bridge uses the Calabi equation at the origin. A smooth extension makes
+the time derivative of its potential continuous there. On the original
+interval this derivative equals `S - 56`, so `sqrt(T - t) * S` would tend to
+zero. The reference theorem gives its limit as a positive number. No uniqueness
+of flows from initial data is needed for this extension contradiction.
+
+The FC flow predicate uses the initial-form normalization of [OAI26], equation
+(1.1): `ωₜ t = ω₀ + ddbar (φ t)`, `φ 0 = 0`, positivity and the Calabi equation.
+`Form` is local coefficient data; `IsKahlerForm` requires a positive form of the
+shape `fubiniStudy n + ddbar f`, where `f` is a smooth projective function.
+For CP7, `flow_iff` proves equivalence with the unchanged reference after
+choosing this `f` and writing `F t = f + φ t`. Conversely,
+`flow_from_reference` sets `f = F 0` and `φ t = F t - F 0`.
+The bridge proves linearity of the complex Hessian on smooth functions,
+preservation of the metric coefficients and scalar curvature, joint and slice
+smoothness, positivity, and the time derivative under this change.
+The normalized extension keeps the same initial form.
+
+This is an equivalence of the two coordinate descriptions. The equation is
+still imposed on chart zero, with smoothness and positivity on all charts.
+A full equivalence with an intrinsic manifold/differential-form development,
+including coordinate invariance and extension from the dense chart, is not
+kernel-certified here. Both descriptions specialize the original equation to
+CPn in the Fubini–Study class; neither formalizes arbitrary Kähler manifolds.
+
+Both problem-file proof bodies are intentional placeholders. The category and
+AMS attributes are metadata and do not enter the mathematical target types or
+axiom audit. `answer(False) ↔ P` is equivalent to `¬ P`, which is also checked
+in the Lean kernel. Historical three-theorem receipts preserve their original
+scope; their `calabi_flow` types differ from the current CP10 target.

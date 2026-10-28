@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proof: independent small-energy reference implies the CP7 counterexample and projective extension failure",
+  "axioms": {
+    "CalabiFCDraftCheck.negative_answer_iff": [],
+    "CalabiFCDraftCheck.flow_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_projective_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-answer-syntax",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-answer",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-AMS",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-metadata-Basic",
+      "exit_code": 0
+    },
+    {
+      "name": "fc-entrypoint",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "implication",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "916cd5a4b4b2f74ff7b653b2fa39ead0c5b24628665a526d273aae2fed79c0b6",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "c1428c8a802001a3b28e64ac4ebd957ecc555311041b6146bc111a25c20e6a4b",
+    "lean/comparator/fc-draft-equivalence.lean.in": "af438933fa6466cc5558519d7d8dc48a6cb580aa4bdfe38478090386d5d26f95",
+    "FClikelean/vendor-lock.json": "5cc0e330c428452507e1e1991510ad47f415ab0817d590733b7ba3b5515ee64a",
+    "FClikelean/vendor/FormalConjecturesUtil/Answer/Syntax.lean": "4572fc294df840c091b79350951760f742eb26f890b48cd329a19995a1e2344c",
+    "FClikelean/vendor/FormalConjecturesUtil/Answer.lean": "1c942303a43be1add611dc8ab6d94563e8834fb7128482b1c969fe314b949724",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
+    "FClikelean/vendor/FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
+    "FClikelean/vendor/FormalConjecturesUtil.lean": "3d1edfbe4f1a8b23c6cfdcf3934585697f3cedff8b5dd429d06a88f626d47d70"
+  },
+  "fc_draft_targets": [
+    "CalabiFC.calabi_flow",
+    "CalabiFC.calabi_flow.variants.dimension_seven"
+  ],
+  "verified_targets": [
+    "CalabiFC.calabi_flow.variants.dimension_seven"
+  ],
+  "verified_corollaries": [
+    "Not every CPn satisfies CalabiFlowConjecture n"
+  ],
+  "unverified_targets": {
+    "CalabiFC.calabi_flow": "Statement only; OpenAI source proof is not included in this verification."
+  },
+  "scope": "Both statements compile. The CP7 variant and projective extension corollary follow from the reference. The main CP10 theorem is statement only; the OpenAI proof is not included.",
+  "seconds": 38.25
+}

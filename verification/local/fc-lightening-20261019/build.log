@@ -1,0 +1,5 @@
+✔ [2630/2632] Built CalabiSmallEnergy.Geometry (17s)
+⚠ [2631/2632] Built CalabiSmallEnergy (5.6s)
+warning: CalabiSmallEnergy.lean:33:8: declaration uses `sorry`
+warning: CalabiSmallEnergy.lean:48:8: declaration uses `sorry`
+Build completed successfully (2632 jobs).

@@ -1,0 +1,6 @@
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/calabi特異点/githubpublication/verification/local/fc-three-theorems-20261020/FCDraftImplication.lean:75:4: warning: Try `simp at hh` instead of `simpa using hh`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'CalabiFCDraftCheck.reference_implies_calabi_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.flow_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.reference_implies_seven' depends on axioms: [propext, Classical.choice, Quot.sound]

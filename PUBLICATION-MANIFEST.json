@@ -10,7 +10,7 @@
   ],
   "verification": {
     "local_review": "COMPLETED_WITH_SCOPE_LIMITATION",
-    "private_ci": "RUNNING",
+    "private_ci": "CANCELLED",
     "public_ci": "NOT_RUN",
     "local_compilation": "PASS",
     "local_statement_comparison": "PASS",
@@ -18,9 +18,44 @@
     "local_fresh_kernel_replay": "PASS",
     "private_ci_run_id": 39035916427,
     "private_ci_run_url": "https://github.com/KitaKen1/calabi-small-energy-singularities/actions/runs/39035916427",
-    "private_ci_build": "PASS"
+    "private_ci_build": "PASS",
+    "fc_draft_compilation": "PASS",
+    "fc_draft_cp7_implication": "PASS",
+    "fc_draft_cp10_proof": "NOT_INCLUDED",
+    "fc_full_upstream_linter_suite": "NOT_RUN",
+    "fc_draft_standalone_build": "PASS",
+    "fc_draft_projective_corollary": "PASS",
+    "fc_draft_answer_equivalence": "PASS",
+    "fc_draft_flow_normalization": "PASS"
   },
   "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized.",
   "private_ci_repository": "KitaKen1/calabi-small-energy-singularities",
-  "original_public_manuscript_commit": "516d623b1351033d555cbafdf97132a843ca3431"
+  "original_public_manuscript_commit": "516d623b1351033d555cbafdf97132a843ca3431",
+  "publication_stage": "PUBLIC_LEAN_PROOF_RELEASE_WITHOUT_CI",
+  "user_review_required_before_private_ci": true,
+  "remote_action_note": "On 28 October 2026 the user authorized publication of the current Lean proof without CI. The historical private CI attempt was cancelled; it does not certify this release. The workflow accepts manual dispatch only.",
+  "fc_draft_targets": [
+    "CalabiFC.calabi_flow",
+    "CalabiFC.calabi_flow.variants.dimension_seven"
+  ],
+  "fc_draft_proof_scope": {
+    "CalabiFC.calabi_flow": "CP10 statement only; cited OpenAI proof not included.",
+    "CalabiFC.calabi_flow.variants.dimension_seven": "Kernel-checked consequence of the independent small-energy reference."
+  },
+  "fc_draft_metadata": {
+    "category": "research solved",
+    "AMS": [
+      53,
+      58
+    ],
+    "upstream_attribute_commit": "c6f4b4bdab8fdabb19191a8a1648be21b81253b0",
+    "answer_format": "answer(False) ↔ positive question",
+    "upstream_answer_commit": "df32117054f5f230e6d2be989d882d9f88b75255"
+  },
+  "fc_draft_receipt": "verification/local/fc-original-equation-20261020/verification.json",
+  "fc_draft_documentation_receipt": "verification/local/fc-original-equation-20261020/documentation-review.json",
+  "fc_draft_flow_representation": "Initial form omega0, omega(t)=omega0+ddbar(phi(t)), phi(0)=0, positivity and the Calabi equation; CP7 coordinate equivalence with the fixed-Fubini–Study reference is kernel-checked.",
+  "publication_date": "2026-10-28",
+  "publication_authorization": "The user explicitly requested uploading the current Lean proof to KitaKen1/calabi-small-energy-singularity, with no CI.",
+  "automatic_ci": "DISABLED_MANUAL_DISPATCH_ONLY"
 }

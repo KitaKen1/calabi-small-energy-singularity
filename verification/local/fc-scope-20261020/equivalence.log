@@ -1,0 +1,2 @@
+'CalabiFCDraftCheck.main_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFCDraftCheck.energy_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]

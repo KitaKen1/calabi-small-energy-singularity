@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proof: independent small-energy reference implies the CP7 counterexample",
+  "axioms": {
+    "CalabiFCDraftCheck.flow_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFCDraftCheck.reference_implies_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "implication",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "02f90a2e7a7dc48aa703938d19cfaa314afc138551b04aab882689083dcb9ace",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "154db4f554f11a28d40a400c9bbe5ef89d1a8ad6c3c0b758f7d972e98d1752a4",
+    "lean/comparator/fc-draft-equivalence.lean.in": "c991d59972f1577f5cc7e005eca751b09d114dc1c4b00b22fb540be6eaae8dfb"
+  },
+  "fc_draft_targets": [
+    "CalabiFC.calabi_flow_dimension_ten",
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "verified_targets": [
+    "CalabiFC.calabi_flow_dimension_seven"
+  ],
+  "unverified_targets": {
+    "CalabiFC.calabi_flow_dimension_ten": "Statement only; OpenAI source proof is not included in this verification."
+  },
+  "scope": "Both statements compile; only the CP7 implication is proved.",
+  "seconds": 21.72
+}

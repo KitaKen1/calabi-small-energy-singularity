@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "command": [
+    "lake",
+    "build"
+  ],
+  "working_directory": "FClikelean",
+  "source_sha256": "0cbfb4f8c8fd81bda3c2e5ef702671d30157e9b026dc2fdb3effb3ecc3c85925",
+  "note": "Build output recorded from the successful local tool result; two intended FC statement placeholders warn about sorry."
+}

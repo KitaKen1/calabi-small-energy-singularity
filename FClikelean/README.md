@@ -1,20 +1,41 @@
-# Standalone Formal Conjectures style draft
+# Finite-time singularities of Calabi flow
 
-`CalabiSmallEnergy.lean` fixes the geometric definitions and states the primary
-small-energy singularity target and its energy specialization. The only holes
-are the two intended theorem proofs. The mathematical definitions and theorem
-bodies are identical to the independently checked Comparator reference.
+[`CalabiSmallEnergy.lean`](CalabiSmallEnergy.lean) contains two theorem statements:
+
+1. `calabi_flow`: OpenAI’s counterexample on `CP¹⁰` [OAI26].
+2. `calabi_flow.variants.dimension_seven`: the present seven-dimensional variant [Ki26].
+
+Both use `answer(False) ↔ CalabiFlowConjecture n`. The predicate asks whether
+every smooth Calabi flow in the Fubini–Study class of `CPⁿ` extends past each
+finite endpoint, agreeing throughout its original interval. Dimension means
+complex dimension. The file concerns these projective counterexamples; it does
+not formalize the original conjecture on arbitrary Kähler manifolds.
+
+The flow definition follows equation (1.1) of [OAI26] explicitly: an initial
+form `ω₀`, `ωₜ t = ω₀ + ddbar (φ t)`, the condition `φ 0 = 0`, positivity,
+and `∂ₜφ = scal (ωₜ t) - S_avg`. Here `S_avg = n * (n + 1)` in the fixed class.
+`Form` stores local coefficients; `IsKahlerForm` requires a compatible smooth
+positive form `fubiniStudy n + ddbar f`. The spatial operator `ddbar` uses the
+actual complex Hessian `levi`. All definitions stay in one file, with one
+`public import FormalConjecturesUtil`.
+
+The two FC theorem bodies are intentional `sorry` placeholders. The CP10 proof
+is cited from OpenAI and is not included in this repository’s verification.
+The stronger CP7 small-energy theorem is proved in
+[`lean/FCSolution.lean`](../lean/FCSolution.lean).
+[`check-fc-draft.py`](../lean/comparator/check-fc-draft.py) proves in the Lean
+kernel that the independent small-energy reference implies the CP7 variant,
+and consequently `¬ ∀ n, CalabiFlowConjecture n`. It also checks that the
+initial-form and fixed-Fubini–Study descriptions agree under the change
+`ω₀ = ω_FS + ddbar (F 0)`, `φ t = F t - F 0`. See the
+[correspondence notes](../lean/comparator/TARGET-CORRESPONDENCE.md).
+
+The standalone entry point imports the needed Mathlib modules and the unchanged
+official FC category/AMS and `answer` implementations. The user-requested
+`answer(False)` format uses the official implementation from before FC’s
+2026-10-15 migration, pinned separately in `vendor-lock.json`. The full upstream
+FC linter suite is not part of this local check.
 
 ```sh
-lake exe cache get
 lake build
 ```
-
-This directory is a proposed statement-only draft. It is not an accepted or
-submitted upstream Formal Conjectures entry, and it does not claim compatibility
-with an untested FC checkout. It uses the same pinned Lean 4.34.1 and Mathlib
-as the complete proof. The completed proofs are in `../lean/FCSolution.lean`.
-See `../lean/comparator/TARGET-CORRESPONDENCE.md` for the maximal-flow limitation.
-
-The [pinned completed proof source](https://github.com/KitaKen1/calabi-small-energy-singularity/blob/b9465fa781c8cf12697e29a8d666dc43b79d2b8b/lean/FCSolution.lean) fixes the exact proof version used for the private Linux checks.
-Its mathematical Lean sources are preserved in the public repository history.

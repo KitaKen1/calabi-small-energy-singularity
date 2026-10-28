@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "method": "Lean kernel proof of the FC target iff statement",
+  "axioms": {
+    "CalabiFCDraftCheck.main_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "steps": [
+    {
+      "name": "reference-build",
+      "exit_code": 0
+    },
+    {
+      "name": "draft-build",
+      "exit_code": 0
+    },
+    {
+      "name": "equivalence",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "FClikelean/CalabiSmallEnergy.lean": "292e998326f89f41182ed967b5b002ecf59baddb3c7018ec79019beb637e34d9",
+    "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+    "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+    "lean/comparator/check-fc-draft.py": "cf280caa05a2d536ed812bd4050b75363044f078bca967c934ff4e02b592594d",
+    "lean/comparator/fc-draft-equivalence.lean.in": "d41de8082545ef9bd673e29d4ac11ebeb3300c8b3c9e16f38f0dfcd1e6c55aa1"
+  },
+  "fc_draft_targets": [
+    "CalabiFC.small_energy_singularity"
+  ],
+  "seconds": 47.83
+}

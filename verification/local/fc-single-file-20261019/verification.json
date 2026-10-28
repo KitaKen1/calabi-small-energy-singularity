@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "command": "lake build",
+  "working_directory": "FClikelean",
+  "exit_code": 0,
+  "seconds": 24.46,
+  "source_sha256": "d4d1614aa4b13097618c22148ef716544a52f2bc874ce24c51828a022058da8d",
+  "source_files": [
+    "FClikelean/CalabiSmallEnergy.lean"
+  ],
+  "imports": [
+    "Mathlib.Analysis.SpecialFunctions.Sqrt",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.Basic",
+    "Mathlib.MeasureTheory.Measure.WithDensity",
+    "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace"
+  ],
+  "matches_independent_reference": true,
+  "intended_statement_holes": 2,
+  "remote_actions_performed": false,
+  "local_readme_links_resolve": true
+}

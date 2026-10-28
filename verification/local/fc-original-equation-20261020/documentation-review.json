@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "leanSha256": "0cbfb4f8c8fd81bda3c2e5ef702671d30157e9b026dc2fdb3effb3ecc3c85925",
+  "files": [
+    {
+      "file": "IsCalabiFlowLeanVSoriginal.html",
+      "sourceBlocksExact": 12,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "closed"
+        },
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "open"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "closed"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "open"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "closed"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "open"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "closed"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "open"
+        }
+      ],
+      "localLinksResolve": true
+    },
+    {
+      "file": "IsCalabiFlow.html",
+      "sourceBlocksExact": 1,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "closed"
+        },
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "open"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "closed"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "open"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "closed"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "open"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "closed"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "open"
+        }
+      ],
+      "localLinksResolve": true
+    },
+    {
+      "file": "CalabiFlowConjecture.html",
+      "sourceBlocksExact": 1,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "closed"
+        },
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "open"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "closed"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "open"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "closed"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "open"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "closed"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "open"
+        }
+      ],
+      "localLinksResolve": true
+    },
+    {
+      "file": "OriginalVSLean.html",
+      "sourceBlocksExact": 4,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "closed"
+        },
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "open"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "closed"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "open"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "closed"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "open"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "closed"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "open"
+        }
+      ],
+      "localLinksResolve": true
+    },
+    {
+      "file": "Def解説.html",
+      "sourceBlocksExact": 3,
+      "layouts": [
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "closed"
+        },
+        {
+          "width": 1280,
+          "scrollWidth": 1280,
+          "details": "open"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "closed"
+        },
+        {
+          "width": 800,
+          "scrollWidth": 800,
+          "details": "open"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "closed"
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "details": "open"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "closed"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "details": "open"
+        }
+      ],
+      "localLinksResolve": true
+    }
+  ],
+  "scriptErrors": [],
+  "externalRequests": [],
+  "checked_on": "2026-10-20",
+  "scope": "Five current explanatory HTML files match the normalized initial-form Lean source; visual inspection of desktop flow and mobile correspondence pages completed. Source comparison is mathematical review, not a kernel proof of intrinsic geometry.",
+  "original_source": {
+    "file": "人間理解用/参考資料/OAI26-Calabi-flow.pdf",
+    "sha256": "486e9e5ff47e92a4db90c7904eb5842085de78f02f825f5b68bcc5bd2719f25d",
+    "pages_reviewed": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "equations": [
+      "1.1",
+      "2.4",
+      "2.6"
+    ]
+  },
+  "files_sha256": {
+    "人間理解用/IsCalabiFlowLeanVSoriginal.html": "cda1957d7c969123bac817eff7f0d87457d66b7349bb8d336cc934015ff9b011",
+    "人間理解用/IsCalabiFlow.html": "1877eb7be2f8e842dbf1f929caffe8bb09da84ffb6c4b3e3742b7262493fa7e3",
+    "人間理解用/CalabiFlowConjecture.html": "eff969bca717c3d3a9f6c6b760bfee0c2a83b565ed39c7fd9a5e23636fd9e45b",
+    "人間理解用/OriginalVSLean.html": "de5a7c205974c46df4cb34794e6230aa8e28acd17972f2a17a97595750c7f52e",
+    "人間理解用/Def解説.html": "88f94d106d8c9795dce1bdf8ae03399024030a60194883a31e49117e902051dd"
+  },
+  "normalization": {
+    "initial_form": "omega0 = omega_FS + ddbar (F 0)",
+    "potential": "phi t = F t - F 0",
+    "kernel_receipt": "verification.json",
+    "preserves": [
+      "metric coefficients",
+      "scalar curvature",
+      "positivity",
+      "smoothness",
+      "Calabi equation",
+      "smooth extensions"
+    ],
+    "formal_scope": "CP7 coordinate descriptions; intrinsic manifold/differential-form equivalence not included."
+  }
+}

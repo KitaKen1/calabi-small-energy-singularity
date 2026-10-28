@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "tested_commit": "db7dd9731c4e6243a41438e19e44676bf304c249",
+  "targets": [
+    "CalabiFC.small_energy_singularity",
+    "CalabiFC.small_calabi_energy"
+  ],
+  "original_closure_modules": 448,
+  "original_closure_digest": "f8d3e3a9e4db28dcdbe0f4c063d05dde00935b3cbe7253d76c3434b881690dda",
+  "identical_shared_sources": 466,
+  "fixed_reference_definitions": true,
+  "fc_draft_matches_reference": true,
+  "pins": {
+    "publication_repository": "KitaKen1/calabi-small-energy-singularity",
+    "reference_repository": "KitaKen1/entropic-rogers-shephard",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "upstream_source_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "comparator_commit": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "lean4export_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "toolchain_patch": {
+      "upstream": "leanprover/lean4:v4.34.0",
+      "build": "leanprover/lean4:v4.34.1",
+      "changed_files": [
+        "lean-toolchain"
+      ]
+    },
+    "targets": [
+      "CalabiFC.small_energy_singularity",
+      "CalabiFC.small_calabi_energy"
+    ],
+    "reference_status": "Local fixed mathematical reference; not an accepted upstream Formal Conjectures target.",
+    "files_sha256": {
+      ".github/workflows/comparator.yml": "80e93c921caada2c749157bc1b9c875371ec6a8a192343922e9f454e6fd9327d",
+      "FClikelean/CalabiSmallEnergy.lean": "adfa39dff6d06fb29e66e67a14bf7a9f4f33abcfcfb8c81f92917d54400861b5",
+      "FClikelean/lakefile.lean": "4b48567cdefa91f2d5f708bf92e2d6428ca33f1bc5b032fee03a4d1104d37a78",
+      "PDF/calabi-small-energy.pdf": "b6177c3f0d0a14e126eacb785fc982f1764e5824dd10f4d39e158b6e680a61f3",
+      "PDF/calabi-small-energy.pdf.ots": "52f67e140299f7a55316070f2a82055b6f0f35878771de757e57273e567212f0",
+      "lean/Challenge.lean": "566e831db1d3ab06cbead95b9b9f95f7e51cbe9539cbff33563d0371441c4ba0",
+      "lean/FCAudit.lean": "2ab327ce5628df860d9c046956f59857d81bdd861a12f188ea660befadc56e05",
+      "lean/FCSolution.lean": "45a7ca75a6806a3db966ce90ae4852f4aa709f116b18d9ec963312e576eb7a3a",
+      "lean/FCTargetDefinitions.lean": "a1f2d2f594dc901d723d0372424b00ea2023c23db5aeeb7d2110bdd892d08a2f",
+      "lean/comparator.json": "acf6a3c76903e3bf3874606d57fbd44630d578cc892f6f9d3a02beb22befd4aa",
+      "lean/comparator/add-swap.sh": "560dbc6aa8f8039264fd7bd1715cde5ba338486a3e675ea23f352e9fcf8680ae",
+      "lean/comparator/archive-run.py": "c24e6b825446b5c8d66cb167fae60df16327a5418e432805222bceec78145cc1",
+      "lean/comparator/build-proof.sh": "275b0a619f1486b343fb58ab3c971a2ff9ac82d57f59d78fb55fec6fd0e47c5b",
+      "lean/comparator/check-axioms.py": "bf33794915886a5c2a27f2a678f1538afe3befbdd1c2f92959544bcf96927f42",
+      "lean/comparator/check-inputs.py": "373fc199a610565a5bd50d6014c6aa9ff28e1a37655f32e4817982984c8c3719",
+      "lean/comparator/install-tools.sh": "50a87ab7a620d7e2321b9e45af63b6a920cb2ea84f8874689d5b903a961a6e8e",
+      "lean/comparator/prepare-runner.sh": "5d12f8901bf6f289f828ffc28dc6c91739e08feabfb0026a37d257990eb99506",
+      "lean/comparator/proof-source-manifest.json": "4dd2dc462adbf988f66c3d7182c4508f02f8ebf967951b22c33cfb3afc023ab3",
+      "lean/comparator/run-check.sh": "79d9af3024350437bdb166928d7ea9b763af93a5e2aab351878f2d4ac91ba18f",
+      "lean/comparator/shared-proof-sources.json": "048f2a979f7502e1af887e87f27dfac2113a2a14245163f53854b92762994cd9",
+      "lean/lake-manifest.json": "244133c6d11cf283995bf858c172ee5bc6d674fc8fe5e03d43e8de4bba7bb328",
+      "lean/lakefile.lean": "ca8a6101f3e265f57149ef146ff5398c964c52fb2bdeccd7cda5c30aba7228f2",
+      "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "leanWithoutComparator/lakefile.lean": "543305617668247253105e8149b90727efbc8e23c9f09a70510eb0a1ee6c6330",
+      "README.md": "6ef1ea64b64dd7e57af0e50e89a3a557490e0bcc66e3887aa2424fa6d71ac6f2",
+      "lean/comparator/TARGET-CORRESPONDENCE.md": "0bc4ec59db29bdb4fed3fe5566a0c880a5701905d23c74f3fefa6f1c9498d9b8",
+      "FClikelean/README.md": "2760d490a99115c2d1c6025a8b2f9ad80658af321b8db213d251bc4c6c4ddfeb"
+    },
+    "private_repository": "KitaKen1/calabi-small-energy-singularities"
+  },
+  "config": {
+    "challenge_module": "Challenge",
+    "solution_module": "FCSolution",
+    "enable_nanoda": false,
+    "theorem_names": [
+      "CalabiFC.small_energy_singularity",
+      "CalabiFC.small_calabi_energy"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}
