@@ -1,5 +1,7 @@
 # Lean proof of small-energy finite-time singularities of Calabi flow
 
+[![Lean proof](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml/badge.svg)](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
+
 The manuscript [*Small-energy finite-time singularities of Calabi flow*](PDF/calabi-small-energy.pdf#page=1)
 considers Calabi flow on complex projective seven-space. The result formalized here is:
 
@@ -301,9 +303,11 @@ See the [comparison record](verification/local/comparator-library.json),
 [fresh replay record](verification/local/fresh-replay.json) and
 [statement review](verification/local/statement-review.json).
 
-The Lean proof is published on 28 October 2026 without CI, at the user’s request.
-The workflow accepts manual dispatch only. The historical private CI attempt was
-cancelled, and public CI has not run; neither is recorded as successful certification.
+The public [Lean proof workflow](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
+builds `FCSolution`, `FCAudit` and `Calabi`, then checks the permitted axioms.
+Its result is shown by the badge above. This build is separate from the full
+Comparator and fresh environment replay workflow, which has not run publicly.
+The historical private full-verification attempt was cancelled.
 
 ## Appendix: timeline (AI generated)
 
@@ -321,7 +325,8 @@ $`2\le p<7`$, stays arbitrarily small and one Sobolev constant works throughout.
 ## Appendix: Verification by Lean Comparator on GitHub CI runner
 
 The [workflow](.github/workflows/comparator.yml) can be run manually to build the full proof on Linux.
-Automatic runs on pushes are disabled; no CI is run for this publication.
+Automatic runs on pushes are disabled. The separate [Lean proof build](.github/workflows/lean-proof.yml)
+does not run Comparator or fresh environment replay.
 A separate job compiles the trusted reference before restoring proof products,
 compares dependent definitions in an unprivileged Landrun sandbox, audits permitted
 axioms and requires builtin Lean-kernel acceptance. Another job performs a fresh
@@ -332,7 +337,8 @@ replay of the complete proof environment.
 The workflow retains logs and artifacts for 90 days. The private attempt's build
 succeeded, but the run was [cancelled](verification/private-ci-verification.json)
 before full verification finished. Public CI has not run.
-This release is published without private or public CI, as requested.
+The public Lean proof build is tracked separately by the badge above; this
+full-verification workflow has not been run publicly.
 
 ### Certification After 90 days: archive
 

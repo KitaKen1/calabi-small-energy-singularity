@@ -19,11 +19,12 @@ The original manuscript files `check_identities.py`, `identity-checks.json`,
 original paths. They are historical numerical/manuscript records. The current
 Lean results are in `local/`, the private/public CI records and the CI archives.
 
-Current stage: **Lean proof published without CI on 28 October 2026**, at the
-user’s explicit request. Automatic CI is disabled; the workflow supports manual
-dispatch only. A historical private repository and CI run were started prematurely;
-that run was cancelled and is not a successful private-CI receipt. Public CI has
-not run for this release.
+Current stage: **Lean proof published on 28 October 2026**. The user subsequently
+authorized one public Lean proof build and axiom audit; its status is tracked by
+the [Lean proof workflow](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
+and the README badge. Automatic CI is disabled; both workflows support manual
+dispatch only. The full Comparator and fresh environment replay workflow has
+not run publicly. The historical private full-verification run was cancelled.
 
 The current FC file contains OpenAI’s CP10 counterexample `calabi_flow` and
 the CP7 variant `calabi_flow.variants.dimension_seven`. The

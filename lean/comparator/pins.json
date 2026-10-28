@@ -44,18 +44,19 @@
     "lean/lakefile.lean": "ca8a6101f3e265f57149ef146ff5398c964c52fb2bdeccd7cda5c30aba7228f2",
     "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
     "leanWithoutComparator/lakefile.lean": "543305617668247253105e8149b90727efbc8e23c9f09a70510eb0a1ee6c6330",
-    "README.md": "648662fa48d9b34d7f3b39614e8e3726296b7843d6c4e9249bb7da52ccd94c41",
+    "README.md": "c4dee1fb174a61fa0c30f70e9d984352e46d9fff239a1236df0adff7962bcf02",
     "lean/comparator/TARGET-CORRESPONDENCE.md": "b25186bac32540be58fd37f5130355d5dc9639d2ecfbf58ac4d450014253ae56",
     "FClikelean/README.md": "3ebd80ce447215e8f8523ea7c7180222049306a2a12d1e59f8c26b74671314b8",
     "lean/comparator/check-fc-draft.py": "a0f2955f87248cd849c94be7c4ce0d54fcd6a3ed83919948bd98d03087779043",
     "lean/comparator/fc-draft-equivalence.lean.in": "1bd392d2f875bd6874e94f54396951123f20c3466344cbde92dcf5244496cbfe",
-    "lean/comparator/README.md": "2238b9d9bf87d2e52cf0507de657c52c18b5f4db9c515a9670f68a7bd553da8e",
+    "lean/comparator/README.md": "dac34dcd6e20e52108d5a736a952323e92b41af11e95cff7dd4a384652b7bfa0",
     "FClikelean/vendor-lock.json": "5cc0e330c428452507e1e1991510ad47f415ab0817d590733b7ba3b5515ee64a",
     "FClikelean/vendor/FormalConjecturesUtil.lean": "3d1edfbe4f1a8b23c6cfdcf3934585697f3cedff8b5dd429d06a88f626d47d70",
     "FClikelean/vendor/FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
     "FClikelean/vendor/FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
     "FClikelean/vendor/FormalConjecturesUtil/Answer.lean": "1c942303a43be1add611dc8ab6d94563e8834fb7128482b1c969fe314b949724",
-    "FClikelean/vendor/FormalConjecturesUtil/Answer/Syntax.lean": "4572fc294df840c091b79350951760f742eb26f890b48cd329a19995a1e2344c"
+    "FClikelean/vendor/FormalConjecturesUtil/Answer/Syntax.lean": "4572fc294df840c091b79350951760f742eb26f890b48cd329a19995a1e2344c",
+    ".github/workflows/lean-proof.yml": "8a684dd7c94ea85932fd5a47dac8b41d4df9284ed9377cc3ab59949bf1eb34a5"
   },
   "private_repository": "KitaKen1/calabi-small-energy-singularities",
   "fc_draft_targets": [

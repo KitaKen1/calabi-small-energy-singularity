@@ -59,10 +59,11 @@ On Linux, set `COMPARATOR_TOOLS` to a fresh directory, run `install-tools.sh`,
 and run `run-check.sh` on an appropriately prepared systemd host.
 The supplied workflow prepares a disposable GitHub-hosted runner.
 
-The 28 October 2026 publication is made without CI at the user’s request.
-The workflow accepts manual dispatch only. If CI is later requested, status files
-must record completed results and exact commits; failed or pending runs must
-not be reported as passing. Historical development audits are kept under
+The public `Lean proof` workflow builds the completed proof and checks its
+allowed axioms. It does not run Comparator or fresh environment replay. Both
+workflows accept manual dispatch only. Status files must record completed
+results and exact commits; failed or pending runs must not be reported as
+passing. Historical development audits are kept under
 `verification/original-audit/` and retain their original scope.
 
 The draft uses the standard `FormalConjecturesUtil` import. The standalone

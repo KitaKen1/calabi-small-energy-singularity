@@ -26,14 +26,16 @@
     "fc_draft_standalone_build": "PASS",
     "fc_draft_projective_corollary": "PASS",
     "fc_draft_answer_equivalence": "PASS",
-    "fc_draft_flow_normalization": "PASS"
+    "fc_draft_flow_normalization": "PASS",
+    "lean_proof_ci": "TRACKED_IN_GITHUB_ACTIONS",
+    "public_ci_scope": "The public_ci field refers to the full Comparator and fresh environment replay workflow; the separate Lean proof build is tracked independently."
   },
   "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized.",
   "private_ci_repository": "KitaKen1/calabi-small-energy-singularities",
   "original_public_manuscript_commit": "516d623b1351033d555cbafdf97132a843ca3431",
-  "publication_stage": "PUBLIC_LEAN_PROOF_RELEASE_WITHOUT_CI",
+  "publication_stage": "PUBLIC_LEAN_PROOF_RELEASE",
   "user_review_required_before_private_ci": true,
-  "remote_action_note": "On 28 October 2026 the user authorized publication of the current Lean proof without CI. The historical private CI attempt was cancelled; it does not certify this release. The workflow accepts manual dispatch only.",
+  "remote_action_note": "On 28 October 2026 the user authorized publication and subsequently one public Lean proof build with an axiom audit. The historical private full-verification attempt was cancelled. Both public workflows accept manual dispatch only.",
   "fc_draft_targets": [
     "CalabiFC.calabi_flow",
     "CalabiFC.calabi_flow.variants.dimension_seven"
@@ -56,6 +58,7 @@
   "fc_draft_documentation_receipt": "verification/local/fc-original-equation-20261020/documentation-review.json",
   "fc_draft_flow_representation": "Initial form omega0, omega(t)=omega0+ddbar(phi(t)), phi(0)=0, positivity and the Calabi equation; CP7 coordinate equivalence with the fixed-Fubini–Study reference is kernel-checked.",
   "publication_date": "2026-10-28",
-  "publication_authorization": "The user explicitly requested uploading the current Lean proof to KitaKen1/calabi-small-energy-singularity, with no CI.",
-  "automatic_ci": "DISABLED_MANUAL_DISPATCH_ONLY"
+  "publication_authorization": "The user authorized uploading the current Lean proof, then explicitly authorized one public Lean proof build and axiom-audit CI run. Full Comparator and fresh environment replay were not requested.",
+  "automatic_ci": "DISABLED_MANUAL_DISPATCH_ONLY",
+  "lean_proof_ci_workflow": "https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml"
 }

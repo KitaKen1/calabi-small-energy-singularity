@@ -1,0 +1,58 @@
+name: Lean proof
+
+# Run explicitly; publishing a commit does not start CI automatically.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-proof-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  LEAN_NUM_THREADS: '2'
+
+jobs:
+  proof:
+    name: Build Lean proof and audit axioms
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check fixed sources and statement definitions
+        run: python3 lean/comparator/check-inputs.py --receipt-dir build-receipt
+      - name: Prepare Lean and runner resources
+        run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 8 4
+      - name: Download pinned Mathlib cache
+        run: lake exe cache get
+        working-directory: lean
+      - name: Build completed proof and check allowed axioms
+        run: bash comparator/build-proof.sh
+        working-directory: lean
+      - name: Record successful proof build
+        run: |
+          {
+            echo '## Lean proof build passed'
+            echo
+            echo "Commit: \`$GITHUB_SHA\`"
+            echo
+            echo 'Built `FCSolution`, `FCAudit` and `Calabi` with their dependencies.'
+            echo 'The transitive axiom audit passed for all six principal declarations.'
+            echo 'Comparator and fresh environment replay are not part of this workflow.'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Save proof build and axiom audit logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-proof-${{ github.sha }}
+          path: build-receipt/
+          retention-days: 90
+          if-no-files-found: error
