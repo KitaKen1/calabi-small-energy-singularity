@@ -20,9 +20,11 @@ original paths. They are historical numerical/manuscript records. The current
 Lean results are in `local/`, the private/public CI records and the CI archives.
 
 Current stage: **Lean proof published on 28 October 2026**. The user subsequently
-authorized one public Lean proof build and axiom audit; its status is tracked by
-the [Lean proof workflow](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
-and the README badge. Automatic CI is disabled; both workflows support manual
+authorized one public Lean proof build and axiom audit. The [successful run](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/runs/40642746582)
+built the complete proof and passed all six transitive axiom audits. The
+[archived receipt and logs](public-lean-proof/20261028/run.json) record the tested
+commit and the verified GitHub artifact digest. The README badge tracks the
+latest Lean proof build. Automatic CI is disabled; both workflows support manual
 dispatch only. The full Comparator and fresh environment replay workflow has
 not run publicly. The historical private full-verification run was cancelled.
 

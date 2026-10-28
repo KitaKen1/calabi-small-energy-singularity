@@ -1,6 +1,6 @@
 # Lean proof of small-energy finite-time singularities of Calabi flow
 
-[![Lean proof](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml/badge.svg)](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
+[![Lean proof](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
 
 The manuscript [*Small-energy finite-time singularities of Calabi flow*](PDF/calabi-small-energy.pdf#page=1)
 considers Calabi flow on complex projective seven-space. The result formalized here is:
@@ -311,7 +311,9 @@ See the [comparison record](verification/local/comparator-library.json),
 
 The public [Lean proof workflow](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
 builds `FCSolution`, `FCAudit` and `Calabi`, then checks the permitted axioms.
-Its result is shown by the badge above. This build is separate from the full
+The build and all six transitive axiom audits [passed on 28 October 2026](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/runs/40642746582).
+The [build and audit logs](verification/public-lean-proof/20261028/run.json) are archived in this repository.
+The badge above shows the latest result. This build is separate from the full
 Comparator and fresh environment replay workflow, which has not run publicly.
 The historical private full-verification attempt was cancelled.
 

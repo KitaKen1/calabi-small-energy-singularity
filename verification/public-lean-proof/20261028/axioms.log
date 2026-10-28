@@ -1,0 +1,6 @@
+'CalabiFC.small_energy_singularity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CalabiFC.small_calabi_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.mainTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.mainTheoremEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.exists_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Calabi.Weighted.localizedCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]

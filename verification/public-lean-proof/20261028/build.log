@@ -1,0 +1,1282 @@
+✔ [2671/2755] Built Calabi.Radial.Basic (2.3s)
+✔ [2742/2989] Built Calabi.Geometry.Statement (2.4s)
+✔ [2975/2992] Built Calabi.Geometry.RadialPotential (3.1s)
+⚠ [2977/3020] Built Calabi.Radial.Strip (3.3s)
+warning: Calabi/Radial/Strip.lean:290:9: Variable name `q` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _q
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Calabi/Radial/Strip.lean:346:8: Variable name `s` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _s
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3005/3026] Built Calabi.Infinity.Bd (1.8s)
+✔ [3008/3026] Built Calabi.Geometry.FubiniStudy (2.2s)
+✔ [3010/3029] Built Calabi.Geometry.RadialScalar (2.1s)
+✔ [3012/3029] Built Calabi.Shot.BlockODE (3.2s)
+✔ [3013/3029] Built Calabi.Geometry.Momentum (3.1s)
+✔ [3014/3036] Built Calabi.Geometry.Gradient (2.7s)
+✔ [3016/3036] Built Calabi.Tail.Linear (2.7s)
+✔ [3017/3036] Built Calabi.Geometry.ChartInfinity (10s)
+✔ [3018/3038] Built Calabi.Geometry.Legendre (3.0s)
+⚠ [3021/3038] Built Calabi.Geometry.Volume (2.8s)
+warning: Calabi/Geometry/Volume.lean:157:0: automatically included section variable(s) unused in theorem `Calabi.Geometry.MomentumData.continuous_xq`:
+  hsurj
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hsurj in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3022/3038] Built Calabi.Shot.Physical (2.3s)
+✔ [3023/3038] Built Calabi.Geometry.Potential (1.8s)
+✔ [3026/3038] Built Calabi.Tail.LinearExists (2.4s)
+✔ [3027/3038] Built Calabi.Geometry.PotentialBound (2.0s)
+✔ [3028/3038] Built Calabi.Geometry.Kahler (1.5s)
+✔ [3029/3038] Built Calabi.Tail.Nonlinear (3.0s)
+⚠ [3030/3040] Built Calabi.Geometry.Dilation (13s)
+warning: Calabi/Geometry/Dilation.lean:184:0: automatically included section variable(s) unused in theorem `Calabi.Geometry.MomentumData.xq_theta`:
+  M
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit M in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Geometry/Dilation.lean:210:0: automatically included section variable(s) unused in theorem `Calabi.Geometry.MomentumData.theta_surjective`:
+  hQ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hQ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3031/3040] Built Calabi.Tail.Profile (3.7s)
+✔ [3032/3040] Built Calabi.Geometry.ChartSwap (4.8s)
+✔ [3033/3042] Built Calabi.Shot.Core (363ms)
+⚠ [3034/3042] Built Calabi.Geometry.SobolevTransfer (7.0s)
+warning: Calabi/Geometry/SobolevTransfer.lean:49:40: `if_false` has been deprecated: Use `ite_false` instead
+warning: Calabi/Geometry/SobolevTransfer.lean:57:26: `if_false` has been deprecated: Use `ite_false` instead
+warning: Calabi/Geometry/SobolevTransfer.lean:67:26: `if_false` has been deprecated: Use `ite_false` instead
+warning: Calabi/Geometry/SobolevTransfer.lean:185:0: automatically included section variable(s) unused in theorem `Calabi.Geometry.MomentumData.surj_of_inverse`:
+  M
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit M in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Geometry/SobolevTransfer.lean:189:0: automatically included section variable(s) unused in theorem `Calabi.Geometry.MomentumData.continuous_theta`:
+  hQ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hQ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3035/3042] Built Calabi.Origin.Cert (367ms)
+✔ [3036/3042] Built Calabi.Infinity.Formal (2.1s)
+✔ [3037/3042] Built Calabi.Origin.Linear (2.9s)
+✔ [3038/3042] Built Calabi.Geometry.LocalSobolev (3.9s)
+✔ [3039/3042] Built Calabi.Infinity.Decay (4.0s)
+⚠ [3040/3044] Built Calabi.Origin.Nonlinear (4.3s)
+warning: Calabi/Origin/Nonlinear.lean:78:8: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+✔ [3041/3047] Built Calabi.Infinity.Compact (1.0s)
+✔ [3042/3050] Built Calabi.Shot.PolyEval (1.5s)
+✔ [3043/3053] Built Calabi.Shot.BlockAlgebra (1.2s)
+✔ [3044/3053] Built Calabi.Shot.Chain (439ms)
+✔ [3045/3055] Built Calabi.Shot.Certified (220ms)
+✔ [3046/3055] Built Calabi.Shot.Data.Params (214ms)
+✔ [3047/3060] Built Calabi.Origin.Data (2.5s)
+✔ [3048/3061] Built Calabi.Shot.BlockFamily (9.5s)
+✔ [3049/3061] Built Calabi.Shot.Data.Blocks00 (15s)
+⚠ [3050/3062] Built Calabi.Shot.BlockSound (2.3s)
+warning: Calabi/Shot/BlockSound.lean:53:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Shot/BlockSound.lean:56:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [3051/3062] Built Calabi.Shot.Data.Blocks01 (13s)
+✔ [3052/3063] Built Calabi.Shot.BlockSpec (2.8s)
+✔ [3053/3063] Built Calabi.Shot.Data.Blocks02 (16s)
+✔ [3054/3064] Built Calabi.Shot.FrameAlgebra (1.7s)
+✔ [3055/3064] Built Calabi.Shot.Data.Blocks03 (22s)
+✔ [3056/3065] Built Calabi.Shot.StepBounds (1.9s)
+✔ [3057/3065] Built Calabi.Shot.Data.Blocks04 (20s)
+✔ [3058/3066] Built Calabi.Shot.StepSound (1.0s)
+✔ [3059/3066] Built Calabi.Shot.Data.Blocks05 (15s)
+✔ [3060/3067] Built Calabi.Shot.StepCore (2.1s)
+✔ [3061/3067] Built Calabi.Origin.CertSound (9.0s)
+✔ [3062/3068] Built Calabi.Shot.Data.Blocks06 (16s)
+✔ [3063/3068] Built Calabi.Shot.StepMain (1.9s)
+✔ [3064/3069] Built Calabi.Shot.Data.Blocks07 (14s)
+✔ [3065/3069] Built Calabi.Shot.Data.Blocks08 (14s)
+✔ [3066/3070] Built Calabi.Shot.ChainSound (1.8s)
+✔ [3067/3071] Built Calabi.Shot.Data.Blocks09 (13s)
+✔ [3068/3072] Built Calabi.Shot.Data.Blocks10 (12s)
+✔ [3069/3073] Built Calabi.Shot.Data.Blocks11 (12s)
+✔ [3070/3074] Built Calabi.Shot.Data.Blocks12 (11s)
+✔ [3071/3075] Built Calabi.Shot.Data.Blocks13 (11s)
+✔ [3072/3079] Built Calabi.Shot.Data.Blocks14 (11s)
+✔ [3073/3079] Built Calabi.Shot.Data.Blocks15 (10s)
+✔ [3074/3088] Built Calabi.Shot.Data.Blocks16 (10s)
+✔ [3078/3089] Built Calabi.Tail.Cert (282ms)
+✔ [3079/3091] Built Calabi.Shot.Data.Blocks17 (10s)
+✔ [3081/3091] Built Calabi.Tail.Data (253ms)
+✔ [3082/3091] Built Calabi.Shot.Data.All (236ms)
+✔ [3083/3091] Built Calabi.Tail.CertSound (7.1s)
+✔ [3084/3091] Built Calabi.Analysis.GlobalODE (2.3s)
+✔ [3085/3091] Built Calabi.Match.Bounds (7.0s)
+✔ [3086/3093] Built Calabi.Shot.Existence (2.6s)
+✔ [3087/3093] Built OAI.Analysis.SphereIsometry.ProbabilitySimplex (1.2s)
+✔ [3088/3096] Built OAI.Analysis.SphereIsometry.SimplexLimit (1.2s)
+✔ [3089/3096] Built OAI.Analysis.SphereIsometry.FiniteComplex (1.1s)
+✔ [3090/3098] Built OAI.Analysis.SphereIsometry.BarycentricFlags (1.1s)
+✔ [3091/3098] Built OAI.Analysis.SphereIsometry.SubdivisionData (974ms)
+✔ [3092/3098] Built Calabi.Shot.Data.ChainData (12s)
+✔ [3093/3103] Built OAI.Analysis.SphereIsometry.BarycentricBasic (1.2s)
+✔ [3094/3103] Built Calabi.Match.Numbers (1.9s)
+✔ [3095/3103] Built Calabi.Shot.FiniteShot (1.7s)
+✔ [3096/3103] Built OAI.Analysis.SphereIsometry.BarycentricSupport (1.3s)
+✔ [3097/3105] Built OAI.Analysis.SphereIsometry.DiameterBounds (997ms)
+✔ [3098/3106] Built Calabi.Shot (1.4s)
+✔ [3099/3106] Built OAI.Analysis.SphereIsometry.ConvexDiameter (1.2s)
+✔ [3100/3108] Built OAI.Analysis.SphereIsometry.SpernerFacet (1.1s)
+✔ [3101/3108] Built OAI.Analysis.SphereIsometry.BarycentricMesh (1.4s)
+✔ [3102/3108] Built OAI.Analysis.SphereIsometry.SpernerBoundary (1.1s)
+✔ [3103/3110] Built OAI.Analysis.SphereIsometry.SpernerIncidence (1.1s)
+✔ [3104/3117] Built OAI.Analysis.SphereIsometry.BarycentricRestriction (980ms)
+✔ [3105/3117] Built OAI.Analysis.SphereIsometry.BarycentricPoints (1.1s)
+✔ [3106/3119] Built OAI.Analysis.SphereIsometry.BarycentricIncidence (1.4s)
+✔ [3107/3119] Built OAI.Analysis.SphereIsometry.SubdivisionRestriction (1.1s)
+✔ [3108/3127] Built OAI.Analysis.SphereIsometry.BarycentricZero (1.0s)
+✔ [3109/3127] Built OAI.Analysis.SphereIsometry.IteratedPoints (1.4s)
+✔ [3110/3127] Built OAI.Analysis.SphereIsometry.SubdivisionIncidence (1.0s)
+✔ [3111/3127] Built OAI.Analysis.SphereIsometry.Sperner (1.2s)
+✔ [3112/3127] Built OAI.Analysis.SphereIsometry.SimplexFixedPoint (1.2s)
+✔ [3113/3127] Built Calabi.Origin.Deriv (3.4s)
+✔ [3114/3127] Built OAI.Analysis.SphereIsometry.CompactApproximation (1.4s)
+✔ [3115/3264] Built Calabi.Origin.Smooth (2.1s)
+✔ [3489/3796] Built OAI.Analysis.SphereIsometry.CompactConvexFixedPoint (1.4s)
+✔ [8704/8865] Built Calabi.Match.Matching (2.0s)
+✔ [9027/9045] Built Calabi.Origin.Start (2.6s)
+✔ [9028/9047] Built OAI.Analysis.AncientFlat.Evolution.TraceFour (4.5s)
+✔ [9029/9047] Built OAI.Analysis.AncientFlat.Geometry.InteriorCore (3.2s)
+⚠ [9030/9047] Built Calabi.Origin.Global (1.9s)
+warning: Calabi/Origin/Global.lean:56:8: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+✔ [9031/9047] Built OAI.Analysis.AncientFlat.Evolution.InitialCore (2.9s)
+✔ [9032/9047] Built OAI.Analysis.AncientFlat.Regularity.HolderAlgebra (4.3s)
+✔ [9033/9047] Built Calabi.ShrinkingProfile (3.7s)
+✔ [9034/9047] Built OAI.Analysis.AncientFlat.Regularity.HolderProducts (3.4s)
+✔ [9035/9047] Built OAI.Analysis.AncientFlat.Regularity.HolderContinuity (3.3s)
+✔ [9036/9047] Built Calabi.Flat.SelfSimilar (2.6s)
+✔ [9037/9047] Built OAI.Analysis.AncientFlat.Regularity.HolderExtension (3.7s)
+✔ [9038/9047] Built OAI.Analysis.AncientFlat.Regularity.CompactHolder (3.5s)
+✔ [9039/9047] Built Calabi.Flat.ProfileDecay (3.8s)
+✔ [9040/9047] Built OAI.Analysis.AncientFlat.Geometry.InteriorCutoff (3.9s)
+✔ [9041/9047] Built Calabi.Radial.Cutoff (3.5s)
+✔ [9042/9047] Built OAI.Analysis.AncientFlat.Evolution.InitialSource (3.7s)
+✔ [9043/9057] Built OAI.Analysis.AncientFlat.Evolution.CutoffCore (4.7s)
+✔ [9044/9062] Built OAI.Analysis.AncientFlat.Energy.EnergyWeight (4.0s)
+✔ [9045/9062] Built OAI.Analysis.AncientFlat.Energy.EnergyIBP (3.6s)
+✔ [9046/9062] Built Calabi.Radial.Estimates (13s)
+✔ [9047/9062] Built OAI.Analysis.AncientFlat.Energy.EnergyGronwall (3.3s)
+✔ [9048/9062] Built OAI.Analysis.AncientFlat.Energy.EnergyProducts (4.3s)
+✔ [9049/9062] Built Calabi.Geometry.Bridge (2.6s)
+✔ [9050/9068] Built Calabi.Geometry.FubiniStudySobolev (2.7s)
+✔ [9051/9068] Built OAI.Analysis.AncientFlat.Energy.EnergyLaplacian (3.6s)
+✔ [9052/9071] Built OAI.Analysis.AncientFlat.Energy.EnergyQuadratic (4.2s)
+✔ [9053/9071] Built OAI.Analysis.AncientFlat.Energy.EnergyTime (6.5s)
+✔ [9054/9071] Built OAI.Analysis.AncientFlat.Energy.EnergyGradient (5.2s)
+✔ [9055/9075] Built OAI.Analysis.AncientFlat.Evolution.WeakToStrong (5.0s)
+✔ [9056/9077] Built OAI.Analysis.AncientFlat.Energy.EnergyPrincipal (5.6s)
+✔ [9057/9077] Built OAI.Analysis.AncientFlat.Energy.EnergyCoercive (6.7s)
+✔ [9058/9081] Built OAI.Analysis.AncientFlat.Energy.EnergyEquation (5.4s)
+✔ [9059/9081] Built OAI.Analysis.AncientFlat.Evolution.HomogeneousUniqueness (5.6s)
+✔ [9060/9089] Built OAI.Analysis.AncientFlat.Evolution.EvolutionCore (4.3s)
+✔ [9061/9089] Built OAI.Analysis.AncientFlat.Evolution.EvolutionAlgebra (3.7s)
+✔ [9062/9089] Built OAI.Analysis.AncientFlat.Kernel.ClassicalBase (56s)
+✔ [9063/9089] Built OAI.Analysis.AncientFlat.Evolution.EvolutionUniqueness (3.9s)
+✔ [9064/9089] Built OAI.Analysis.AncientFlat.Evolution.LocalWeakToStrong (3.5s)
+✔ [9065/9092] Built OAI.Analysis.AncientFlat.Evolution.ClassicalSpatial (4.8s)
+✔ [9066/9093] Built OAI.Analysis.AncientFlat.Evolution.RowContinuity (4.4s)
+✔ [9067/9096] Built OAI.Analysis.AncientFlat.Regularity.GammaCorrection (4.8s)
+✔ [9068/9096] Built OAI.Analysis.AncientFlat.Evolution.BetaRow (4.7s)
+✔ [9069/9096] Built OAI.Analysis.AncientFlat.Evolution.DilationDerivatives (3.6s)
+✔ [9070/9096] Built OAI.Analysis.AncientFlat.Evolution.DilationCore (4.6s)
+✔ [9071/9097] Built OAI.Analysis.AncientFlat.Evolution.GammaBetaRow (4.3s)
+✔ [9072/9100] Built OAI.Analysis.AncientFlat.Regularity.ConstantResidual (3.9s)
+✔ [9073/9107] Built OAI.Analysis.AncientFlat.Evolution.RowIntegral (5.6s)
+✔ [9074/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderJet (3.7s)
+✔ [9075/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderCancel (3.9s)
+✔ [9076/9107] Built OAI.Analysis.AncientFlat.Evolution.GammaRowIntegral (5.2s)
+✔ [9077/9107] Built OAI.Analysis.AncientFlat.Evolution.ClassicalRHS (4.9s)
+✔ [9078/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderLag (3.5s)
+✔ [9079/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderJetTime (4.2s)
+✔ [9080/9107] Built OAI.Analysis.AncientFlat.Evolution.PairClassical (3.0s)
+✔ [9081/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderSpace (3.0s)
+✔ [9082/9107] Built OAI.Analysis.AncientFlat.Evolution.ActualClassical (5.2s)
+✔ [9083/9107] Built OAI.Analysis.AncientFlat.Evolution.GammaRHS (4.5s)
+✔ [9084/9107] Built OAI.Analysis.AncientFlat.Regularity.SchauderTime (4.2s)
+✔ [9085/9113] Built OAI.Analysis.AncientFlat.Evolution.ClassicalEvolution (4.2s)
+✔ [9086/9118] Built OAI.Analysis.AncientFlat.Evolution.SourceDerivative (3.6s)
+✔ [9087/9118] Built OAI.Analysis.AncientFlat.Regularity.SchauderKernel (3.4s)
+✔ [9088/9120] Built OAI.Analysis.AncientFlat.Regularity.GammaBoundedJets (3.7s)
+✔ [9089/9120] Built OAI.Analysis.AncientFlat.Regularity.ActualBoundedJets (3.7s)
+✔ [9090/9121] Built OAI.Analysis.AncientFlat.Evolution.FiniteDifference (4.2s)
+✔ [9091/9121] Built OAI.Analysis.AncientFlat.Evolution.SourceClassical (4.6s)
+✔ [9092/9123] Built OAI.Analysis.AncientFlat.Evolution.TimePaste (3.3s)
+✔ [9093/9123] Built OAI.Analysis.AncientFlat.Regularity.UniformCorrection (4.2s)
+✔ [9094/9123] Built OAI.Analysis.AncientFlat.Regularity.PointInterpolation (3.7s)
+✔ [9095/9123] Built OAI.Analysis.AncientFlat.Evolution.SourceEvolves (3.9s)
+✔ [9096/9123] Built OAI.Analysis.AncientFlat.Evolution.InitialPaste (3.7s)
+✔ [9097/9123] Built OAI.Analysis.AncientFlat.Evolution.InitialCoefficients (3.2s)
+✔ [9098/9123] Built OAI.Analysis.AncientFlat.Evolution.StrongClassicalEvolution (3.7s)
+✔ [9099/9123] Built OAI.Analysis.AncientFlat.Regularity.UniformSourceCorrection (4.5s)
+✔ [9100/9123] Built OAI.Analysis.AncientFlat.Regularity.BallInterpolation (3.7s)
+✔ [9101/9123] Built OAI.Analysis.AncientFlat.Evolution.ShiftedEvolution (3.7s)
+✔ [9102/9123] Built OAI.Analysis.AncientFlat.Evolution.SourceResponse (4.2s)
+✔ [9103/9123] Built OAI.Analysis.AncientFlat.Regularity.LowerJet (4.0s)
+✔ [9104/9123] Built OAI.Analysis.AncientFlat.Evolution.EvolutionFamily (3.8s)
+✔ [9105/9123] Built OAI.Analysis.AncientFlat.Regularity.CorrectionSourceClassical (3.0s)
+✔ [9106/9123] Built OAI.Analysis.AncientFlat.Regularity.InterpolationAlgebra (3.3s)
+✔ [9107/9123] Built OAI.Analysis.AncientFlat.Evolution.SimilarityCovariance (4.3s)
+✔ [9108/9123] Built OAI.Analysis.AncientFlat.Evolution.ConstantRepresentation (4.3s)
+✔ [9109/9123] Built OAI.Analysis.AncientFlat.Evolution.ZeroSourceResponse (4.3s)
+✔ [9110/9123] Built OAI.Analysis.AncientFlat.Regularity.JetTimeHolder (4.1s)
+✔ [9111/9126] Built OAI.Analysis.AncientFlat.Regularity.JetSpaceHolder (3.6s)
+✔ [9112/9127] Built OAI.Analysis.AncientFlat.Regularity.ConstantSchauder (3.7s)
+✔ [9113/9127] Built OAI.Analysis.AncientFlat.Evolution.FrozenAverage (3.0s)
+✔ [9114/9128] Built OAI.Analysis.AncientFlat.Regularity.ParabolicInterpolation (3.7s)
+✔ [9115/9128] Built OAI.Analysis.AncientFlat.Regularity.CommutatorJets (3.7s)
+✔ [9116/9128] Built OAI.Analysis.AncientFlat.Regularity.HolderC0Extension (3.4s)
+✔ [9117/9128] Built OAI.Analysis.AncientFlat.Evolution.SourceInitialDerivative (3.7s)
+✔ [9118/9128] Built OAI.Analysis.AncientFlat.Regularity.InterpolationEpsilon (3.4s)
+✔ [9119/9128] Built OAI.Analysis.AncientFlat.Evolution.BCFTimeDerivative (3.9s)
+✔ [9120/9130] Built OAI.Analysis.AncientFlat.Regularity.CommutatorHolder (3.7s)
+✔ [9121/9135] Built OAI.Analysis.AncientFlat.Evolution.SourceEvolution (3.0s)
+✔ [9122/9135] Built OAI.Analysis.AncientFlat.Regularity.WithinInterpolation (3.6s)
+✔ [9123/9135] Built OAI.Analysis.AncientFlat.Regularity.CutoffRegularity (3.6s)
+✔ [9124/9139] Built OAI.Analysis.AncientFlat.Evolution.TimeRescaling (3.6s)
+✔ [9125/9143] Built OAI.Analysis.AncientFlat.Regularity.FrozenSchauder (3.8s)
+✔ [9126/9143] Built OAI.Analysis.AncientFlat.Evolution.InitialModel (4.7s)
+✔ [9127/9144] Built OAI.Analysis.AncientFlat.Regularity.FourthInterpolation (3.2s)
+✔ [9128/9144] Built OAI.Analysis.AncientFlat.Evolution.SpaceRescaling (3.8s)
+✔ [9129/9144] Built OAI.Analysis.AncientFlat.Regularity.InitialJetModel (4.2s)
+✔ [9130/9144] Built OAI.Analysis.AncientFlat.Regularity.FrozenLongSchauder (3.8s)
+✔ [9131/9144] Built OAI.Analysis.AncientFlat.Evolution.BackwardModel (3.5s)
+✔ [9132/9144] Built OAI.Analysis.AncientFlat.Evolution.CutoffEvolution (4.1s)
+✔ [9133/9147] Built OAI.Analysis.AncientFlat.Evolution.LocalizedFrozen (3.5s)
+✔ [9134/9155] Built OAI.Analysis.AncientFlat.Evolution.InitialContinuation (6.0s)
+✔ [9135/9155] Built OAI.Analysis.AncientFlat.Evolution.TopSeminorm (3.2s)
+✔ [9136/9157] Built OAI.Analysis.AncientFlat.Regularity.FreezingResidual (5.1s)
+✔ [9137/9157] Built OAI.Analysis.AncientFlat.Regularity.GeometricAbsorption (3.4s)
+✔ [9138/9157] Built OAI.Analysis.AncientFlat.Regularity.ResidualBudget (4.4s)
+✔ [9139/9159] Built OAI.Analysis.AncientFlat.Weighted.WeightedLocalCore (3.0s)
+✔ [9140/9159] Built OAI.Analysis.AncientFlat.Regularity.UnitInterpolation (4.6s)
+✔ [9141/9159] Built OAI.Analysis.AncientFlat.Weighted.WeightedCharts (3.5s)
+✔ [9142/9159] Built OAI.Analysis.AncientFlat.Geometry.ParabolicWindows (3.8s)
+✔ [9143/9159] Built OAI.Analysis.AncientFlat.Evolution.NearConstant (7.1s)
+✔ [9144/9159] Built OAI.Analysis.AncientFlat.Geometry.WindowJets (3.9s)
+⚠ [9145/9159] Built Calabi.Correction.TwoPoint (7.3s)
+warning: Calabi/Correction/TwoPoint.lean:95:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.IsScale.rpow_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:100:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.IsScale.mono`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:111:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.IsScale.of_lipschitz`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:127:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.IsScale.const`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:145:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.mono`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:154:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.restrict`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:158:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.radius_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:163:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.congr`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:170:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.zero`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:179:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.add`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:192:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.neg`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:208:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.of_local`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:224:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.weight`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:254:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.scale`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:339:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.of_lipschitz`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:477:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.clm`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:490:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.const_smul`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPoint.lean:513:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.holderBound_window`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9146/9160] Built OAI.Analysis.AncientFlat.Geometry.WindowGeometry (3.5s)
+✔ [9147/9163] Built OAI.Analysis.AncientFlat.Geometry.WindowEstimate (4.5s)
+⚠ [9148/9164] Built Calabi.Correction.TwoPointJets (5.6s)
+warning: Calabi/Correction/TwoPointJets.lean:60:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_iteratedFDeriv_smul_scaled`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointJets.lean:73:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_commutator_scaled`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointJets.lean:104:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WJ.of_le`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointJets.lean:114:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WJ.value`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9149/9164] Built OAI.Analysis.AncientFlat.Geometry.WindowHolderCover (3.6s)
+✔ [9150/9172] Built OAI.Analysis.AncientFlat.Regularity.NestedEstimate (5.7s)
+✔ [9151/9173] Built OAI.Analysis.AncientFlat.Geometry.ParabolicAverage (3.5s)
+✔ [9152/9173] Built OAI.Analysis.AncientFlat.Regularity.GeneralAbsorption (3.6s)
+✔ [9153/9173] Built OAI.Analysis.AncientFlat.Evolution.InitialCover (3.7s)
+✔ [9154/9173] Built OAI.Analysis.AncientFlat.Evolution.SupNorm (3.1s)
+✔ [9155/9173] Built OAI.Analysis.AncientFlat.Regularity.TopInteriorEstimate (4.3s)
+✔ [9156/9177] Built OAI.Analysis.AncientFlat.Evolution.InitialWindows (3.4s)
+⚠ [9157/9177] Built Calabi.Correction.Extension (4.3s)
+warning: Calabi/Correction/Extension.lean:62:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.pdist_rpow_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/Extension.lean:230:63: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/Extension.lean:232:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/Extension.lean:240:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/Extension.lean:244:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/Extension.lean:155:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.exists_endpoint_extension`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9158/9177] Built OAI.Analysis.AncientFlat.Evolution.InitialClosure (3.4s)
+✔ [9159/9179] Built OAI.Analysis.AncientFlat.Weighted.ExactYNorm (3.2s)
+⚠ [9160/9186] Built Calabi.Correction.Osc (1.0s)
+warning: Calabi/Correction/Osc.lean:56:10: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:59:2: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.dx_bound`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:60:2: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.dt`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:57:2: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.bound`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:58:2: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.dx`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:61:2: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.dt_bound`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:56:10: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.mk`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:65:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.cast`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:69:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.congr_deriv`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:88:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.congr_fun`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:100:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.mono`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:110:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.zero`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:124:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.add`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:145:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.const_mul`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:159:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.neg`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:173:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.sub`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:191:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.mul`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:260:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.lower`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:286:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.sum`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:305:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.coord`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:320:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.of_x`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+warning: Calabi/Correction/Osc.lean:429:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.oscE`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+✔ [9161/9186] Built OAI.Analysis.AncientFlat.Geometry.InteriorSchauder (8.0s)
+✔ [9162/9186] Built Calabi.Correction.ProfileJets (2.6s)
+✔ [9163/9186] Built Calabi.Correction.Factor (2.4s)
+✔ [9164/9186] Built OAI.Analysis.AncientFlat.Geometry.WindowSchauder (3.7s)
+✔ [9165/9186] Built OAI.Analysis.AncientFlat.Regularity.InitialSchauder (4.1s)
+✔ [9166/9186] Built Calabi.Correction.ProfileOsc (2.5s)
+✔ [9167/9186] Built OAI.Analysis.AncientFlat.Evolution.BoxOscillation (3.8s)
+⚠ [9168/9186] Built Calabi.Correction.WindowEstimate (4.1s)
+warning: Calabi/Correction/WindowEstimate.lean:31:0: automatically included section variable(s) unused in theorem `Calabi.FlatZero.window_mem_slab`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9169/9186] Built Calabi.Correction.CutoffOsc (2.4s)
+✔ [9170/9186] Built Calabi.Correction.ResidualOsc (2.8s)
+⚠ [9171/9186] Built Calabi.Correction.OuterEstimate (5.6s)
+warning: Calabi/Correction/OuterEstimate.lean:54:0: automatically included section variable(s) unused in theorem `Calabi.FlatZero.SJet.mono`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9172/9186] Built OAI.Analysis.AncientFlat.Regularity.NestedL2 (8.5s)
+✔ [9173/9192] Built Calabi.Correction.FrozenOsc (2.2s)
+✔ [9174/9192] Built OAI.Analysis.AncientFlat.Geometry.InteriorL2Sup (5.0s)
+✔ [9175/9192] Built OAI.Analysis.AncientFlat.Weighted.WeightedRow (4.1s)
+✔ [9176/9192] Built OAI.Analysis.AncientFlat.Geometry.InteriorL2 (3.9s)
+✔ [9177/9192] Built OAI.Analysis.AncientFlat.Evolution.RowLinearity (3.7s)
+✔ [9178/9192] Built OAI.Analysis.AncientFlat.Geometry.AnnularCore (3.1s)
+✔ [9179/9192] Built OAI.Analysis.AncientFlat.Profile.AnnularProfileCore (2.9s)
+✔ [9180/9192] Built OAI.Analysis.AncientFlat.Evolution.Commutator (5.1s)
+✔ [9181/9192] Built OAI.Analysis.AncientFlat.Weighted.WeightedEstimateCore (3.0s)
+✔ [9182/9192] Built OAI.Analysis.AncientFlat.Evolution.SharpPrincipal (3.5s)
+✔ [9183/9201] Built OAI.Analysis.AncientFlat.Weighted.ExactXNorm (3.5s)
+✔ [9184/9203] Built OAI.Analysis.AncientFlat.Weighted.WeightedScaling (3.5s)
+✔ [9185/9203] Built OAI.Analysis.AncientFlat.Regularity.SharpResidual (4.1s)
+✔ [9186/9203] Built OAI.Analysis.AncientFlat.Evolution.FamilyCancellation (4.1s)
+⚠ [9187/9210] Built Calabi.Correction.WindowConvert (5.6s)
+warning: Calabi/Correction/WindowConvert.lean:90:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.abs_sigma_sub_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/WindowConvert.lean:121:9: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Calabi/Correction/WindowConvert.lean:121:14: Variable name `q` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _q
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Calabi/Correction/WindowConvert.lean:202:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH_of_window`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9188/9210] Built OAI.Analysis.AncientFlat.Regularity.SharpCorrection (4.0s)
+✔ [9189/9210] Built OAI.Analysis.AncientFlat.Evolution.TimeFamilyEnvelope (3.8s)
+⚠ [9190/9211] Built Calabi.Correction.OscChart (9.5s)
+warning: Calabi/Correction/OscChart.lean:25:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sigma_sq`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9191/9211] Built Calabi.Correction.TwoPointMore (6.0s)
+warning: Calabi/Correction/TwoPointMore.lean:39:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.pdist_comm`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointMore.lean:47:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.comp_map`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+  [InnerProductSpace ℝ V']
+  [FiniteDimensional ℝ V']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] [InnerProductSpace ℝ V'] [FiniteDimensional ℝ V'] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointMore.lean:207:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.weight_supp`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointMore.lean:362:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_le_sum_basis`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointMore.lean:444:16: `ContinuousMultilinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: Calabi/Correction/TwoPointMore.lean:467:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sigma_le_of_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoPointMore.lean:467:54: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9192/9215] Built OAI.Analysis.AncientFlat.Evolution.OrthogonalCalculus (3.4s)
+✔ [9193/9215] Built OAI.Analysis.AncientFlat.Evolution.VariableTimeCancellation (3.9s)
+✔ [9194/9215] Built Calabi.Correction.ProfileChart (3.4s)
+✔ [9195/9215] Built OAI.Analysis.AncientFlat.Profile.RotationCore (3.2s)
+✔ [9196/9215] Built OAI.Analysis.AncientFlat.Profile.RadialRealCore (3.1s)
+⚠ [9197/9218] Built Calabi.Correction.ChartMaps (4.4s)
+warning: Calabi/Correction/ChartMaps.lean:36:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_rayMap`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartMaps.lean:40:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.pdist_rayMap_le`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartMaps.lean:74:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_swapPt`:
+  [FiniteDimensional ℝ V]
+  [InnerProductSpace ℝ V']
+  [FiniteDimensional ℝ V']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] [InnerProductSpace ℝ V'] [FiniteDimensional ℝ V'] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartMaps.lean:101:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.pdist_swapPt_le`:
+  [FiniteDimensional ℝ V]
+  [InnerProductSpace ℝ V']
+  [FiniteDimensional ℝ V']
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] [InnerProductSpace ℝ V'] [FiniteDimensional ℝ V'] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9198/9218] Built Calabi.Correction.EulerJets (1.9s)
+✔ [9199/9218] Built OAI.Analysis.AncientFlat.Evolution.VariableRows (4.9s)
+✔ [9200/9218] Built Calabi.Correction.RadialChart (2.4s)
+✔ [9201/9218] Built OAI.Analysis.AncientFlat.Evolution.VariableSpace (5.1s)
+⚠ [9202/9222] Built Calabi.Correction.ChartJets (6.1s)
+warning: Calabi/Correction/ChartJets.lean:87:10: `ContinuousMultilinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: Calabi/Correction/ChartJets.lean:191:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.LowBound.smul_coef`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9203/9222] Built OAI.Analysis.AncientFlat.Evolution.MeasurableSpace (4.1s)
+✔ [9204/9222] Built OAI.Analysis.AncientFlat.Kernel.SchwartzIBP (3.4s)
+✔ [9205/9225] Built OAI.Analysis.AncientFlat.Evolution.ChangingPair (4.3s)
+✔ [9206/9228] Built OAI.Analysis.AncientFlat.Evolution.MeasurableTime (4.7s)
+✔ [9207/9228] Built OAI.Analysis.AncientFlat.Kernel.SymbolCore (3.1s)
+✔ [9208/9229] Built OAI.Analysis.AncientFlat.Kernel.KernelChangingPair (3.9s)
+✔ [9209/9229] Built OAI.Analysis.AncientFlat.Regularity.MeasurableHolder (3.8s)
+✔ [9210/9231] Built OAI.Analysis.AncientFlat.Evolution.EarlyIntegral (4.6s)
+✔ [9211/9231] Built OAI.Analysis.AncientFlat.Kernel.BilapNorm (3.3s)
+✔ [9212/9231] Built OAI.Analysis.AncientFlat.Kernel.SymbolBounds (3.5s)
+✔ [9213/9231] Built OAI.Analysis.AncientFlat.Kernel.AdjointKernel (3.0s)
+✔ [9214/9231] Built OAI.Analysis.AncientFlat.Regularity.LocalHolder (3.0s)
+✔ [9215/9231] Built OAI.Analysis.AncientFlat.Evolution.EarlyRows (4.3s)
+✔ [9216/9231] Built OAI.Analysis.AncientFlat.Kernel.KernelJetMajorant (3.7s)
+✔ [9217/9231] Built OAI.Analysis.AncientFlat.Regularity.ProductJets (3.5s)
+✔ [9218/9231] Built OAI.Analysis.AncientFlat.Kernel.SymbolJets (3.6s)
+✔ [9219/9231] Built OAI.Analysis.AncientFlat.Regularity.FrozenHolder (3.8s)
+✔ [9220/9231] Built OAI.Analysis.AncientFlat.Weighted.WeightedHolder (4.6s)
+✔ [9221/9231] Built OAI.Analysis.AncientFlat.Kernel.SymbolDecay (3.7s)
+✔ [9222/9231] Built OAI.Analysis.AncientFlat.Regularity.MildHolder (4.0s)
+✔ [9223/9231] Built OAI.Analysis.AncientFlat.Kernel.AdjointPairDerivative (3.7s)
+✔ [9224/9234] Built OAI.Analysis.AncientFlat.Regularity.ClassicalHolder (4.6s)
+✔ [9225/9234] Built OAI.Analysis.AncientFlat.Kernel.AdjointBounds (3.5s)
+✔ [9226/9236] Built OAI.Analysis.AncientFlat.Regularity.SourceHolderEvolution (3.5s)
+✔ [9227/9236] Built OAI.Analysis.AncientFlat.Evolution.MovingScalar (3.5s)
+⚠ [9228/9236] Built Calabi.Correction.Bundle (3.4s)
+warning: Calabi/Correction/Bundle.lean:110:8: automatically included section variable(s) unused in theorem `Calabi.FlatZero.coeffMap_apply`:
+  [NormedSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9229/9239] Built OAI.Analysis.AncientFlat.Evolution.DilationContinuity (3.3s)
+✔ [9230/9239] Built OAI.Analysis.AncientFlat.Evolution.MovingBounds (3.7s)
+✔ [9231/9239] Built Calabi.Correction.FlatSymmetry (3.9s)
+✔ [9232/9243] Built OAI.Analysis.AncientFlat.Evolution.SimilarityFamily (3.7s)
+✔ [9233/9243] Built OAI.Analysis.AncientFlat.Evolution.LocalExtensionAlgebra (3.5s)
+✔ [9234/9248] Built OAI.Analysis.AncientFlat.Evolution.MovingCoefficients (4.6s)
+✔ [9235/9250] Built OAI.Analysis.AncientFlat.Evolution.LocalExtensionContinuity (3.7s)
+✔ [9236/9250] Built OAI.Analysis.AncientFlat.Evolution.MovingUnique (3.4s)
+✔ [9237/9252] Built OAI.Analysis.AncientFlat.Evolution.CompactDifferenceCore (2.0s)
+✔ [9238/9252] Built OAI.Analysis.AncientFlat.Kernel.SymbolSemigroup (3.7s)
+⚠ [9239/9252] Built Calabi.Correction.FlatZero (19s)
+warning: Calabi/Correction/FlatZero.lean:61:0: automatically included section variable(s) unused in theorem `Calabi.FlatZero.continuous_of_holder`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/FlatZero.lean:340:15: `iteratedFDeriv_zero_fun` has been deprecated: Use `iteratedFDeriv_fun_zero` instead
+warning: Calabi/Correction/FlatZero.lean:285:21: This simp argument is unused:
+  Real.zero_rpow h14
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pdist]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Calabi/Correction/FlatZero.lean:598:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/FlatZero.lean:601:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [9240/9252] Built OAI.Analysis.AncientFlat.Kernel.KernelMollifier (3.7s)
+✔ [9241/9252] Built OAI.Analysis.AncientFlat.Evolution.MovingSymmetry (3.8s)
+✔ [9242/9253] Built OAI.Analysis.AncientFlat.Evolution.C0Ascoli (3.7s)
+✔ [9243/9255] Built OAI.Analysis.AncientFlat.Profile.RadialRealSemigroup (3.4s)
+⚠ [9244/9255] Built Calabi.Correction.ForwardBlock (6.7s)
+warning: Calabi/Correction/ForwardBlock.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.scale_comparable`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9245/9255] Built OAI.Analysis.AncientFlat.Evolution.ConstantEvolution (4.6s)
+✔ [9246/9255] Built OAI.Analysis.AncientFlat.Evolution.UniformLipschitz (3.9s)
+✔ [9247/9258] Built OAI.Analysis.AncientFlat.Evolution.HeatDilation (3.4s)
+✔ [9248/9261] Built OAI.Analysis.AncientFlat.Evolution.TimeOneLipschitz (3.4s)
+✔ [9249/9261] Built OAI.Analysis.AncientFlat.Spectral.EigenFlag (3.6s)
+✔ [9250/9261] Built OAI.Analysis.AncientFlat.Spectral.QuasiPowers (3.6s)
+✔ [9251/9261] Built OAI.Analysis.AncientFlat.Evolution.MovingNorm (3.3s)
+✔ [9252/9261] Built OAI.Analysis.AncientFlat.Spectral.CompactFredholm (3.8s)
+✔ [9253/9261] Built OAI.Analysis.AncientFlat.Spectral.QuasiFinite (3.0s)
+✔ [9254/9261] Built OAI.Analysis.AncientFlat.Evolution.ConstantPowers (3.8s)
+✔ [9255/9264] Built OAI.Analysis.AncientFlat.Kernel.AdjointPairContinuity (3.5s)
+✔ [9256/9264] Built OAI.Analysis.AncientFlat.Spectral.QuasiSpectrum (3.7s)
+✔ [9257/9264] Built OAI.Analysis.AncientFlat.Kernel.AdjointPairEstimate (4.1s)
+✔ [9258/9264] Built OAI.Analysis.AncientFlat.Evolution.StrongAction (3.6s)
+✔ [9259/9264] Built OAI.Analysis.AncientFlat.Evolution.SourceStep (3.7s)
+✔ [9260/9266] Built OAI.Analysis.AncientFlat.Evolution.TimeOneTails (4.8s)
+✔ [9261/9272] Built OAI.Analysis.AncientFlat.Evolution.DuhamelCocycle (3.3s)
+✔ [9262/9273] Built OAI.Analysis.AncientFlat.Evolution.CompactDifference (3.6s)
+✔ [9263/9273] Built OAI.Analysis.AncientFlat.Kernel.FourierDecay (3.0s)
+✔ [9264/9275] Built OAI.Analysis.AncientFlat.Kernel.GreenConvolution (4.1s)
+✔ [9265/9275] Built OAI.Analysis.AncientFlat.Spectral.SpectralCircle (3.6s)
+✔ [9266/9278] Built OAI.Analysis.AncientFlat.Evolution.SemigroupSymmetry (3.5s)
+✔ [9267/9280] Built OAI.Analysis.AncientFlat.Spectral.ResolventCoefficients (4.5s)
+✔ [9268/9280] Built OAI.Analysis.AncientFlat.Evolution.MovingSource (3.9s)
+✔ [9269/9287] Built OAI.Analysis.AncientFlat.Spectral.Recursion (3.2s)
+✔ [9270/9287] Built OAI.Analysis.AncientFlat.Evolution.TwistedDuhamel (3.6s)
+✔ [9271/9287] Built OAI.Analysis.AncientFlat.Evolution.MovingEvaluation (4.3s)
+✔ [9272/9287] Built OAI.Analysis.AncientFlat.Evolution.SourceDuhamel (4.5s)
+✔ [9273/9287] Built OAI.Analysis.AncientFlat.Spectral.RecursionUnique (4.4s)
+✔ [9274/9293] Built OAI.Analysis.AncientFlat.Evolution.SimilaritySource (4.4s)
+✔ [9275/9295] Built OAI.Analysis.AncientFlat.Regularity.CompactLocalHolder (3.7s)
+✔ [9276/9295] Built OAI.Analysis.AncientFlat.Evolution.TimeGreen (4.0s)
+✔ [9277/9296] Built OAI.Analysis.AncientFlat.Regularity.HolderTimeChange (3.7s)
+✔ [9278/9296] Built OAI.Analysis.AncientFlat.Weighted.WeightedSourceHolder (3.9s)
+✔ [9279/9298] Built OAI.Analysis.AncientFlat.Evolution.AncientMild (3.6s)
+✔ [9280/9298] Built OAI.Analysis.AncientFlat.Regularity.FiniteLocalJets (5.2s)
+✔ [9281/9298] Built OAI.Analysis.AncientFlat.Regularity.TimeScalarHolder (3.3s)
+✔ [9282/9298] Built OAI.Analysis.AncientFlat.Evolution.MildSymmetry (3.5s)
+✔ [9283/9298] Built OAI.Analysis.AncientFlat.Evolution.SemigroupNormalize (3.8s)
+✔ [9284/9298] Built OAI.Analysis.AncientFlat.Regularity.MovingFourthHolder (3.5s)
+✔ [9285/9299] Built OAI.Analysis.AncientFlat.Geometry.NormalizedWindow (3.6s)
+✔ [9286/9299] Built OAI.Analysis.AncientFlat.Evolution.PreliminaryAncient (4.3s)
+✔ [9287/9299] Built OAI.Analysis.AncientFlat.Evolution.RenormalizedSource (3.9s)
+✔ [9288/9306] Built OAI.Analysis.AncientFlat.Kernel.ParameterDecay (3.9s)
+✔ [9289/9306] Built OAI.Analysis.AncientFlat.Evolution.ClassicalAncientCore (3.3s)
+✔ [9290/9307] Built OAI.Analysis.AncientFlat.Profile.CompactificationDerivative (3.3s)
+✔ [9291/9309] Built OAI.Analysis.AncientFlat.Evolution.ClassicalAncientWindow (3.6s)
+✔ [9292/9309] Built OAI.Analysis.AncientFlat.Geometry.AnnularCompactHolder (3.3s)
+✔ [9293/9311] Built OAI.Analysis.AncientFlat.Weighted.WeightedRescaling (3.5s)
+✔ [9294/9311] Built OAI.Analysis.AncientFlat.Evolution.ClassicalAncient (3.0s)
+✔ [9295/9311] Built OAI.Analysis.AncientFlat.Evolution.UniformC0 (3.4s)
+✔ [9296/9311] Built OAI.Analysis.AncientFlat.Profile.CompactificationCoeff (3.7s)
+✔ [9297/9311] Built OAI.Analysis.AncientFlat.Weighted.WeightedSpatial (3.9s)
+✔ [9298/9311] Built OAI.Analysis.AncientFlat.Evolution.PhysicalCore (3.0s)
+✔ [9299/9311] Built OAI.Analysis.AncientFlat.Evolution.SourceC0 (3.4s)
+✔ [9300/9311] Built OAI.Analysis.AncientFlat.Profile.CompactificationIdentity (3.3s)
+✔ [9301/9313] Built OAI.Analysis.AncientFlat.Evolution.PhysicalWindow (4.1s)
+✔ [9302/9315] Built OAI.Analysis.AncientFlat.Weighted.WeightedSource (3.4s)
+✔ [9303/9315] Built OAI.Analysis.AncientFlat.Profile.ProfileFamilies (3.6s)
+✔ [9304/9315] Built OAI.Analysis.AncientFlat.Evolution.PhysicalFromWindow (3.7s)
+✔ [9305/9315] Built OAI.Analysis.AncientFlat.Evolution.PhysicalFourthLocal (3.0s)
+✔ [9306/9315] Built OAI.Analysis.AncientFlat.Profile.RadialHolderOn (3.5s)
+✔ [9307/9315] Built OAI.Analysis.AncientFlat.Evolution.GeneralWindows (3.7s)
+✔ [9308/9318] Built OAI.Analysis.AncientFlat.Profile.ProfileScaleMatch (3.6s)
+✔ [9309/9318] Built OAI.Analysis.AncientFlat.Evolution.PhysicalCompact (3.5s)
+✔ [9310/9320] Built OAI.Analysis.AncientFlat.Evolution.CoreProfile (3.7s)
+✔ [9311/9320] Built OAI.Analysis.AncientFlat.Profile.ProfileSymbols (4.1s)
+✔ [9312/9320] Built OAI.Analysis.AncientFlat.Geometry.AnnularGeometry (3.9s)
+✔ [9313/9320] Built OAI.Analysis.AncientFlat.Regularity.PhysicalFiniteJets (3.5s)
+✔ [9314/9321] Built OAI.Analysis.AncientFlat.Regularity.CoreSchauder (3.0s)
+✔ [9315/9321] Built OAI.Analysis.AncientFlat.Profile.AnnularProfile (3.3s)
+✔ [9316/9323] Built OAI.Analysis.AncientFlat.Geometry.AnnularL2 (3.7s)
+✔ [9317/9323] Built OAI.Analysis.AncientFlat.Evolution.FinitePhysicalAncient (4.3s)
+✔ [9318/9323] Built OAI.Analysis.AncientFlat.Geometry.NormalizedGeometry (4.1s)
+✔ [9319/9328] Built OAI.Analysis.AncientFlat.Geometry.Annular (3.7s)
+✔ [9320/9329] Built OAI.Analysis.AncientFlat.Regularity.ScaledJets (3.4s)
+✔ [9321/9329] Built OAI.Analysis.AncientFlat.Profile.ProfileScaling (3.6s)
+✔ [9322/9334] Built OAI.Analysis.AncientFlat.Regularity.ReferenceEstimate (5.6s)
+✔ [9323/9334] Built OAI.Analysis.AncientFlat.Regularity.NormalizedJets (3.8s)
+✔ [9324/9336] Built OAI.Analysis.AncientFlat.Weighted.ExactSourceSpace (3.6s)
+✔ [9325/9336] Built OAI.Analysis.AncientFlat.Evolution.ScaledEquation (3.6s)
+✔ [9326/9336] Built OAI.Analysis.AncientFlat.Weighted.ExactNormCongr (3.2s)
+⚠ [9327/9339] Built Calabi.Correction.OuterOsc (2.7s)
+warning: Calabi/Correction/OuterOsc.lean:100:31: Variable name `hc0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Calabi/Correction/OuterOsc.lean:251:8: The namespace `Osc` is duplicated in the declaration `Calabi.Osc.Osc.raise`.
+
+Note: This linter can be disabled with `set_option linter.dupNamespace false`
+✔ [9328/9339] Built OAI.Analysis.AncientFlat.Weighted.WeightedEstimate (3.8s)
+⚠ [9329/9350] Built Calabi.Correction.ChartCutoff (3.0s)
+warning: Calabi/Correction/ChartCutoff.lean:38:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.contDiff_radFn`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.radFn_rotate`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:47:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.iteratedFDeriv_radFn_eq_zero`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:112:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_of_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:115:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_of_ge`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:118:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_nonneg`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:120:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_le_one`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:122:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.contDiff_chiV`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:125:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_rotate`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/ChartCutoff.lean:129:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.chiV_eq_smul`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9330/9350] Built OAI.Analysis.AncientFlat.Evolution.PhysicalProfileBridge (3.4s)
+⚠ [9331/9373] Built Calabi.Correction.Newton (1.5s)
+warning: Calabi/Correction/Newton.lean:1:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+warning: Calabi/Correction/Newton.lean:41:55: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9332/9375] Built Calabi.Correction.Whitney (3.5s)
+✔ [9334/9377] Built OAI.Analysis.AncientFlat.Weighted.WeightedPhysicalAncient (4.6s)
+✔ [9335/9377] Built Calabi.Correction.KopBound (4.1s)
+✔ [9336/9377] Built OAI.Analysis.AncientFlat.Weighted.ExactWeightedInverse (4.2s)
+⚠ [9337/9377] Built Calabi.Correction.RealSolvers (5.3s)
+warning: Calabi/Correction/RealSolvers.lean:37:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.time_shift`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/RealSolvers.lean:51:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_reJet_le`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/RealSolvers.lean:59:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.iteratedFDeriv_re`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/RealSolvers.lean:247:13: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/RealSolvers.lean:252:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/RealSolvers.lean:256:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/RealSolvers.lean:309:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/RealSolvers.lean:309:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/RealSolvers.lean:318:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/RealSolvers.lean:318:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/RealSolvers.lean:327:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.ancExt_rotate`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/RealSolvers.lean:396:13: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/RealSolvers.lean:415:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [9338/9377] Built Calabi.Correction.LocalSolve (5.1s)
+⚠ [9339/9377] Built Calabi.Correction.InteriorReal (5.5s)
+warning: Calabi/Correction/InteriorReal.lean:31:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_ofRealJet_le`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/InteriorReal.lean:39:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.iteratedFDeriv_ofReal`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9340/9377] Built Calabi.Correction.ParabolicBox (4.9s)
+⚠ [9341/9377] Built Calabi.Correction.TwoCharts (6.3s)
+warning: Calabi/Correction/TwoCharts.lean:37:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_fst_sub_le_pdist`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoCharts.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.norm_le_sigma`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/TwoCharts.lean:47:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sigma_le_norm_add_one`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9342/9377] Built Calabi.Correction.SmoothClass (4.9s)
+warning: Calabi/Correction/SmoothClass.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.one_weight`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothClass.lean:51:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.holderBound_of_WH`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothClass.lean:59:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH_of_holderBound`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothClass.lean:79:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.slice_eventuallyEq`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothClass.lean:87:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.time_eventuallyEq`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothClass.lean:103:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.Sm.mono_set`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9343/9377] Built Calabi.Correction.SigmaTheta (5.7s)
+warning: Calabi/Correction/SigmaTheta.lean:39:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sth_le_one`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sqrt_le_sth`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:41:29: Variable name `hθ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hθ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Calabi/Correction/SigmaTheta.lean:46:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sth_pos`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:49:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sth_eq`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:80:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sth_lipschitz`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:97:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sigma_sq_eq`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:102:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.sigma_le_norm_add`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:141:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.sigma_of_sth`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SigmaTheta.lean:163:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.sth_of_sigma`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9344/9377] Built Calabi.Correction.OuterOne (11s)
+✔ [9345/9377] Built Calabi.Correction.RayBounds (5.2s)
+⚠ [9346/9377] Built Calabi.Correction.SmoothOps (6.7s)
+warning: Calabi/Correction/SmoothOps.lean:271:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/SmoothOps.lean:278:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/SmoothOps.lean:297:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/SmoothOps.lean:314:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+✔ [9347/9377] Built Calabi.Correction.PairSpace (5.4s)
+✔ [9348/9377] Built Calabi.Correction.Coefficients (3.3s)
+⚠ [9349/9377] Built Calabi.Correction.SmoothBase (3.5s)
+warning: Calabi/Correction/SmoothBase.lean:44:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WJ.zero_of_WH`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/SmoothBase.lean:117:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.Sm.union`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9350/9377] Built Calabi.Correction.OuterZero (5.9s)
+⚠ [9351/9377] Built Calabi.Correction.Compose (5.4s)
+warning: Calabi/Correction/Compose.lean:92:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.isometry`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9352/9377] Built Calabi.Correction.InnerBlock (22s)
+✔ [9353/9377] Built Calabi.Correction.JointClass (4.9s)
+✔ [9354/9377] Built Calabi.Correction.OuterZeroBlock (76s)
+✔ [9355/9377] Built Calabi.Correction.OuterPair (5.9s)
+⚠ [9356/9377] Built Calabi.Correction.PairLimit (4.9s)
+warning: Calabi/Correction/PairLimit.lean:37:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.tsum_jets`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/PairLimit.lean:60:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.of_tendsto`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/PairLimit.lean:75:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/PairLimit.lean:72:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.limFn_of_mem`:
+  [NormedAddCommGroup V]
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup V] [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/PairLimit.lean:180:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/PairLimit.lean:332:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.tendsto_value_of_jets`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9357/9377] Built Calabi.Correction.ApproxInverse (5.0s)
+⚠ [9358/9377] Built Calabi.Correction.DiffQuot (4.3s)
+warning: Calabi/Correction/DiffQuot.lean:157:20: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: Calabi/Correction/DiffQuot.lean:104:36: Variable name `hα` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hα
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9359/9377] Built Calabi.Correction.ChartSymmetry (4.5s)
+warning: Calabi/Correction/ChartSymmetry.lean:35:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.radial_eq_of_norm_eq`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9360/9377] Built Calabi.Correction.FirstStep (7.8s)
+warning: Calabi/Correction/FirstStep.lean:41:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.exp_le`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/FirstStep.lean:53:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.WH.const_fun`:
+  [InnerProductSpace ℝ V]
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ V] [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/FirstStep.lean:205:58: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9361/9377] Built Calabi.Correction.DiffQuotStep (10s)
+warning: Calabi/Correction/DiffQuotStep.lean:530:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/DiffQuotStep.lean:537:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/DiffQuotStep.lean:543:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Calabi/Correction/DiffQuotStep.lean:556:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+✔ [9362/9377] Built Calabi.Correction.Transfer (5.1s)
+✔ [9363/9377] Built Calabi.Correction.Commute (3.7s)
+✔ [9364/9377] Built Calabi.Correction.Iteration (9.7s)
+⚠ [9365/9377] Built Calabi.Correction.Ladder (5.0s)
+warning: Calabi/Correction/Ladder.lean:153:31: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+warning: Calabi/Correction/Ladder.lean:237:13: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+warning: Calabi/Correction/Ladder.lean:237:44: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: Calabi/Correction/Ladder.lean:208:61: Variable name `hf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9366/9377] Built Calabi.Correction.JointSmooth (4.0s)
+warning: Calabi/Correction/JointSmooth.lean:44:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.JS.sm`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Calabi/Correction/JointSmooth.lean:49:0: automatically included section variable(s) unused in theorem `Calabi.Weighted.JS.mono`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9367/9377] Built Calabi.Correction.ChartPieces (3.0s)
+warning: Calabi/Correction/ChartPieces.lean:114:21: `if_true` has been deprecated: Use `ite_true` instead
+warning: Calabi/Correction/ChartPieces.lean:116:21: `if_false` has been deprecated: Use `ite_false` instead
+warning: Calabi/Correction/ChartPieces.lean:122:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Calabi/Correction/ChartPieces.lean:126:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+✔ [9368/9377] Built Calabi.Correction.ChartFlow (4.3s)
+⚠ [9369/9377] Built Calabi.Correction.Solution (4.7s)
+warning: Calabi/Correction/Solution.lean:46:22: Variable name `hx1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9370/9377] Built Calabi.Correction.Assembly (5.9s)
+✔ [9371/9377] Built Calabi.Main (2.0s)
+✔ [9372/9377] Built Calabi (2.9s)
+✔ [9374/9377] Built FCSolution (3.2s)
+ℹ [9376/9377] Built FCAudit (2.8s)
+info: FCAudit.lean:3:0: 'CalabiFC.small_energy_singularity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FCAudit.lean:4:0: 'CalabiFC.small_calabi_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FCAudit.lean:5:0: 'Calabi.mainTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FCAudit.lean:6:0: 'Calabi.mainTheoremEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FCAudit.lean:7:0: 'Calabi.exists_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FCAudit.lean:8:0: 'Calabi.Weighted.localizedCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9377 jobs).

@@ -27,8 +27,10 @@
     "fc_draft_projective_corollary": "PASS",
     "fc_draft_answer_equivalence": "PASS",
     "fc_draft_flow_normalization": "PASS",
-    "lean_proof_ci": "TRACKED_IN_GITHUB_ACTIONS",
-    "public_ci_scope": "The public_ci field refers to the full Comparator and fresh environment replay workflow; the separate Lean proof build is tracked independently."
+    "lean_proof_ci": "PASS",
+    "public_ci_scope": "The public_ci field refers to the full Comparator and fresh environment replay workflow; the separate Lean proof build is tracked independently.",
+    "lean_proof_ci_build": "PASS",
+    "lean_proof_ci_axioms": "PASS"
   },
   "formal_scope": "Constructed smooth Calabi flow with uniform curvature margin, common Sobolev bound and scalar blow-up. Smooth uniqueness and maximal-flow identification are not formalized.",
   "private_ci_repository": "KitaKen1/calabi-small-energy-singularities",
@@ -60,5 +62,9 @@
   "publication_date": "2026-10-28",
   "publication_authorization": "The user authorized uploading the current Lean proof, then explicitly authorized one public Lean proof build and axiom-audit CI run. Full Comparator and fresh environment replay were not requested.",
   "automatic_ci": "DISABLED_MANUAL_DISPATCH_ONLY",
-  "lean_proof_ci_workflow": "https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml"
+  "lean_proof_ci_workflow": "https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml",
+  "lean_proof_ci_receipt": "verification/public-lean-proof/20261028/run.json",
+  "lean_proof_ci_run_id": 40642746582,
+  "lean_proof_ci_run_url": "https://github.com/KitaKen1/calabi-small-energy-singularity/actions/runs/40642746582",
+  "lean_proof_ci_tested_commit": "2d78c1b0b2a7504d1e3c3dd67ba0bc1ebf644c90"
 }

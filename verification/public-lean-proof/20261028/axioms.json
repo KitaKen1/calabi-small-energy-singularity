@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "targets": {
+    "CalabiFC.small_energy_singularity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFC.small_calabi_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.mainTheorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.mainTheoremEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.exists_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.Weighted.localizedCorrection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

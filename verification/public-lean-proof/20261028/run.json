@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "repository": "KitaKen1/calabi-small-energy-singularity",
+  "scope": "Lean proof build and six transitive axiom audits; Comparator and fresh environment replay not included.",
+  "tested_commit": "2d78c1b0b2a7504d1e3c3dd67ba0bc1ebf644c90",
+  "run_id": 40642746582,
+  "run_attempt": 1,
+  "run_url": "https://github.com/KitaKen1/calabi-small-energy-singularity/actions/runs/40642746582",
+  "workflow": ".github/workflows/lean-proof.yml",
+  "event": "workflow_dispatch",
+  "created_at": "2026-10-28T06:15:23Z",
+  "updated_at": "2026-10-28T06:39:05Z",
+  "jobs": [
+    {
+      "id": 122664433096,
+      "name": "Build Lean proof and audit axioms",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check fixed sources and statement definitions",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare Lean and runner resources",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned Lean release from GitHub",
+          "conclusion": "success"
+        },
+        {
+          "name": "Download pinned Mathlib cache",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build completed proof and check allowed axioms",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record successful proof build",
+          "conclusion": "success"
+        },
+        {
+          "name": "Save proof build and axiom audit logs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "artifact": {
+    "id": 12796464966,
+    "name": "lean-proof-2d78c1b0b2a7504d1e3c3dd67ba0bc1ebf644c90",
+    "digest": "sha256:a8a77f02eb243bfe3d1c3e1c143208aa0bb187e7700a62040002d1a473922575",
+    "download_digest_verified": true
+  },
+  "files_sha256": {
+    "axioms.json": "ce52b49b82b07fe6387e9a0de3eb5798e79daf6a0a6472c72c55239ad43471c2",
+    "axioms.log": "b1b4bcdf0423822225c2a74b795155aeaf2645f2eb0d1ac7df475f28a2e8bae2",
+    "build.log": "2a958fb30a2b66bd4327f1d687ab500abfee9b1e864c4bce50df4421878d133b",
+    "input-check.json": "a5100f34bafd2dfcf65796eb77f5f904b2f60633ccbfd4fc6defb2c03c9d1998",
+    "status.txt": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431"
+  },
+  "axioms": {
+    "CalabiFC.small_energy_singularity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CalabiFC.small_calabi_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.mainTheorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.mainTheoremEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.exists_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Calabi.Weighted.localizedCorrection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}
