@@ -56,7 +56,7 @@
     "FClikelean/vendor/FormalConjecturesUtil/Attributes/Basic.lean": "0ecdf87713c3f9141b60572eb62b9a9a28ccbc7a56739c73a1e3116a119d92d0",
     "FClikelean/vendor/FormalConjecturesUtil/Answer.lean": "1c942303a43be1add611dc8ab6d94563e8834fb7128482b1c969fe314b949724",
     "FClikelean/vendor/FormalConjecturesUtil/Answer/Syntax.lean": "4572fc294df840c091b79350951760f742eb26f890b48cd329a19995a1e2344c",
-    ".github/workflows/lean-proof.yml": "8a684dd7c94ea85932fd5a47dac8b41d4df9284ed9377cc3ab59949bf1eb34a5"
+    ".github/workflows/lean-proof.yml": "2dc2076e2f3896d435c57a8760e3c486da5e213d62c4fd0fd753fce353429f44"
   },
   "private_repository": "KitaKen1/calabi-small-energy-singularities",
   "fc_draft_targets": [

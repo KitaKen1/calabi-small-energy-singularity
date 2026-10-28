@@ -31,6 +31,20 @@ jobs:
         run: python3 lean/comparator/check-inputs.py --receipt-dir build-receipt
       - name: Prepare Lean and runner resources
         run: bash lean/comparator/prepare-runner.sh && bash lean/comparator/add-swap.sh 8 4
+      - name: Install pinned Lean release from GitHub
+        run: |
+          toolchain='leanprover/lean4:v4.34.1'
+          test "$(cat lean/lean-toolchain)" = "$toolchain"
+          archive="$RUNNER_TEMP/lean-4.34.1-linux.tar.zst"
+          curl --fail --location --retry 5 --retry-all-errors --connect-timeout 20 \
+            --output "$archive" \
+            https://github.com/leanprover/lean4/releases/download/v4.34.1/lean-4.34.1-linux.tar.zst
+          printf '%s  %s\n' \
+            47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4 \
+            "$archive" | sha256sum --check -
+          tar --zstd -xf "$archive" -C "$RUNNER_TEMP"
+          elan toolchain link "$toolchain" "$RUNNER_TEMP/lean-4.34.1-linux"
+          elan run "$toolchain" lean --version
       - name: Download pinned Mathlib cache
         run: lake exe cache get
         working-directory: lean
