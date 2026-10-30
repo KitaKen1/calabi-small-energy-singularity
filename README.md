@@ -1,5 +1,7 @@
 # Lean proof of small-energy finite-time singularities of Calabi flow
 
+**Tentative version.** The final version will be released soon.
+
 [![Lean proof](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/KitaKen1/calabi-small-energy-singularity/actions/workflows/lean-proof.yml)
 
 The manuscript [*Small-energy finite-time singularities of Calabi flow*](PDF/calabi-small-energy.pdf#page=1)
